@@ -8,14 +8,12 @@ from .io import load_batch_csv
 from .term_store import TermStore
 from .drift import DriftEngine
 from .config import Config
+from .concept_proxy import term_label_stats, p_hate_given_term, concept_proxy_drift
 
-from .concept_proxy import (
-    term_label_stats,
-    p_hate_given_term,
-    concept_proxy_drift,
-)
-
+# Morfessor + variant resolver
+from .morph import load_vocab, save_vocab, train_morfessor, load_morfessor
 from .variant_resolver import VariantResolver
+from .suffix_miner import discover_suffixes
 
 MANIFEST_PATH = "artifacts/processed_manifest.json"
 TERM_STORE_PATH = "artifacts/term_store.json"
@@ -38,10 +36,6 @@ def _save_manifest(processed_files: set[str]) -> None:
 
 
 def _baseline_batches(window: int) -> list[str]:
-    """
-    Baseline is last N batch_nos recorded in drift_history.csv.
-    Used for target/data drift methods.
-    """
     if not os.path.exists(DRIFT_HISTORY_PATH):
         return []
     hist = pd.read_csv(DRIFT_HISTORY_PATH)
@@ -77,56 +71,56 @@ def _append_trigger(event: dict) -> None:
         f.write(json.dumps(event, ensure_ascii=False) + "\n")
 
 
-def _load_last_processed_for_baseline(processed_folder: str, n: int) -> pd.DataFrame | None:
-    """
-    Loads last n processed CSVs from processed_folder and concatenates them for concept drift proxy baseline.
-    Returns None if no files.
-    """
+def _load_last_processed_for_concept_baseline(processed_folder: str, n_files: int) -> pd.DataFrame | None:
     if not os.path.exists(processed_folder):
         return None
-
     files = sorted([f for f in os.listdir(processed_folder) if f.lower().endswith(".csv")])
     if not files:
         return None
-
-    files = files[-n:]
+    files = files[-n_files:]
     dfs = []
     for fname in files:
-        path = os.path.join(processed_folder, fname)
         try:
-            dfs.append(load_batch_csv(path))
+            dfs.append(load_batch_csv(os.path.join(processed_folder, fname)))
         except Exception:
             continue
-
     if not dfs:
         return None
     return pd.concat(dfs, ignore_index=True)
 
 
 class BatchConsumer:
-    """
-    Consumes batch CSVs produced by Component 1.
-    Performs:
-      - Automatic term variant merging (VariantResolver) -> canonical real spelling
-      - New term detection (hate-only new_term_rate)
-      - Target drift (label drift): hate_rate drift via ADWIN
-      - Data/feature drift: hate-term distribution drift via JSD + ADWIN (+ hard threshold)
-      - Concept drift proxy: drift in P(Hate=1 | term) vs baseline window
-      - Triggers incremental update using voting rule (2-of-4)
-    """
-
     def __init__(self, cfg: Config):
         self.cfg = cfg
+
         self.store = TermStore.load(TERM_STORE_PATH)
         self.drift = DriftEngine()
         self.processed_files = _load_manifest()
 
-        # Automatic canonical term resolver (no manual alias list)
-        self.variants = VariantResolver("artifacts/variant_map.json")
+        # Morfessor state
+        self.vocab = load_vocab()          # {term: count}
+        self.morfessor = load_morfessor()  # model or None
+        self.variants = VariantResolver(self.morfessor, "artifacts/variant_map.json")
+
+        # set initial learned suffixes (automatic)
+        suffixes = discover_suffixes(list(self.vocab.keys()), min_types=6, min_len=1, max_len=6)
+        self.variants.set_suffixes(suffixes)
+        print("suffixes learned:", len(suffixes), "top:", suffixes[:10])
+
 
         os.makedirs(cfg.batch_folder, exist_ok=True)
         os.makedirs(cfg.processed_folder, exist_ok=True)
         os.makedirs("artifacts", exist_ok=True)
+
+        # retraining policy
+        self._last_vocab_size = len(self.vocab)
+        self._retrain_step = 300  # retrain when vocab grows by +300 unique terms
+
+    def _maybe_retrain_morfessor(self) -> None:
+        current_size = len(self.vocab)
+        if current_size >= self._last_vocab_size + self._retrain_step:
+            self.morfessor = train_morfessor(self.vocab)   # saves artifacts/morfessor_model.bin
+            self._last_vocab_size = current_size
 
     def run_once(self) -> None:
         files = sorted([f for f in os.listdir(self.cfg.batch_folder) if f.lower().endswith(".csv")])
@@ -138,17 +132,17 @@ class BatchConsumer:
             path = os.path.join(self.cfg.batch_folder, fname)
             df = load_batch_csv(path)
 
-            # each file should be a single batch, but groupby supports multiple batches safely
             for batch_no, g in df.groupby("batch_no"):
+                batch_no = str(batch_no)
                 if len(g) < self.cfg.min_rows_in_batch:
                     continue
 
-                batch_no = str(batch_no)
                 hate_rate = float(g["Hate"].mean())
 
-                # --------------------------
-                # Build term-label pairs with canonical terms
-                # --------------------------
+                # IMPORTANT: set suffixes BEFORE canonicalizing this batch
+                suffixes = discover_suffixes(list(self.vocab.keys()), min_types=6, min_len=1, max_len=6)
+                self.variants.set_suffixes(suffixes)
+
                 term_label_pairs: list[tuple[str, int]] = []
                 hate_terms: list[str] = []
                 unique_hate_terms: set[str] = set()
@@ -156,10 +150,15 @@ class BatchConsumer:
                 for _, row in g.iterrows():
                     label = int(row["Hate"])
                     for raw_t in row["terms"]:
-                        # Learn mapping from raw term (automatic)
-                        self.variants.observe(raw_t)
+                        raw_t = str(raw_t).strip()
+                        if not raw_t:
+                            continue
 
-                        # Use canonical REAL spelling (not skeleton)
+                        # update vocab (for Morfessor)
+                        self.vocab[raw_t] = int(self.vocab.get(raw_t, 0)) + 1
+
+                        # learn mapping and canonicalize
+                        self.variants.observe(raw_t)
                         t = self.variants.canonicalize(raw_t)
                         if not t:
                             continue
@@ -169,46 +168,61 @@ class BatchConsumer:
                             hate_terms.append(t)
                             unique_hate_terms.add(t)
 
-                # Persist variant map so canonicalization is stable across runs
+                # persist vocab
+                save_vocab(self.vocab)
+
+                # maybe retrain morfessor and attach updated model
+                self._maybe_retrain_morfessor()
+                self.variants.model = self.morfessor
+
+                # save mapping
                 self.variants.save()
+                suffixes = discover_suffixes(list(self.vocab.keys()), min_types=6, min_len=1, max_len=6)
+                self.variants.set_suffixes(suffixes)
+                print("suffixes learned:", len(suffixes), "top:", suffixes[:15])  # debug
 
-                # Update term store
+                # ---- New term rate (hate-only) ----
                 term_report = self.store.update(batch_no, term_label_pairs)
-
-                # New-term-rate among Hate=1 terms ONLY
                 new_terms_set = set(term_report["new_terms"])
                 new_terms_in_hate = len(new_terms_set.intersection(unique_hate_terms))
                 new_term_rate = new_terms_in_hate / max(1, len(unique_hate_terms))
                 new_term_flag = new_term_rate >= self.cfg.new_term_rate_threshold
 
-                # --------------------------
-                # Target + Data drift
-                # --------------------------
+                # ---- Target + data drift ----
                 baseline = _baseline_batches(self.cfg.baseline_window)
                 drift_report = self.drift.update(batch_no, hate_rate, hate_terms, baseline)
 
-                # Warm-up: need at least 2 previous batches
                 enough_history = len(baseline) >= 2
 
                 jsd_val = drift_report["jsd"]
                 hard_jsd = (jsd_val is not None) and (jsd_val >= self.cfg.jsd_hard_threshold)
 
-                # --------------------------
-                # Concept drift proxy
-                # (relationship drift): P(Hate | term)
-                # --------------------------
+                # ---- Concept drift proxy ----
                 concept_report = {"mean_abs_delta": None, "frac_delta_gt_0_2": None, "shared_terms": 0}
                 concept_flag = False
 
-                baseline_df = _load_last_processed_for_baseline(
+                baseline_df = _load_last_processed_for_concept_baseline(
                     processed_folder=self.cfg.processed_folder,
-                    n=self.cfg.baseline_window
+                    n_files=self.cfg.baseline_window
                 )
 
                 if baseline_df is not None and not baseline_df.empty:
-                    # NOTE: baseline_df already contains canonical terms if it was processed by this consumer.
-                    base_tc, base_th = term_label_stats(baseline_df)
-                    cur_tc, cur_th = term_label_stats(g)
+                    def _canon_terms_list(lst):
+                        out = []
+                        for x in lst:
+                            self.variants.observe(x)
+                            c = self.variants.canonicalize(x)
+                            if c:
+                                out.append(c)
+                        return out
+
+                    base2 = baseline_df.copy()
+                    cur2 = g.copy()
+                    base2["terms"] = base2["terms"].apply(_canon_terms_list)
+                    cur2["terms"] = cur2["terms"].apply(_canon_terms_list)
+
+                    base_tc, base_th = term_label_stats(base2)
+                    cur_tc, cur_th = term_label_stats(cur2)
 
                     cur_p = p_hate_given_term(cur_tc, cur_th, alpha=1.0)
                     base_p = p_hate_given_term(base_tc, base_th, alpha=1.0)
@@ -221,28 +235,19 @@ class BatchConsumer:
                             or concept_report["frac_delta_gt_0_2"] >= self.cfg.concept_bigfrac_threshold
                         )
 
-                # --------------------------
-                # Voting trigger (persistent drift)
-                # 2-of-4 rule
-                # --------------------------
+                # ---- Trigger (vote_count>=2 OR new_term_flag) ----
                 votes = {
-                    # Target drift (label drift)
                     "target_drift": bool(drift_report["hate_rate_drift"]),
-                    # Data/feature drift
                     "data_drift": bool(drift_report["jsd_drift"] or hard_jsd),
-                    # Concept drift proxy
                     "concept_proxy": bool(concept_flag),
-                    # New term emergence among hateful terms
                     "new_term_flag": bool(new_term_flag),
                 }
                 vote_count = sum(votes.values())
 
-                trigger = bool(enough_history and vote_count >= 2)
+                trigger = bool(enough_history and (vote_count >= 2 or new_term_flag))
 
-                # Save drift history
                 _append_drift_row(batch_no, drift_report, new_term_rate, concept_report, trigger)
 
-                # Save trigger event
                 if trigger:
                     _append_trigger({
                         "batch_no": batch_no,
@@ -254,10 +259,10 @@ class BatchConsumer:
                         "concept_proxy": concept_report,
                         "votes": votes,
                         "vote_count": int(vote_count),
-                        "baseline_batches": drift_report.get("baseline_batches", []),
+                        "baseline_batches": baseline,
                     })
 
-            # Persist term store + manifest + move file
+            # persist store + manifest + move file
             self.store.save(TERM_STORE_PATH)
             self.processed_files.add(fname)
             _save_manifest(self.processed_files)
