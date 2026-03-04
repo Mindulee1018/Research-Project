@@ -1,0 +1,27 @@
+# Models - too large for GitHub
+models/
+*.bin
+*.pt
+*.ckpt
+
+# Outputs
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data - optional (comment out if you want to include)
+# data/
