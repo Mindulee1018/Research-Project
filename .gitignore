@@ -38,5 +38,5 @@ pip-log.txt
 .DS_Store
 Thumbs.db
 
-data/raw
+data/
 data/SOLD_chunks_100
