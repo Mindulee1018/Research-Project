@@ -1,6 +1,6 @@
-from src.config import Config
-from src.consumer import BatchConsumer
-from src.update_handler import run_updates
+from src.config.config import Config
+from src.streaming.consumer import BatchConsumer
+from src.core.update_handler import run_updates
 
 def main():
     consumer = BatchConsumer(Config())

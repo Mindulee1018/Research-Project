@@ -1,0 +1,42 @@
+# --- Python virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+*.venv/
+
+# --- Python cache / compiled ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Pylance / type-check cache ---
+.pytype/
+.pyright/
+.mypy_cache/
+
+# --- Pytest / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+
+# --- Build / packaging ---
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# --- Poetry / pip caches (optional) ---
+.poetry/
+pip-log.txt
+
+# --- OS / Editor ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+data/raw
+data/SOLD_chunks_100
