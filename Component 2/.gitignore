@@ -38,9 +38,6 @@ pip-log.txt
 .DS_Store
 Thumbs.db
 
-data/raw
-data/SOLD_chunks_100
-
 
 node_modules/
 artifacts/
