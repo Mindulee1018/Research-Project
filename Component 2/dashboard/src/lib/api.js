@@ -1,4 +1,4 @@
-const API = "/api";
+const API = "http://127.0.0.1:8000/api";
 
 export async function fetchJSON(url) {
   const r = await fetch(url);
