@@ -17,12 +17,7 @@ def run_pipeline(youtube_url, max_comments=500, output_filename=None):
     print("  Sinhala Hate Speech & Disinformation Detection Pipeline")
     print("=" * 60)
 
-    detector = SinhalaHateDetector(
-        clf_model_path=CLF_MODEL_PATH,
-        token_model_path=TOKEN_MODEL_PATH,
-        train_data_path=TRAIN_DATA_PATH,
-        bio_data_path=BIO_DATA_PATH,
-    )
+    detector = SinhalaHateDetector()
 
     print(f"Scraping from: {youtube_url}")
     raw_comments = scrape_youtube_comments(youtube_url, max_comments)
@@ -59,6 +54,25 @@ def run_pipeline(youtube_url, max_comments=500, output_filename=None):
     print(f"Saved to: {output_path}")
     return results_df
 
+#if __name__ == "__main__":
+    #YOUTUBE_URL = "https://youtu.be/_7JGPFz7Vfs?si=CaJVL9sExi_0OtUM"
+    #df = run_pipeline(youtube_url=YOUTUBE_URL, max_comments=500, output_filename="youtube_results.csv")
+
 if __name__ == "__main__":
-    YOUTUBE_URL = "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
-    df = run_pipeline(youtube_url=YOUTUBE_URL, max_comments=500, output_filename="youtube_results.csv")
+    from datetime import datetime
+    import sys
+
+    # Get URL from command line argument or prompt
+    if len(sys.argv) > 1:
+        YOUTUBE_URL = sys.argv[1]
+    else:
+        YOUTUBE_URL = input("https://youtu.be/_7JGPFz7Vfs?si=P5-PxexZpKaFr0NP").strip()
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_filename = f"youtube_results_{timestamp}.csv"
+
+    df = run_pipeline(
+        youtube_url=YOUTUBE_URL,
+        max_comments=200,
+        output_filename=output_filename,
+    )

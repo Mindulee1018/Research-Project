@@ -6,11 +6,8 @@ import os
 import json
 import torch
 import pandas as pd
-from transformers import (
-    AutoTokenizer,
-    AutoModelForSequenceClassification,
-    AutoModelForTokenClassification,
-)
+from optimum.onnxruntime import ORTModelForSequenceClassification, ORTModelForTokenClassification
+from transformers import AutoTokenizer
 
 LABEL2ID = {'HATE': 0, 'DISINFO': 1, 'NORMAL': 2}
 ID2LABEL = {0: 'HATE', 1: 'DISINFO', 2: 'NORMAL'}
@@ -19,57 +16,44 @@ ID2TAG   = {0: 'O', 1: 'B-HATE', 2: 'I-HATE'}
 HATE_PROB_THRESHOLD = 0.4
 
 
+CLF_REPO   = "Imaya2002/sinhala-hate-classifier"
+TOKEN_REPO = "Imaya2002/sinhala-hate-word-detector"
+
+BASE_DIR        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TRAIN_DATA_PATH = os.path.join(BASE_DIR, 'Data', 'train_set.csv')
+BIO_DATA_PATH   = os.path.join(BASE_DIR, 'Data', 'bio_train_dataset.json')
+
+
 class SinhalaHateDetector:
-    """
-    Full pipeline for Sinhala hate speech and disinformation detection.
+    def __init__(self):
+        self.device = 'cpu'  # ONNX runs on CPU
+        print("Loading tokenizer from HuggingFace...")
+        self.tokenizer = AutoTokenizer.from_pretrained(CLF_REPO)
 
-    Usage:
-        detector = SinhalaHateDetector(
-            clf_model_path   = 'Models/clf_model_final',
-            token_model_path = 'Models/token_model_final',
-            train_data_path  = 'Data/train_set.csv',
-            bio_data_path    = 'Data/bio_train_dataset.json',
-        )
-        label, hate_words = detector.predict("ballo thopi hora kala")
-    """
+        print("Loading classifier model (ONNX)...")
+        self.clf_model = ORTModelForSequenceClassification.from_pretrained(CLF_REPO)
 
-    def __init__(self, clf_model_path, token_model_path, train_data_path, bio_data_path):
-        self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        print(f"Using device: {self.device}")
-
-        print("Loading tokenizer...")
-        self.tokenizer = AutoTokenizer.from_pretrained(clf_model_path)
-
-        print("Loading classifier model...")
-        self.clf_model = AutoModelForSequenceClassification.from_pretrained(
-            clf_model_path, num_labels=3, id2label=ID2LABEL, label2id=LABEL2ID,
-        ).to(self.device)
-        self.clf_model.eval()
-
-        print("Loading token classifier model...")
-        self.token_model = AutoModelForTokenClassification.from_pretrained(
-            token_model_path, num_labels=3, id2label=ID2TAG, label2id=TAG2ID,
-        ).to(self.device)
-        self.token_model.eval()
+        print("Loading token classifier model (ONNX)...")
+        self.token_model = ORTModelForTokenClassification.from_pretrained(TOKEN_REPO)
 
         print("Building hate word set...")
-        self.hate_word_set = self._build_hate_word_set(train_data_path, bio_data_path)
+        self.hate_word_set = self._build_hate_word_set()
         print(f"Hate word set: {len(self.hate_word_set)} unique tokens")
-        print("Detector ready!\n")
+        print("✅ Detector ready!\n")
 
-    def _build_hate_word_set(self, train_data_path, bio_data_path):
+    def _build_hate_word_set(self):
         hate_words = set()
 
-        if os.path.exists(bio_data_path):
-            with open(bio_data_path, 'r', encoding='utf-8') as f:
+        if os.path.exists(BIO_DATA_PATH):
+            with open(BIO_DATA_PATH, 'r', encoding='utf-8') as f:
                 bio_data = json.load(f)
             for example in bio_data:
                 for token, tag in zip(example['tokens'], example['tags']):
                     if tag in ('B-HATE', 'I-HATE'):
                         hate_words.add(token.lower().strip())
 
-        if os.path.exists(train_data_path):
-            df = pd.read_csv(train_data_path, encoding='utf-8-sig')
+        if os.path.exists(TRAIN_DATA_PATH):
+            df = pd.read_csv(TRAIN_DATA_PATH, encoding='utf-8-sig')
             if 'Word Identified' in df.columns:
                 for val in df['Word Identified'].dropna():
                     for w in str(val).split(','):
@@ -136,12 +120,9 @@ class SinhalaHateDetector:
         inputs = self.tokenizer(
             comment, return_tensors='pt', truncation=True,
             max_length=128, padding=True,
-        ).to(self.device)
-
-        with torch.no_grad():
-            logits = self.clf_model(**inputs).logits
-
-        pred_label = ID2LABEL[torch.argmax(logits).item()]
+        )
+        logits     = self.clf_model(**inputs).logits
+        pred_label = ID2LABEL[int(logits.argmax(axis=-1)[0])]
         hate_words = self._get_hate_words_combined(comment) if pred_label == 'HATE' else []
         return pred_label, hate_words
 
