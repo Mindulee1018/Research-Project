@@ -39,4 +39,7 @@ pip-log.txt
 Thumbs.db
 
 data/
-data/SOLD_chunks_100
+node_modules/
+
+package-lock.json
+package.json

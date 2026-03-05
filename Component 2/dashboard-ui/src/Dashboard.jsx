@@ -1,29 +1,15 @@
-// dashboard/src/Dashboard.jsx
 import { useEffect, useMemo, useState } from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-  CartesianGrid,
-  BarChart,
-  Bar,
-  Legend,
-} from "recharts";
 
-const API = "/api";
-// const API = "http://127.0.0.1:8000";
+import KPI from "./components/KPI.jsx";
+import DriftChart from "./components/DriftChart.jsx";
+import LexiconTop from "./components/LexiconTop.jsx";
+import StatusCard from "./components/StatusCard.jsx";
+import VariantGroups from "./components/VariantGroups.jsx";
+import ManualMerge from "./components/ManualMerge.jsx";
+import LatestTrigger from "./components/LatestTrigger.jsx";
+import TriggerTimeline from "./components/TriggerTimeline.jsx";
 
-function KPI({ title, value }) {
-  return (
-    <div className="card">
-      <div className="kpiTitle">{title}</div>
-      <div className="kpiValue">{value ?? "-"}</div>
-    </div>
-  );
-}
+import { addManualAlias, deleteManualAlias, loadDashboardData } from "./lib/api.js";
 
 export default function Dashboard() {
   const [metrics, setMetrics] = useState(null);
@@ -31,427 +17,267 @@ export default function Dashboard() {
   const [triggers, setTriggers] = useState([]);
   const [lexTop, setLexTop] = useState([]);
   const [variantGroups, setVariantGroups] = useState([]);
+  const [manualMap, setManualMap] = useState({});
   const [err, setErr] = useState("");
 
-  const [manualFrom, setManualFrom] = useState("");
-  const [manualTo, setManualTo] = useState("");
-  const [manualMap, setManualMap] = useState({});
+  const [refreshTick, setRefreshTick] = useState(0);
 
   // lexicon search
   const [query, setQuery] = useState("");
 
-  // manual refresh (optional)
-  const [refreshTick, setRefreshTick] = useState(0);
+  // manual merge inputs
+  const [manualFrom, setManualFrom] = useState("");
+  const [manualTo, setManualTo] = useState("");
+
+  // trigger timeline controls
+  const [tlQuery, setTlQuery] = useState("");
+  const [tlLimit, setTlLimit] = useState(10);
+  const [tlExpanded, setTlExpanded] = useState({});
+  const [tlOnlyFlagged, setTlOnlyFlagged] = useState(false);
+
+  // variant groups controls + pagination
+  const [vgQuery, setVgQuery] = useState("");
+  const [vgOnlyUnchecked, setVgOnlyUnchecked] = useState(false);
+  const [vgPage, setVgPage] = useState(1);
+
+  const [checkedGroups, setCheckedGroups] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem("checkedVariantGroups") || "{}");
+    } catch {
+      return {};
+    }
+  });
+
+  const thresholds = useMemo(
+    () => ({
+      jsd: 0.2,
+      concept: 0.1,
+      newTerm: 0.4,
+    }),
+    [],
+  );
+
+  function toggleGroupChecked(key) {
+    setCheckedGroups((prev) => {
+      const next = { ...prev, [key]: !prev[key] };
+      localStorage.setItem("checkedVariantGroups", JSON.stringify(next));
+      return next;
+    });
+  }
+
+  function toggleTlExpanded(batchNo) {
+    setTlExpanded((prev) => ({ ...prev, [batchNo]: !prev[batchNo] }));
+  }
 
   useEffect(() => {
     async function load() {
       try {
         setErr("");
-        const [m, d, t, l, vg, mm] = await Promise.all([
-          fetch(`${API}/metrics`).then((r) => r.json()),
-          fetch(`${API}/drift_history`).then((r) => r.json()),
-          fetch(`${API}/triggers`).then((r) => r.json()),
-          fetch(`${API}/lexicon_top?limit=200`).then((r) => r.json()),
-          fetch(`${API}/variant_groups?limit=10&min_variants=1`).then(
-            (r) => r.json(),
-            fetch(`${API}/manual_aliases`).then((r) => r.json()),
-          ),
-        ]);
-
-        setMetrics(m);
-        setDrift(d);
-        setTriggers(t);
-        setLexTop(l);
-        setVariantGroups(vg);
-        setManualMap(mm);
+        const data = await loadDashboardData();
+        setMetrics(data.metrics);
+        setDrift(data.drift);
+        setTriggers(data.triggers);
+        setLexTop(data.lexTop);
+        setVariantGroups(data.variantGroups);
+        setManualMap(data.manualMap);
+        setVgPage(1);
       } catch (e) {
-        setErr(String(e));
+        setErr(String(e?.message || e));
       }
     }
     load();
   }, [refreshTick]);
 
   const triggerBatches = useMemo(
-    () => new Set(triggers.map((x) => String(x.batch_no))),
+    () => new Set((triggers || []).map((x) => String(x.batch_no))),
     [triggers],
   );
 
   const driftChartData = useMemo(() => {
-    return drift.map((r) => ({
+    return (drift || []).map((r) => ({
       batch_no: String(r.batch_no),
-      jsd: r.jsd === "" ? null : Number(r.jsd),
+      jsd: r.jsd === "" || r.jsd == null ? null : Number(r.jsd),
       concept:
-        r.concept_mean_abs_delta === ""
+        r.concept_mean_abs_delta === "" || r.concept_mean_abs_delta == null
           ? null
           : Number(r.concept_mean_abs_delta),
-      new_term_rate: r.new_term_rate === "" ? null : Number(r.new_term_rate),
-      hate_rate: r.hate_rate === "" ? null : Number(r.hate_rate),
-      // mark trigger batches (0/1)
+      new_term_rate:
+        r.new_term_rate === "" || r.new_term_rate == null
+          ? null
+          : Number(r.new_term_rate),
       trigger: triggerBatches.has(String(r.batch_no)) ? 1 : 0,
     }));
   }, [drift, triggerBatches]);
 
-  const filteredLex = useMemo(() => {
-    const q = query.trim();
-    if (!q) return lexTop;
-    return lexTop.filter((x) => String(x.term).includes(q));
-  }, [query, lexTop]);
-
-  const lexChartData = useMemo(() => {
-    // show top 20 of filtered results to keep chart readable
-    return filteredLex.slice(0, 20).map((x) => ({
-      term: x.term,
-      weight: Number(x.weight || 0),
-    }));
-  }, [filteredLex]);
-
   const latestTrigger = triggers.length ? triggers[triggers.length - 1] : null;
+  const latestRow = drift?.length ? drift[drift.length - 1] : null;
+
+  const action = useMemo(() => {
+    if (!latestRow) return { level: "info", title: "Waiting for data...", steps: [] };
+
+    const jsd = latestRow.jsd === "" ? null : Number(latestRow.jsd);
+    const concept =
+      latestRow.concept_mean_abs_delta === "" ? null : Number(latestRow.concept_mean_abs_delta);
+    const newTerm =
+      latestRow.new_term_rate === "" ? null : Number(latestRow.new_term_rate);
+
+    const trig = String(latestRow.trigger) === "True" || latestRow.trigger === true;
+
+    const driftHigh =
+      (jsd != null && jsd >= thresholds.jsd) ||
+      (concept != null && concept >= thresholds.concept) ||
+      (newTerm != null && newTerm >= thresholds.newTerm);
+
+    if (!trig && !driftHigh) {
+      return {
+        level: "good",
+        title: "Stable (no action needed)",
+        steps: ["Continue monitoring batches.", "No review required right now."],
+      };
+    }
+
+    return {
+      level: "warn",
+      title: trig ? "Trigger detected — Review recommended" : "Drift elevated — Review recommended",
+      steps: [
+        "Collect ~100 labeled samples from this batch (votes / human review).",
+        "Confirm new terms and add Manual Merge aliases if needed.",
+        "When the static model is ready: run incremental update for this batch.",
+      ],
+    };
+  }, [latestRow, thresholds]);
+
+  const statusColor =
+    action.level === "good" ? "#16a34a" : action.level === "warn" ? "#f59e0b" : "#2563eb";
 
   return (
-    <div className="container">
-      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <h1 className="title" style={{ marginBottom: 0 }}>
-          Component 2 Dashboard — Drift & New Terms
-        </h1>
+    <div className="container my-3">
+      {/* Header */}
+      <div className="d-flex align-items-center gap-3">
+        <div>
+          <h3 className="mb-0">Component 2 Dashboard — Drift & New Terms</h3>
+          <div className="text-muted small">
+            Drift monitoring + lexicon review (model updates can be connected later)
+          </div>
+        </div>
 
         <button
+          className="btn btn-outline-primary btn-sm ms-auto"
           onClick={() => setRefreshTick((x) => x + 1)}
-          style={{
-            marginLeft: "auto",
-            padding: "8px 12px",
-            borderRadius: 10,
-            border: "1px solid #e5e7eb",
-            background: "white",
-            cursor: "pointer",
-            boxShadow: "0 6px 18px rgba(0,0,0,0.04)",
-          }}
-          title="Reload data from artifacts"
+          title="Reload data from backend"
         >
           Refresh
         </button>
       </div>
 
+      {/* Error */}
       {err && (
-        <div className="small" style={{ color: "crimson", marginTop: 8 }}>
-          {err}
+        <div className="alert alert-danger mt-3 mb-0 py-2">
+          <div className="small" style={{ whiteSpace: "pre-wrap" }}>
+            {err}
+          </div>
         </div>
       )}
 
-      <div className="grid grid-4" style={{ marginTop: 12, marginBottom: 12 }}>
-        <KPI title="Latest Batch" value={metrics?.latest_batch} />
-        <KPI title="Batches Seen" value={metrics?.batches_seen} />
-        <KPI title="Trigger Events" value={metrics?.trigger_count} />
-        <KPI title="Lexicon Size" value={metrics?.lexicon_size} />
+      {/* KPI row */}
+      <div className="row g-3 mt-2">
+        <div className="col-12 col-md-6 col-lg-3">
+          <KPI title="Latest Batch" value={metrics?.latest_batch} hint="Most recent processed batch" />
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
+          <KPI title="Batches Seen" value={metrics?.batches_seen} hint="Total batches in history" accent="#16a34a" />
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
+          <KPI title="Trigger Events" value={metrics?.trigger_count} hint="Batches requiring review" accent="#ef4444" />
+        </div>
+        <div className="col-12 col-md-6 col-lg-3">
+          <KPI title="Lexicon Size" value={metrics?.lexicon_size} hint="Unique terms tracked" accent="#f59e0b" />
+        </div>
       </div>
 
-      <div
-        className="grid"
-        style={{ gridTemplateColumns: "1.4fr 1fr", gap: 12 }}
-      >
-        {/* Drift chart */}
-        <div className="card">
-          <div className="sectionTitle">
-            Drift Trends (JSD / Concept / New-Term Rate) + Trigger Markers
-          </div>
-          <div style={{ width: "100%", height: 340 }}>
-            <ResponsiveContainer>
-              <LineChart data={driftChartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="batch_no" />
-                <YAxis />
-                <Tooltip />
-                <Legend /> {/* ✅ shows which line is which */}
-                <Line
-                  type="monotone"
-                  dataKey="jsd"
-                  name="JSD"
-                  stroke="#2563eb"
-                  dot={false}
-                  strokeWidth={2}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="concept"
-                  name="Concept Drift"
-                  stroke="#16a34a"
-                  dot={false}
-                  strokeWidth={2}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="new_term_rate"
-                  name="New Term Rate"
-                  stroke="#f59e0b"
-                  dot={false}
-                  strokeWidth={2}
-                />
-                {/* trigger marker line (0/1) */}
-                <Line
-                  type="stepAfter"
-                  dataKey="trigger"
-                  name="Trigger"
-                  stroke="#ef4444"
-                  dot={{ r: 3 }}
-                  strokeWidth={2}
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-          <div className="small">
-            JSD=data drift (term distribution). Concept=relationship drift
-            proxy. Trigger line shows incremental update points.
-          </div>
+      {/* Drift chart */}
+      <div className="row g-3 mt-0">
+        <div className="col-12">
+          <DriftChart data={driftChartData} thresholds={thresholds} />
         </div>
+      </div>
 
-        {/* Lexicon chart + search */}
-        <div className="card">
-          <div className="sectionTitle">Top Terms by Weight (Lexicon)</div>
+      {/* Lexicon + Status */}
+      <div className="row g-3 mt-0">
+        <div className="col-12 col-lg-7">
+          <LexiconTop lexTop={lexTop} query={query} setQuery={setQuery} />
+        </div>
+        <div className="col-12 col-lg-5">
+          <StatusCard actionTitle={action.title} actionSteps={action.steps} statusColor={statusColor} />
+        </div>
+      </div>
 
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search Sinhala term…"
-            style={{
-              width: "100%",
-              padding: 10,
-              borderRadius: 10,
-              border: "1px solid #eee",
-              marginBottom: 10,
-              outline: "none",
+      {/* Variant groups */}
+      <div className="row g-3 mt-0">
+        <div className="col-12">
+          <VariantGroups
+            variantGroups={variantGroups}
+            vgQuery={vgQuery}
+            setVgQuery={setVgQuery}
+            vgOnlyUnchecked={vgOnlyUnchecked}
+            setVgOnlyUnchecked={setVgOnlyUnchecked}
+            checkedGroups={checkedGroups}
+            toggleGroupChecked={toggleGroupChecked}
+            vgPage={vgPage}
+            setVgPage={setVgPage}
+          />
+        </div>
+      </div>
+
+      {/* Manual merge */}
+      <div className="row g-3 mt-0">
+        <div className="col-12">
+          <ManualMerge
+            manualFrom={manualFrom}
+            setManualFrom={setManualFrom}
+            manualTo={manualTo}
+            setManualTo={setManualTo}
+            manualMap={manualMap}
+            onAdd={async () => {
+              await addManualAlias(manualFrom, manualTo);
+              setManualFrom("");
+              setManualTo("");
+              setRefreshTick((x) => x + 1);
+            }}
+            onRemove={async (term) => {
+              await deleteManualAlias(term);
+              setRefreshTick((x) => x + 1);
             }}
           />
-
-          <div style={{ width: "100%", height: 340 }}>
-            <ResponsiveContainer>
-              <BarChart data={lexChartData}>
-                <XAxis dataKey="term" hide />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="weight" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-
-          <div className="small">
-            Weight ≈ P(Hate|term) with smoothing. Showing top 20 matches.
-          </div>
         </div>
+      </div>
 
-        <div className="card" style={{ gridColumn: "1 / -1" }}>
-          <div className="sectionTitle">
-            Variant Groups (What got merged - Top 10)
-          </div>
-
-          {!variantGroups?.length ? (
-            <div className="small">No merged groups found yet.</div>
-          ) : (
-            <div
-              className="grid"
-              style={{ gridTemplateColumns: "1fr", gap: 10 }}
-            >
-              {variantGroups.map((g, idx) => (
-                <div className="listItem" key={idx}>
-                  <div style={{ fontWeight: 800 }}>
-                    Canonical: {g.canonical}
-                    <span className="small">
-                      {" "}
-                      — variants: {g.variant_count}, total: {g.total_count}
-                    </span>
-                  </div>
-                  <div className="small" style={{ marginTop: 6 }}>
-                    {g.variants.map((v) => `${v.term}(${v.count})`).join(", ")}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+      {/* Latest trigger */}
+      <div className="row g-3 mt-0">
+        <div className="col-12">
+          <LatestTrigger latestTrigger={latestTrigger} />
         </div>
+      </div>
 
-        <div className="card" style={{ gridColumn: "1 / -1" }}>
-          <div className="sectionTitle">Manual Merge (Override)</div>
-
-          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-            <input
-              value={manualFrom}
-              onChange={(e) => setManualFrom(e.target.value)}
-              placeholder="From (variant) e.g., අන්තවාදීන්ට"
-              style={{
-                padding: 10,
-                borderRadius: 10,
-                border: "1px solid #eee",
-                flex: 1,
-              }}
-            />
-            <input
-              value={manualTo}
-              onChange={(e) => setManualTo(e.target.value)}
-              placeholder="To (canonical) e.g., අන්තවාදී"
-              style={{
-                padding: 10,
-                borderRadius: 10,
-                border: "1px solid #eee",
-                flex: 1,
-              }}
-            />
-            <button
-              onClick={async () => {
-                await fetch(`${API}/manual_aliases`, {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({ from: manualFrom, to: manualTo }),
-                });
-                setManualFrom("");
-                setManualTo("");
-                setRefreshTick((x) => x + 1);
-              }}
-              style={{
-                padding: "10px 14px",
-                borderRadius: 10,
-                border: "1px solid #e5e7eb",
-                background: "white",
-              }}
-            >
-              Add
-            </button>
-          </div>
-
-          <div className="small" style={{ marginTop: 10 }}>
-            Current overrides:
-          </div>
-
-          {!Object.keys(manualMap || {}).length ? (
-            <div className="small">No manual merges yet.</div>
-          ) : (
-            <div
-              className="grid"
-              style={{ gridTemplateColumns: "1fr", gap: 8, marginTop: 8 }}
-            >
-              {Object.entries(manualMap).map(([k, v]) => (
-                <div
-                  className="listItem"
-                  key={k}
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    gap: 8,
-                  }}
-                >
-                  <div>
-                    <b>{k}</b> → {v}
-                  </div>
-                  <button
-                    onClick={async () => {
-                      await fetch(
-                        `${API}/manual_aliases?term=${encodeURIComponent(k)}`,
-                        { method: "DELETE" },
-                      );
-                      setRefreshTick((x) => x + 1);
-                    }}
-                    style={{
-                      padding: "6px 10px",
-                      borderRadius: 10,
-                      border: "1px solid #e5e7eb",
-                      background: "white",
-                    }}
-                  >
-                    Remove
-                  </button>
-                </div>
-              ))}
-            </div>
-          )}
+      {/* Trigger timeline */}
+      <div className="row g-3 mt-0">
+        <div className="col-12">
+          <TriggerTimeline
+            triggers={triggers}
+            tlQuery={tlQuery}
+            setTlQuery={setTlQuery}
+            tlOnlyFlagged={tlOnlyFlagged}
+            setTlOnlyFlagged={setTlOnlyFlagged}
+            tlLimit={tlLimit}
+            setTlLimit={setTlLimit}
+            tlExpanded={tlExpanded}
+            toggleTlExpanded={toggleTlExpanded}
+          />
         </div>
+      </div>
 
-        {/* Latest trigger card */}
-        <div className="card" style={{ gridColumn: "1 / -1" }}>
-          <div className="sectionTitle">Latest Trigger</div>
-
-          {!latestTrigger ? (
-            <div className="small">No triggers yet.</div>
-          ) : (
-            <div>
-              <div style={{ marginBottom: 8 }}>
-                <span className="pill">Batch: {latestTrigger.batch_no}</span>
-                <span className="pill">
-                  Vote count: {latestTrigger.vote_count}
-                </span>
-                <span className="pill">JSD: {latestTrigger.jsd ?? "-"}</span>
-                <span className="pill">
-                  new_terms_in_hate: {latestTrigger.new_terms_in_hate ?? "-"}
-                </span>
-              </div>
-
-              <div className="small" style={{ marginBottom: 6 }}>
-                New terms:
-              </div>
-              <div className="listItem" style={{ marginBottom: 10 }}>
-                {(latestTrigger.new_terms || []).length
-                  ? latestTrigger.new_terms.join(", ")
-                  : "None"}
-              </div>
-
-              <div className="small" style={{ marginBottom: 6 }}>
-                Votes:
-              </div>
-              <pre className="listItem" style={{ overflow: "auto", margin: 0 }}>
-                {JSON.stringify(latestTrigger.votes, null, 2)}
-              </pre>
-            </div>
-          )}
-        </div>
-
-        {/* New terms over time */}
-        <div className="card" style={{ gridColumn: "1 / -1" }}>
-          <div className="sectionTitle">
-            New Terms Over Time (by Trigger Batch)
-          </div>
-          <div className="grid" style={{ gridTemplateColumns: "1fr", gap: 10 }}>
-            {[...triggers].reverse().map((t, idx) => (
-              <div className="listItem" key={idx}>
-                <div style={{ fontWeight: 700 }}>
-                  {t.batch_no}{" "}
-                  <span className="small">
-                    — new_terms_in_hate: {t.new_terms_in_hate ?? "-"} | votes:{" "}
-                    {t.vote_count}
-                  </span>
-                </div>
-                <div className="small" style={{ marginTop: 4 }}>
-                  {(t.new_terms || []).length
-                    ? t.new_terms.join(", ")
-                    : "No new terms"}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Trigger log */}
-        <div className="card" style={{ gridColumn: "1 / -1" }}>
-          <div className="sectionTitle">Trigger Log</div>
-          <div className="grid" style={{ gridTemplateColumns: "1fr", gap: 10 }}>
-            {[...triggers].reverse().map((t, idx) => (
-              <div className="listItem" key={idx}>
-                <div style={{ fontWeight: 700 }}>
-                  {t.batch_no}{" "}
-                  <span className="small">— votes: {t.vote_count}</span>
-                </div>
-                <div className="small">
-                  target_drift: {String(t?.votes?.target_drift)} | data_drift:{" "}
-                  {String(t?.votes?.data_drift)} | concept_proxy:{" "}
-                  {String(t?.votes?.concept_proxy)} | new_term_flag:{" "}
-                  {String(t?.votes?.new_term_flag)}
-                </div>
-                <div className="small">
-                  JSD: {t.jsd ?? "-"} | new_terms_in_hate:{" "}
-                  {t.new_terms_in_hate ?? "-"}
-                </div>
-                <div className="small" style={{ marginTop: 4 }}>
-                  new terms: {(t.new_terms || []).join(", ") || "None"}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="text-muted small mt-3">
+        Tip: Bootstrap should be imported in <code>src/main.jsx</code>.
       </div>
     </div>
   );
