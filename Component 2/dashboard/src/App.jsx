@@ -1,6 +1,10 @@
-import Dashboard from "./Dashboard.jsx";
-import "./styles.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./AppRoutes.jsx";
 
 export default function App() {
-  return <Dashboard />;
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
 }
