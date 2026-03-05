@@ -1,0 +1,82 @@
+/* dashboard/src/styles.css */
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f6f7fb;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-weight: 800;
+  font-size: 22px;
+  margin: 0 0 12px 0;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.kpiTitle {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.kpiValue {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+.small {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.listItem {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  font-size: 12px;
+  margin-right: 6px;
+}
