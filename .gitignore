@@ -38,6 +38,9 @@ pip-log.txt
 .DS_Store
 Thumbs.db
 
+
+
+#------------------------------------------------------------------------
 node_modules/
 
 package-lock.json
@@ -46,4 +49,3 @@ package.json
 component 2/data/processed
 component 2/data/batches
 
-component 2/artifacts/
