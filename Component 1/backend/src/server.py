@@ -5,18 +5,37 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import pandas as pd
 import sys, os
+from datetime import datetime
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from scraper import scrape_youtube_video
 from cleaner import clean_comment, is_valid_comment
 from predictor import SinhalaHateDetector
 
+# ── MongoDB Atlas Integration (to be integrated with team) ────
+# pip install pymongo
+# from pymongo import MongoClient
+# from pymongo.errors import DuplicateKeyError
+#
+# MONGO_URI = "mongodb+srv://imayaperera1_db_user:lN6AXSLKln3H7svR@cluster0.m6eaxvq.mongodb.net/?appName=Cluster0"
+# mongo_client = MongoClient(MONGO_URI)
+# db = mongo_client["sinhala_hate_db"]
+# comments_col = db["comments"]
+# posts_col    = db["posts"]
+# posts_col.create_index("video_url", unique=True)     # prevent duplicate videos
+# comments_col.create_index("comment_id", unique=True) # prevent duplicate comments
+# print("✅ MongoDB Atlas connected!")
+
 app = FastAPI()
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 jobs = {}
 
-# Video ID counter - persists while server is running
+# Video ID counter
+# NOTE: When MongoDB is integrated, replace with:
+# def get_next_video_id():
+#     last_post = posts_col.find_one(sort=[("video_id", -1)])
+#     return (last_post["video_id"] + 1) if last_post else 1
 video_counter = {"count": 0}
 
 print("Loading models...")
@@ -31,6 +50,16 @@ class ProcessRequest(BaseModel):
 
 @app.post("/process")
 async def process(req: ProcessRequest):
+    # ── MongoDB: Check duplicate video (skip if already processed) ──
+    # existing = posts_col.find_one({"video_url": req.youtube_url})
+    # if existing:
+    #     return {
+    #         "job_id": None,
+    #         "already_exists": True,
+    #         "video_id": existing["video_id"],
+    #         "message": f"Video already processed as Video ID {existing['video_id']}"
+    #     }
+
     job_id = str(uuid.uuid4())[:8]
     jobs[job_id] = {
         "status": "processing", "stage": 0, "progress": 0,
@@ -38,7 +67,7 @@ async def process(req: ProcessRequest):
         "comment_csv": None, "post_csv": None, "error": None,
     }
     asyncio.create_task(run_pipeline(job_id, req.youtube_url, req.max_comments))
-    return {"job_id": job_id}
+    return {"job_id": job_id, "already_exists": False}
 
 
 @app.get("/status/{job_id}")
@@ -48,10 +77,40 @@ async def status(job_id: str):
     return jobs[job_id]
 
 
+# ── MongoDB: Retrieve all processed videos ───────────────────
+# @app.get("/videos")
+# async def get_all_videos():
+#     posts = list(posts_col.find({}, {"_id": 0}).sort("video_id", 1))
+#     return {"videos": posts}
+
+# ── MongoDB: Download comments CSV by Video ID ───────────────
+# @app.get("/download/comments/{video_id}")
+# async def download_comments(video_id: int):
+#     comments = list(comments_col.find({"video_id": video_id}, {"_id": 0}))
+#     if not comments:
+#         return {"error": "No comments found for this video ID"}
+#     df = pd.DataFrame(comments)
+#     buf = io.StringIO()
+#     df.to_csv(buf, index=False, encoding="utf-8")
+#     return {"csv": buf.getvalue(), "video_id": video_id}
+
+# ── MongoDB: Download all posts CSV ──────────────────────────
+# @app.get("/download/posts")
+# async def download_all_posts():
+#     posts = list(posts_col.find({}, {"_id": 0}).sort("video_id", 1))
+#     if not posts:
+#         return {"error": "No posts found"}
+#     df = pd.DataFrame(posts)
+#     buf = io.StringIO()
+#     df.to_csv(buf, index=False, encoding="utf-8")
+#     return {"csv": buf.getvalue()}
+
+
 async def run_pipeline(job_id, youtube_url, max_comments):
     job = jobs[job_id]
     try:
         # ── Generate Video ID ──
+        # MongoDB version: video_id = get_next_video_id()
         video_counter["count"] += 1
         video_id = video_counter["count"]
 
@@ -108,6 +167,7 @@ async def run_pipeline(job_id, youtube_url, max_comments):
                 "Disinfo":           1 if label == "DISINFO" else 0,
                 "Normal":            1 if label == "NORMAL"  else 0,
                 "Hate Words":        ", ".join(hate_words) if hate_words else "",
+                "Processed At":      datetime.utcnow().isoformat(),
             })
 
             if (i + 1) % 10 == 0:
@@ -115,22 +175,39 @@ async def run_pipeline(job_id, youtube_url, max_comments):
                 job.update({"progress": pct, "log": f"Classified {i+1}/{total} comments..."})
                 await asyncio.sleep(0)
 
-        # ── Stage 3: Classify Video Title + Build Post Dataset ──
+        # ── Stage 3: Classify Video Title ──
         job.update({"stage": 3, "progress": 92, "log": "Classifying video title..."})
         await asyncio.sleep(0.1)
 
-        # Classify video title using same model
         title_label, _ = await asyncio.to_thread(detector.predict, data['title'])
 
         post_result = {
-            "Video ID":    video_id,
-            "Channel":     data['channel'],
-            "Video Title": data['title'],
-            "Video URL":   youtube_url,
-            "Title Label": title_label,
+            "Video ID":       video_id,
+            "Channel":        data['channel'],
+            "Video Title":    data['title'],
+            "Video URL":      youtube_url,
+            "Title Label":    title_label,
+            "Total Comments": len(comment_results),
+            "Hate Count":     sum(1 for c in comment_results if c['Label'] == 'HATE'),
+            "Disinfo Count":  sum(1 for c in comment_results if c['Label'] == 'DISINFO'),
+            "Normal Count":   sum(1 for c in comment_results if c['Label'] == 'NORMAL'),
+            "Processed At":   datetime.utcnow().isoformat(),
         }
 
-        # ── Build CSVs ──
+        # ── MongoDB: Save to Atlas in real-time ──────────────────
+        # job.update({"progress": 95, "log": "Saving to MongoDB Atlas..."})
+        # if comment_results:
+        #     try:
+        #         comments_col.insert_many(comment_results, ordered=False)
+        #     except Exception as e:
+        #         print(f"Some comments may be duplicates: {e}")
+        # try:
+        #     posts_col.insert_one(post_result)
+        # except DuplicateKeyError:
+        #     print(f"Post already exists for {youtube_url}")
+        # print(f"✅ Saved Video ID {video_id} to MongoDB!")
+
+        # ── Build CSVs for download ──
         comment_df = pd.DataFrame(comment_results)
         post_df    = pd.DataFrame([post_result])
 

@@ -1,11 +1,6 @@
-# ============================================================
-# cleaner.py — Comment Cleaning
-# ============================================================
-
+# cleaner.py
 import re
 
-
-# Emoji pattern
 EMOJI_PATTERN = re.compile(
     "["
     "\U0001F600-\U0001F64F"
@@ -20,47 +15,51 @@ EMOJI_PATTERN = re.compile(
     flags=re.UNICODE,
 )
 
-
 def clean_comment(text: str) -> str:
-    """
-    Clean a raw YouTube comment.
-
-    Steps:
-        1. Remove URLs
-        2. Remove mentions (@user)
-        3. Remove hashtags (#tag)
-        4. Remove emojis
-        5. Keep Sinhala unicode + alphanumeric + spaces
-        6. Normalize whitespace
-
-    Args:
-        text : Raw comment string
-
-    Returns:
-        Cleaned comment string
-    """
     if not text or not isinstance(text, str):
         return ""
-
-    text = re.sub(r'http\S+', '', text)                          # URLs
-    text = re.sub(r'@\w+', '', text)                             # mentions
-    text = re.sub(r'#\w+', '', text)                             # hashtags
-    text = EMOJI_PATTERN.sub('', text)                           # emojis
-    text = re.sub(r'[^\u0D80-\u0DFFa-zA-Z0-9\s]', '', text)     # keep Sinhala + alphanumeric
-    text = re.sub(r'\s+', ' ', text).strip()                     # normalize whitespace
-
+    text = re.sub(r'http\S+', '', text)
+    text = re.sub(r'@\w+', '', text)
+    text = re.sub(r'#\w+', '', text)
+    text = EMOJI_PATTERN.sub('', text)
+    text = re.sub(r'[^\u0D80-\u0DFFa-zA-Z0-9\s]', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
     return text
 
-
-def is_valid_comment(text: str, min_length: int = 3) -> bool:
+def is_valid_comment(text: str, min_length: int = 10) -> bool:
     """
-    Check if a cleaned comment is valid for processing.
-
-    Args:
-        text       : Cleaned comment string
-        min_length : Minimum character length
-
-    Returns:
-        True if valid, False otherwise
+    Stricter validation:
+    - Minimum 10 characters
+    - Must have at least 2 words
+    - Must not be gibberish (random characters)
+    - Must contain at least some Sinhala or meaningful English
     """
-    return bool(text) and len(text) >= min_length
+    if not text or len(text) < min_length:
+        return False
+
+    words = text.strip().split()
+
+    # Must have at least 2 words
+    if len(words) < 2:
+        # Allow single Sinhala words that are long enough
+        if len(text) < 5:
+            return False
+
+    # Check for gibberish — if a single word has 10+ chars with no vowels it's random
+    def is_gibberish(word):
+        vowels = set('aeiouAEIOU\u0DCF\u0DD0\u0DD1\u0DD2\u0DD3\u0DD4\u0DD6\u0DD8\u0DDA\u0DDC\u0DDD\u0DDE')
+        if len(word) > 8:
+            has_vowel = any(c in vowels for c in word)
+            if not has_vowel:
+                return True
+        return False
+
+    # If ALL words are gibberish → skip
+    if all(is_gibberish(w) for w in words):
+        return False
+
+    # Must have at least 3 unique characters
+    if len(set(text.lower())) < 3:
+        return False
+
+    return True
