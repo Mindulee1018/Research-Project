@@ -1,6 +1,7 @@
 import KPI from "../components/KPI.jsx";
 import StatusCard from "../components/StatusCard.jsx";
 import DriftChart from "../components/DriftChart.jsx";
+import Component1PipelineCard from "../components/Component1PipelineCard.jsx";
 
 export default function HomePage({
   metrics,
@@ -22,7 +23,10 @@ export default function HomePage({
           </div>
         </div>
 
-        <button className="btn btn-outline-primary btn-sm ms-auto" onClick={onRefresh}>
+        <button
+          className="btn btn-outline-primary btn-sm ms-auto"
+          onClick={onRefresh}
+        >
           Refresh
         </button>
       </div>
@@ -35,19 +39,44 @@ export default function HomePage({
         </div>
       )}
 
+      <div className="row g-3 mt-0">
+        <div className="col-12 ">
+          <Component1PipelineCard />
+        </div>
+      </div>
+
       {/* KPI row */}
       <div className="row g-3 mt-2">
         <div className="col-12 col-md-6 col-lg-3">
-          <KPI title="Latest Batch" value={metrics?.latest_batch} hint="Most recent processed batch" />
+          <KPI
+            title="Latest Batch"
+            value={metrics?.latest_batch}
+            hint="Most recent processed batch"
+          />
         </div>
         <div className="col-12 col-md-6 col-lg-3">
-          <KPI title="Batches Seen" value={metrics?.batches_seen} hint="Total batches in history" accent="#16a34a" />
+          <KPI
+            title="Batches Seen"
+            value={metrics?.batches_seen}
+            hint="Total batches in history"
+            accent="#16a34a"
+          />
         </div>
         <div className="col-12 col-md-6 col-lg-3">
-          <KPI title="Trigger Events" value={metrics?.trigger_count} hint="Batches requiring review" accent="#ef4444" />
+          <KPI
+            title="Trigger Events"
+            value={metrics?.trigger_count}
+            hint="Batches requiring review"
+            accent="#ef4444"
+          />
         </div>
         <div className="col-12 col-md-6 col-lg-3">
-          <KPI title="Lexicon Size" value={metrics?.lexicon_size} hint="Unique terms tracked" accent="#f59e0b" />
+          <KPI
+            title="Lexicon Size"
+            value={metrics?.lexicon_size}
+            hint="Unique terms tracked"
+            accent="#f59e0b"
+          />
         </div>
       </div>
 
