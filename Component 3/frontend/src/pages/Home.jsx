@@ -8,6 +8,7 @@ import {
   StoryRow,
   ToastMsg,
   AnalysisDrawer,
+  ModerationStatsChart,
 } from "../ui/SLBook.jsx";
 
 const API_BASE = (import.meta.env.VITE_API_BASE || "http://127.0.0.1:5000").replace(/\/$/, "");
@@ -299,6 +300,10 @@ export default function Home() {
                   setToast({ type: "warning", text: "Composer එක demo එකක් 😄" })
                 }
               />
+            </div>
+
+            <div className="mt-3">
+              <ModerationStatsChart posts={posts} />
             </div>
 
             <div className="d-flex flex-column gap-3 mt-3">
