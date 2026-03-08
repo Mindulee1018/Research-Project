@@ -215,6 +215,23 @@ async def run_pipeline(job_id, youtube_url, max_comments):
         post_buf    = io.StringIO()
         comment_df.to_csv(comment_buf, index=False, encoding="utf-8")
         post_df.to_csv(post_buf,    index=False, encoding="utf-8")
+        
+
+
+        # ── Auto-save CSVs to teammate's Component 2 data folder ──
+        TEAMMATE_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+        "..", "..", "..", "Component 2", "data", "raw data", "data_files")
+        try:
+            os.makedirs(TEAMMATE_DATA_PATH, exist_ok=True)
+            comment_path = os.path.join(TEAMMATE_DATA_PATH, f"comments_video_{video_id}.csv")
+            post_path    = os.path.join(TEAMMATE_DATA_PATH, f"posts_video_{video_id}.csv")
+            comment_df.to_csv(comment_path, index=False, encoding="utf-8-sig")
+            post_df.to_csv(post_path,    index=False, encoding="utf-8-sig")
+            print(f"✅ CSVs saved to teammate's folder: Video ID {video_id}")
+        except Exception as e:
+            print(f"⚠️ Could not save to teammate's folder: {e}")
+
+       
 
         summary = {
             "video_id":    video_id,
@@ -243,3 +260,5 @@ async def run_pipeline(job_id, youtube_url, max_comments):
             "error":  str(e),
             "log":    f"Error: {str(e)}",
         })
+
+        
