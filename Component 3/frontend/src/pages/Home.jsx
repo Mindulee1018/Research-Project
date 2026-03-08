@@ -8,12 +8,11 @@ import {
   StoryRow,
   ToastMsg,
   AnalysisDrawer,
-  ModerationStatsChart,
 } from "../ui/SLBook.jsx";
 
 const API_BASE = (import.meta.env.VITE_API_BASE || "http://127.0.0.1:5000").replace(/\/$/, "");
 
-export default function Home() {
+export default function Home({ posts, setPosts, openStats }) {
   const initialPosts = useMemo(
     () => [
       {
@@ -68,10 +67,10 @@ export default function Home() {
     []
   );
 
-  const [posts, setPosts] = useState(initialPosts);
+  const effectivePosts = posts && posts.length ? posts : initialPosts;
+
   const [draftComments, setDraftComments] = useState({});
   const [toast, setToast] = useState(null);
-
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [drawerPayload, setDrawerPayload] = useState(null);
 
@@ -302,12 +301,25 @@ export default function Home() {
               />
             </div>
 
-            <div className="mt-3">
-              <ModerationStatsChart posts={posts} />
+            <div className="mt-3 text-end">
+              <button
+                onClick={openStats}
+                style={{
+                  background: "#1877f2",
+                  color: "white",
+                  border: "none",
+                  padding: "8px 18px",
+                  borderRadius: "8px",
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                }}
+              >
+                View Moderation Statistics
+              </button>
             </div>
 
             <div className="d-flex flex-column gap-3 mt-3">
-              {posts.map((post) => (
+              {effectivePosts.map((post) => (
                 <PostCard
                   key={post.id}
                   post={post}
