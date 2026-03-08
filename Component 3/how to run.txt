@@ -1,0 +1,17 @@
+python -m venv venv
+venv\Scripts\activate
+
+
+pip install -r requirements.txt ( not)
+
+pip install numpy pandas Flask flask-cors torch transformers datasets scikit-learn lime sentence-transformers pyarrow tqdm
+
+
+python train_bert.py
+python train_rewriter.py
+python app.py
+
+
+frontend 
+npm install
+npm run dev
