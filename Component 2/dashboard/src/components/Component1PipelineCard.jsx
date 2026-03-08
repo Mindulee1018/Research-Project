@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import Component1ModelStatus from "./Component1ModelStatus";  
 
 const API_URL = "http://localhost:8000";
 
@@ -39,6 +40,8 @@ export default function Component1PipelineCard() {
   const [results, setResults] = useState(null);
   const [csvData, setCsvData] = useState(null);
   const [error, setError] = useState("");
+  const [showModel, setShowModel] = useState(false);  // ← ADD HERE
+
 
   const logsRef = useRef(null);
   const pollRef = useRef(null);
@@ -166,6 +169,7 @@ export default function Component1PipelineCard() {
   return (
     <div className="card border-0 shadow-sm h-100">
       <div className="card-body p-4">
+        {showModel && <Component1ModelStatus onClose={() => setShowModel(false)} />}
         <div className="mb-4">
           <span className="badge rounded-pill bg-success-subtle text-success border border-success-subtle mb-2">
             Component 1
@@ -181,6 +185,15 @@ export default function Component1PipelineCard() {
           >
             Scrape · Clean · Classify · Download
           </div>
+          <div className="text-center mt-2">
+            <button
+              type="button"
+              className="btn btn-sm rounded-pill btn-outline-secondary"
+              onClick={() => setShowModel(true)}
+          >
+    🧠 Model Status
+  </button>
+</div>
         </div>
 
         {status === "idle" && (
