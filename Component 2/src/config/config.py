@@ -14,3 +14,8 @@ class Config:
     # concept drift proxy thresholds
     concept_delta_threshold: float = 0.12
     concept_bigfrac_threshold: float = 0.10
+
+    # incremental learning thresholds
+    incremental_min_term_total_count: int = 2
+    incremental_min_hate_count: int = 1
+    incremental_min_hate_ratio: float = 0.60

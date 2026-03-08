@@ -1,11 +1,8 @@
-# src/consumer.py
 import os
 import json
 import shutil
 import pandas as pd
-
 import sys
-import pandas as pd
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -20,6 +17,9 @@ from src.core.concept_proxy import term_label_stats, p_hate_given_term, concept_
 from src.preprocessing.morph import load_vocab, save_vocab, train_morfessor, load_morfessor
 from src.core.variant_resolver import VariantResolver
 from src.preprocessing.suffix_miner import discover_suffixes
+
+# incremental update
+from src.core.update_handler import run_incremental_update
 
 MANIFEST_PATH = "artifacts/processed_manifest.json"
 TERM_STORE_PATH = "artifacts/term_store.json"
@@ -104,28 +104,25 @@ class BatchConsumer:
         self.processed_files = _load_manifest()
 
         # Morfessor state
-        self.vocab = load_vocab()          # {term: count}
-        self.morfessor = load_morfessor()  # model or None
+        self.vocab = load_vocab()
+        self.morfessor = load_morfessor()
         self.variants = VariantResolver(self.morfessor, "artifacts/variant_map.json")
 
-        # set initial learned suffixes (automatic)
         suffixes = discover_suffixes(list(self.vocab.keys()), min_types=6, min_len=1, max_len=6)
         self.variants.set_suffixes(suffixes)
         print("suffixes learned:", len(suffixes), "top:", suffixes[:10])
-
 
         os.makedirs(cfg.batch_folder, exist_ok=True)
         os.makedirs(cfg.processed_folder, exist_ok=True)
         os.makedirs("artifacts", exist_ok=True)
 
-        # retraining policy
         self._last_vocab_size = len(self.vocab)
-        self._retrain_step = 300  # retrain when vocab grows by +300 unique terms
+        self._retrain_step = 300
 
     def _maybe_retrain_morfessor(self) -> None:
         current_size = len(self.vocab)
         if current_size >= self._last_vocab_size + self._retrain_step:
-            self.morfessor = train_morfessor(self.vocab)   # saves artifacts/morfessor_model.bin
+            self.morfessor = train_morfessor(self.vocab)
             self._last_vocab_size = current_size
 
     def run_once(self) -> None:
@@ -143,9 +140,9 @@ class BatchConsumer:
                 if len(g) < self.cfg.min_rows_in_batch:
                     continue
 
+                g = g.copy()
                 hate_rate = float(g["Hate"].mean())
 
-                # IMPORTANT: set suffixes BEFORE canonicalizing this batch
                 suffixes = discover_suffixes(list(self.vocab.keys()), min_types=6, min_len=1, max_len=6)
                 self.variants.set_suffixes(suffixes)
 
@@ -160,10 +157,8 @@ class BatchConsumer:
                         if not raw_t:
                             continue
 
-                        # update vocab (for Morfessor)
                         self.vocab[raw_t] = int(self.vocab.get(raw_t, 0)) + 1
 
-                        # learn mapping and canonicalize
                         self.variants.observe(raw_t)
                         t = self.variants.canonicalize(raw_t)
                         if not t:
@@ -174,18 +169,15 @@ class BatchConsumer:
                             hate_terms.append(t)
                             unique_hate_terms.add(t)
 
-                # persist vocab
                 save_vocab(self.vocab)
 
-                # maybe retrain morfessor and attach updated model
                 self._maybe_retrain_morfessor()
                 self.variants.model = self.morfessor
 
-                # save mapping
                 self.variants.save()
                 suffixes = discover_suffixes(list(self.vocab.keys()), min_types=6, min_len=1, max_len=6)
                 self.variants.set_suffixes(suffixes)
-                print("suffixes learned:", len(suffixes), "top:", suffixes[:15])  # debug
+                print("suffixes learned:", len(suffixes), "top:", suffixes[:15])
 
                 # ---- New term rate (hate-only) ----
                 term_report = self.store.update(batch_no, term_label_pairs)
@@ -255,7 +247,7 @@ class BatchConsumer:
                 _append_drift_row(batch_no, drift_report, new_term_rate, concept_report, trigger)
 
                 if trigger:
-                    _append_trigger({
+                    trigger_event = {
                         "batch_no": batch_no,
                         "new_terms": term_report["new_terms"],
                         "new_terms_in_hate": int(new_terms_in_hate),
@@ -266,9 +258,26 @@ class BatchConsumer:
                         "votes": votes,
                         "vote_count": int(vote_count),
                         "baseline_batches": baseline,
-                    })
+                    }
 
-            # persist store + manifest + move file
+                    _append_trigger(trigger_event)
+
+                    update_result = run_incremental_update(
+                        trigger_event=trigger_event,
+                        current_batch_df=g,
+                        processed_folder=self.cfg.processed_folder,
+                        baseline_window=self.cfg.baseline_window,
+                        min_total_count=self.cfg.incremental_min_term_total_count,
+                        min_hate_count=self.cfg.incremental_min_hate_count,
+                        min_hate_ratio=self.cfg.incremental_min_hate_ratio,
+                    )
+
+                    print(
+                        f"[incremental] batch={batch_no} "
+                        f"accepted={update_result.get('accepted_terms_count', 0)} "
+                        f"updated={update_result.get('updated_terms_count', 0)}"
+                    )
+
             self.store.save(TERM_STORE_PATH)
             self.processed_files.add(fname)
             _save_manifest(self.processed_files)
