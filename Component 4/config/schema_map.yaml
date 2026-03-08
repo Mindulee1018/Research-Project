@@ -1,0 +1,16 @@
+posts:
+  post_id_col: "Video Id"
+  post_title_col: "Video Title"
+  post_label_col: "Label"
+  post_id_prefix: "yt_video_"
+
+comments:
+  comment_id_col: "comment_id"
+  comment_author_col: "user_id"
+  parent_post_col: "post_id"
+  comment_text_col: "Text"
+  comment_likes_col: "likes_count"
+  comment_ts_col: "timestamp"
+  label_primary_col: "label_primary"
+  is_harmful_col: "is_harmful"
+  topic_col: "topic"
