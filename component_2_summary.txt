@@ -1,0 +1,29 @@
+developed a concept drift detection system that monitors how hate speech patterns change over time. Comments are processed in batches, and the system analyzes several indicators.
+To detect drift, used multiple techniques.
+	1. target drift by tracking the overall hate rate using the ADWIN streaming drift detection algorithm (from the River streaming ML 	   library).
+	2. data drift by comparing the distribution of hate words using Jensen–Shannon Divergence (JSD). JSD compares the probability 		   distributions of hate words between current batch vs previous baseline batches.
+	3. concept drift by estimating the probability P(Hate | term) and observing how the relationship between words and hate labels 	  	   changes.
+	4. track new hate terms that appear in the data. The system tracks all observed vocabulary using a term store. For each batch 	   	   computenew_term_rate = new_terms_in_hate / unique_hate_terms
+
+Threshold Selection
+new_term_rate_threshold = 0.15 (If more than 15% of hate terms are new, it signals vocabulary drift.)
+jsd_hard_threshold = 0.12 (If the Jensen–Shannon divergence exceeds this value, the system considers that the distribution of hate words has changed significantly.)
+Concept Drift Threshold
+	concept_delta_threshold = 0.12
+	concept_bigfrac_threshold = 0.10
+Concept drift is detected if mean change in P(Hate|term) ≥ 0.12 or more than 10% of terms show large probability change
+
+When enough drift signals are detected, a trigger mechanism activates incremental learning.
+The system then updates a dynamic hate lexicon, allowing it to learn new hateful vocabulary automatically.
+
+Instead of triggering on a single signal, use a vote-based mechanism.
+vote_count = number of true signals (target_drift, data_drift, concept_proxy, new_term_flag)
+
+The system triggers incremental learning when: vote_count ≥ 2 OR new_term_flag = true
+
+To handle Sinhala language variations, implemented text normalization, morphological segmentation using Morfessor, suffix mining, and variant resolution. (රෙද්ද, රෙද්දෙ, රෙද්දක්ද ----> රෙද්ද)
+
+built a dashboard that visualizes 
+drift metrics, 
+trigger events, 
+newly discovered hate terms
