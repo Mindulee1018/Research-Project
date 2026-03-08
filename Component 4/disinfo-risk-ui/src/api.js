@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000",
+  baseURL: import.meta.env.VITE_API_BASE || "http://127.0.0.1:8002",
 });
 
 export async function fetchStats() {
@@ -22,4 +22,11 @@ export async function fetchTopQueue(k = 20) {
 export async function fetchTopCommunities(k = 20) {
   const res = await api.get("/communities/top", { params: { k } });
   return res.data.rows;
+}
+
+export async function fetchNetworkGraph(k = 25, neighborLimit = 3) {
+  const res = await api.get("/graph/sample", {
+    params: { k, neighbor_limit: neighborLimit },
+  });
+  return res.data;
 }

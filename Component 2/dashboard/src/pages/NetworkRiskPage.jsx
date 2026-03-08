@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { fetchStats, fetchTopRisk, fetchTopQueue, fetchTopCommunities } from "./api";
-import "./App.css";
-import NetworkGraph from "./components/NetworkGraph";
+import { fetchStats, fetchTopRisk, fetchTopQueue, fetchTopCommunities } from "../../../../Component 4/disinfo-risk-ui/src/api";
+import "../../../../Component 4/disinfo-risk-ui/src/App.css";
+import NetworkGraph from "../components/NetworkGraph";
 
 function Table({ title, columns, rows }) {
   return (
