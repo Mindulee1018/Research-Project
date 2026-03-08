@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sinhala Prediction + LIME XAI</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      margin: 0;
+      padding: 24px;
+      color: #111;
+    }
+
+    .box {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 120px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 10px;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover { filter: brightness(1.05); }
+
+    .section {
+      margin-top: 16px;
+      border-top: 1px solid #eee;
+      padding-top: 14px;
+    }
+
+    .label { font-weight: 800; margin-bottom: 6px; }
+    .pred { font-size: 18px; font-weight: 900; }
+
+    .note {
+      font-size: 13px;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    .highlight {
+      background: #fafafa;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 12px;
+      line-height: 2.0;
+    }
+
+    .tok { padding: 2px 4px; border-radius: 6px; }
+
+    .sentence {
+      background: #f9fbff;
+      border: 1px solid #e0e7ff;
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    /* ✅ Simple suggestions */
+    .sugg {
+      background: #f7fff7;
+      border: 1px solid #d9f5d9;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .sugg-item {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+
+    <form method="POST">
+      <div class="label">Enter Sinhala text</div>
+      <textarea name="text" placeholder="Type Sinhala text here...">{{ result.original if result else "" }}</textarea>
+      <button type="submit">Predict + Explain</button>
+    </form>
+
+    {% if result %}
+    <div class="section">
+      <div class="label">Prediction</div>
+      <div class="pred">{{ result.prediction }}</div>
+    </div>
+
+    <div class="section">
+      <div class="label">Explainable Summary</div>
+      <div class="sentence">{{ result.xai_sentence }}</div>
+      <div class="note">Generated using LIME (local explanation).</div>
+    </div>
+
+    <div class="section">
+      <div class="label">Highlight (on cleaned text)</div>
+      <div class="highlight">{{ result.highlight_html | safe }}</div>
+      <div class="note">Highlighting is based on the cleaned text used by the model.</div>
+    </div>
+
+    <!-- ✅ Client/User version: simple suggestions (no score, no extra text) -->
+    {% if result.prediction in ["HATE", "DISINFO"] %}
+    <div class="section">
+      <div class="label">Suggestions With the comment</div>
+
+      {% if result.suggestions and result.suggestions|length > 0 %}
+      <div class="sugg">
+        {% for s in result.suggestions %}
+        <div class="sugg-item">{{ s.suggestion }}</div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="note">No suggestions available.</div>
+      {% endif %}
+
+    </div>
+    {% endif %}
+    <!-- ✅ END suggestions -->
+
+    {% endif %}
+  </div>
+</body>
+
+</html>

@@ -2,6 +2,7 @@ import KPI from "../components/KPI.jsx";
 import StatusCard from "../components/StatusCard.jsx";
 import DriftChart from "../components/DriftChart.jsx";
 import Component1PipelineCard from "../components/Component1PipelineCard.jsx";
+import RunDriftButton from "../components/RunDriftButton.jsx";
 
 export default function HomePage({
   metrics,
@@ -40,8 +41,14 @@ export default function HomePage({
       )}
 
       <div className="row g-3 mt-0">
-        <div className="col-12 ">
+        <div className="col-12">
           <Component1PipelineCard />
+        </div>
+      </div>
+
+      <div className="row g-3 mt-3">
+        <div className="col-12">
+          <RunDriftButton />
         </div>
       </div>
 

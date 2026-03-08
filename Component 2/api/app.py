@@ -2,11 +2,14 @@
 import os
 import json
 import pandas as pd
+import sys
 from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
+import subprocess
 
 ARTIFACTS_DIR = os.path.join(os.getcwd(), "artifacts")
 MANUAL_ALIASES_PATH = os.path.join(ARTIFACTS_DIR, "manual_aliases.json")
+COMPONENT2_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 app = FastAPI(title="Component2 Dashboard API")
 
@@ -55,7 +58,30 @@ def write_manual_aliases(data: dict):
     with open(MANUAL_ALIASES_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+@app.post("/api/run-main")
+def run_main():
+    try:
+        result = subprocess.run(
+            [sys.executable, "-m", "src.main"],
+            capture_output=True,
+            text=True,
+            cwd=COMPONENT2_ROOT
+        )
 
+        return {
+            "ok": result.returncode == 0,
+            "stdout": result.stdout,
+            "stderr": result.stderr,
+            "message": "src.main executed successfully." if result.returncode == 0 else "src.main execution failed."
+        }
+    except Exception as e:
+        return {
+            "ok": False,
+            "message": str(e),
+            "stdout": "",
+            "stderr": ""
+        }
+    
 @app.get("/api/metrics")
 def metrics():
     drift_path = os.path.join(ARTIFACTS_DIR, "drift_history.csv")

@@ -4,6 +4,12 @@ import json
 import shutil
 import pandas as pd
 
+import sys
+import pandas as pd
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 from src.utils.io import load_batch_csv
 from src.core.term_store import TermStore
 from src.drift.drift import DriftEngine
