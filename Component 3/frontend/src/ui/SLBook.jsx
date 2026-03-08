@@ -775,14 +775,35 @@ function ActionBtn({ icon, text, onClick, active }) {
 
 function CommentItem({ name, text, analysis, onClick }) {
   const pred = analysis?.prediction;
+  const moderation = analysis?.moderation || {};
+  const action = (moderation?.action || "").toUpperCase();
+
   let statusClass = "sl-status-pending";
-  let statusLabel = "⏳";
+  let statusLabel = "⏳ Pending";
 
   if (analysis) {
-    if (pred === "ERROR") { statusClass = "sl-status-error"; statusLabel = "❌ error"; }
-    else if (pred === "HATE") { statusClass = "sl-status-hate"; statusLabel = "🚫 HATE"; }
-    else if (pred === "DISINFO") { statusClass = "sl-status-disinfo"; statusLabel = "⚠️ DISINFO"; }
-    else if (pred === "NORMAL") { statusClass = "sl-status-normal"; statusLabel = "✅ NORMAL"; }
+    if (pred === "ERROR") {
+      statusClass = "sl-status-error";
+      statusLabel = "❌ ERROR";
+    } else if (action === "BLOCK") {
+      statusClass = "sl-status-hate";
+      statusLabel = "🚫 BLOCK";
+    } else if (action === "FLAG") {
+      statusClass = "sl-status-disinfo";
+      statusLabel = "⚠️ FLAG";
+    } else if (action === "REVIEW" || action === "WARN") {
+      statusClass = "sl-status-disinfo";
+      statusLabel = `🟠 ${action}`;
+    } else if (pred === "HATE") {
+      statusClass = "sl-status-hate";
+      statusLabel = "🚫 HATE";
+    } else if (pred === "DISINFO") {
+      statusClass = "sl-status-disinfo";
+      statusLabel = "⚠️ DISINFO";
+    } else if (pred === "NORMAL") {
+      statusClass = "sl-status-normal";
+      statusLabel = "✅ NORMAL";
+    }
   }
 
   return (
@@ -796,10 +817,22 @@ function CommentItem({ name, text, analysis, onClick }) {
         onClick={onClick}
       >
         <div className="d-flex justify-content-between align-items-center gap-2">
-          <div className="fw-black sl-tiny" style={{ color: "#1c1e21" }}>{name}</div>
+          <div className="fw-black sl-tiny" style={{ color: "#1c1e21" }}>
+            {name}
+          </div>
           <span className={`sl-status ${statusClass}`}>{statusLabel}</span>
         </div>
+
         <div style={{ fontSize: 14, marginTop: 2 }}>{text}</div>
+
+        {analysis?.moderation?.reason ? (
+          <div
+            className="sl-tiny"
+            style={{ color: "#65676b", marginTop: 6, lineHeight: 1.4 }}
+          >
+            {analysis.moderation.reason}
+          </div>
+        ) : null}
       </div>
     </div>
   );
@@ -850,60 +883,105 @@ export function AnalysisDrawer({ open, payload, onClose }) {
 
   useEffect(() => {
     if (!open) return;
-    const onKey = (e) => { if (e.key === "Escape") onClose?.(); };
+    const onKey = (e) => {
+      if (e.key === "Escape") onClose?.();
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
   const pred = analysis?.prediction || "—";
   const probs = analysis?.probs || {};
-  const conf = probs[pred] != null ? `${(probs[pred] * 100).toFixed(2)}%` : "";
+  const moderation = analysis?.moderation || {};
   const xai = analysis?.xai_sentence || "";
   const cleaned = analysis?.cleaned || "";
+  const original = analysis?.original || text || "";
   const highlightHtml = analysis?.highlight_html || "";
-  const suggestions = Array.isArray(analysis?.suggestions) ? analysis.suggestions : [];
-  const showSuggestions = pred === "HATE" || pred === "DISINFO";
+  const rawSuggestions = Array.isArray(analysis?.suggestions) ? analysis.suggestions : [];
 
-  const badgeColor =
-    pred === "HATE" ? "#ff4444"
-    : pred === "DISINFO" ? "#ffaa00"
-    : pred === "NORMAL" ? "#42b72a"
-    : "#8a8d91";
-  const badgeTextColor = pred === "DISINFO" ? "#1c1e21" : "#fff";
+  const normalizedSuggestions = rawSuggestions
+    .map((item) => {
+      if (typeof item === "string") return item;
+      if (item && typeof item === "object") return item.suggestion || item.text || JSON.stringify(item);
+      return "";
+    })
+    .filter(Boolean);
+
+  const moderationAction = (moderation?.action || "").toUpperCase() || "N/A";
+  const moderationSeverity = (moderation?.severity || "").toUpperCase() || "LOW";
+  const moderationReason = moderation?.reason || "No moderation reason available.";
+  const moderationConfidence =
+    moderation?.confidence != null
+      ? `${(Number(moderation.confidence) * 100).toFixed(2)}%`
+      : probs[pred] != null
+      ? `${(Number(probs[pred]) * 100).toFixed(2)}%`
+      : "—";
+
+  const showSuggestions =
+    ["HATE", "DISINFO", "ERROR"].includes(pred) ||
+    ["BLOCK", "FLAG", "REVIEW", "WARN"].includes(moderationAction);
+
+  let badgeColor = "#8a8d91";
+  let badgeTextColor = "#fff";
+
+  if (pred === "HATE") badgeColor = "#ff4444";
+  else if (pred === "DISINFO") {
+    badgeColor = "#ffaa00";
+    badgeTextColor = "#1c1e21";
+  } else if (pred === "NORMAL") badgeColor = "#42b72a";
+  else if (pred === "ERROR") badgeColor = "#1c1e21";
+
+  let actionColor = "#8a8d91";
+  let actionTextColor = "#fff";
+
+  if (moderationAction === "BLOCK") actionColor = "#dc3545";
+  else if (moderationAction === "FLAG") {
+    actionColor = "#f59e0b";
+    actionTextColor = "#1c1e21";
+  } else if (moderationAction === "REVIEW" || moderationAction === "WARN") {
+    actionColor = "#ffb020";
+    actionTextColor = "#1c1e21";
+  } else if (moderationAction === "ALLOW" || moderationAction === "ALLOW_WITH_LOG") {
+    actionColor = "#42b72a";
+  }
 
   const copy = async (value) => {
-    try { await navigator.clipboard.writeText(value || ""); } catch {}
+    try {
+      await navigator.clipboard.writeText(value || "");
+    } catch {}
   };
 
   return (
     <>
-      {/* Backdrop */}
       <div
         onClick={onClose}
         style={{
           display: open ? "block" : "none",
-          position: "fixed", inset: 0,
+          position: "fixed",
+          inset: 0,
           background: "rgba(0,0,0,0.5)",
           zIndex: 9998,
           backdropFilter: "blur(2px)",
         }}
       />
 
-      {/* Drawer */}
       <div
         style={{
-          position: "fixed", top: 0, left: 0,
-          height: "100vh", width: "min(560px, 94vw)",
+          position: "fixed",
+          top: 0,
+          left: 0,
+          height: "100vh",
+          width: "min(560px, 94vw)",
           transform: open ? "translateX(0)" : "translateX(-110%)",
           transition: "transform 220ms cubic-bezier(0.25,0.46,0.45,0.94)",
           background: "#fff",
           zIndex: 9999,
           boxShadow: "4px 0 40px rgba(0,0,0,0.18)",
-          display: "flex", flexDirection: "column",
+          display: "flex",
+          flexDirection: "column",
           fontFamily: "'Nunito', sans-serif",
         }}
       >
-        {/* Drawer header */}
         <div
           style={{
             padding: "16px 20px",
@@ -914,12 +992,13 @@ export function AnalysisDrawer({ open, payload, onClose }) {
           <div className="d-flex align-items-start justify-content-between gap-2">
             <div>
               <div style={{ fontSize: 20, fontWeight: 900, color: "#1c1e21" }}>
-                🔍 XAI Panel
+                🔍 XAI + Moderation Panel
               </div>
               <div style={{ fontSize: 12, color: "#65676b", marginTop: 2 }}>
-                Comment analysis • LIME + Retrieval
+                Comment analysis • Prediction + moderation + explanation
               </div>
             </div>
+
             <button
               className="btn btn-light rounded-circle"
               onClick={onClose}
@@ -929,46 +1008,73 @@ export function AnalysisDrawer({ open, payload, onClose }) {
             </button>
           </div>
 
-          {/* Prediction badge */}
           <div className="mt-3 d-flex align-items-center gap-2 flex-wrap">
             <span
               style={{
-                background: badgeColor, color: badgeTextColor,
-                fontWeight: 900, fontSize: 14,
-                padding: "8px 16px", borderRadius: 20,
+                background: badgeColor,
+                color: badgeTextColor,
+                fontWeight: 900,
+                fontSize: 14,
+                padding: "8px 16px",
+                borderRadius: 20,
                 boxShadow: `0 2px 8px ${badgeColor}55`,
                 letterSpacing: 0.5,
               }}
             >
               Prediction: {pred}
-              {conf ? ` · ${conf}` : ""}
             </span>
 
-            {/* Probability bars */}
-            {Object.keys(probs).length > 0 && (
-              <div className="ms-2 d-flex gap-2">
-                {Object.entries(probs).map(([k, v]) => (
-                  <div key={k} title={`${k}: ${(v * 100).toFixed(1)}%`}>
-                    <div style={{ fontSize: 10, fontWeight: 700, color: "#65676b", textAlign: "center" }}>{k}</div>
-                    <div
-                      style={{
-                        width: 28, height: 28, borderRadius: "50%",
-                        background: `conic-gradient(${k === "HATE" ? "#ff4444" : k === "DISINFO" ? "#ffaa00" : "#42b72a"} ${v * 360}deg, #e4e6ea 0deg)`,
-                        display: "flex", alignItems: "center", justifyContent: "center",
-                      }}
-                    >
-                      <div style={{ width: 18, height: 18, borderRadius: "50%", background: "#fff" }} />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
+            <span
+              style={{
+                background: actionColor,
+                color: actionTextColor,
+                fontWeight: 900,
+                fontSize: 14,
+                padding: "8px 16px",
+                borderRadius: 20,
+                boxShadow: `0 2px 8px ${actionColor}33`,
+                letterSpacing: 0.5,
+              }}
+            >
+              Action: {moderationAction}
+            </span>
+
+            <span
+              style={{
+                background: "#eef2f7",
+                color: "#1c1e21",
+                fontWeight: 800,
+                fontSize: 13,
+                padding: "8px 14px",
+                borderRadius: 20,
+              }}
+            >
+              Severity: {moderationSeverity}
+            </span>
+
+            <span
+              style={{
+                background: "#f8f9fa",
+                color: "#1c1e21",
+                fontWeight: 800,
+                fontSize: 13,
+                padding: "8px 14px",
+                borderRadius: 20,
+                border: "1px solid #e4e6ea",
+              }}
+            >
+              Confidence: {moderationConfidence}
+            </span>
 
             {pred === "ERROR" && (
               <span
                 style={{
-                  background: "#1c1e21", color: "#fff",
-                  fontSize: 12, padding: "8px 12px", borderRadius: 20, fontWeight: 700,
+                  background: "#1c1e21",
+                  color: "#fff",
+                  fontSize: 12,
+                  padding: "8px 12px",
+                  borderRadius: 20,
+                  fontWeight: 700,
                 }}
               >
                 {analysis?.error || "API error"}
@@ -976,54 +1082,103 @@ export function AnalysisDrawer({ open, payload, onClose }) {
             )}
           </div>
 
-          {/* Input comment */}
           <div className="mt-3">
             <div style={{ fontSize: 12, color: "#65676b", marginBottom: 6, fontWeight: 700 }}>
               Input Comment
             </div>
             <div
               style={{
-                background: "#f8f9fa", border: "1px solid #e4e6ea",
-                borderRadius: 10, padding: "10px 14px",
-                fontSize: 14, lineHeight: 1.6, color: "#1c1e21",
+                background: "#f8f9fa",
+                border: "1px solid #e4e6ea",
+                borderRadius: 10,
+                padding: "10px 14px",
+                fontSize: 14,
+                lineHeight: 1.6,
+                color: "#1c1e21",
               }}
             >
               {text || "—"}
             </div>
           </div>
 
-          {/* Copy buttons */}
           <div className="mt-2 d-flex gap-2 flex-wrap">
             <button
               onClick={() => copy(xai)}
               style={{
-                border: "2px solid #1877f2", color: "#1877f2",
-                background: "transparent", borderRadius: 20,
-                padding: "4px 14px", fontSize: 12, fontWeight: 700, cursor: "pointer",
+                border: "2px solid #1877f2",
+                color: "#1877f2",
+                background: "transparent",
+                borderRadius: 20,
+                padding: "4px 14px",
+                fontSize: 12,
+                fontWeight: 700,
+                cursor: "pointer",
                 transition: "all 0.18s",
               }}
-              onMouseEnter={e => { e.target.style.background = "#1877f2"; e.target.style.color = "#fff"; }}
-              onMouseLeave={e => { e.target.style.background = "transparent"; e.target.style.color = "#1877f2"; }}
+              onMouseEnter={(e) => {
+                e.target.style.background = "#1877f2";
+                e.target.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = "transparent";
+                e.target.style.color = "#1877f2";
+              }}
             >
               📋 Copy Summary
             </button>
+
             <button
               onClick={() => copy(cleaned || text)}
               style={{
-                border: "2px solid #65676b", color: "#65676b",
-                background: "transparent", borderRadius: 20,
-                padding: "4px 14px", fontSize: 12, fontWeight: 700, cursor: "pointer",
+                border: "2px solid #65676b",
+                color: "#65676b",
+                background: "transparent",
+                borderRadius: 20,
+                padding: "4px 14px",
+                fontSize: 12,
+                fontWeight: 700,
+                cursor: "pointer",
                 transition: "all 0.18s",
               }}
-              onMouseEnter={e => { e.target.style.background = "#65676b"; e.target.style.color = "#fff"; }}
-              onMouseLeave={e => { e.target.style.background = "transparent"; e.target.style.color = "#65676b"; }}
+              onMouseEnter={(e) => {
+                e.target.style.background = "#65676b";
+                e.target.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = "transparent";
+                e.target.style.color = "#65676b";
+              }}
             >
               📝 Copy Cleaned
+            </button>
+
+            <button
+              onClick={() => copy(original || text)}
+              style={{
+                border: "2px solid #42b72a",
+                color: "#42b72a",
+                background: "transparent",
+                borderRadius: 20,
+                padding: "4px 14px",
+                fontSize: 12,
+                fontWeight: 700,
+                cursor: "pointer",
+                transition: "all 0.18s",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = "#42b72a";
+                e.target.style.color = "#fff";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = "transparent";
+                e.target.style.color = "#42b72a";
+              }}
+            >
+              📄 Copy Original
             </button>
           </div>
         </div>
 
-        {/* Body */}
         <div style={{ padding: 20, overflow: "auto", flex: 1 }}>
           <Tabs
             tabs={[
@@ -1031,31 +1186,127 @@ export function AnalysisDrawer({ open, payload, onClose }) {
                 title: "📄 Summary",
                 content: (
                   <>
-                    <SectionTitle>Explainable Summary</SectionTitle>
+                    <SectionTitle>Moderation Decision</SectionTitle>
                     <div
                       style={{
-                        background: "#f0f4ff", border: "1px solid #c7d7fd",
-                        borderRadius: 10, padding: "12px 16px",
-                        lineHeight: 1.7, fontSize: 14, color: "#1c1e21",
+                        background: "#fff8e8",
+                        border: "1px solid #f3d48a",
+                        borderRadius: 10,
+                        padding: "12px 16px",
+                        lineHeight: 1.7,
+                        fontSize: 14,
+                        color: "#1c1e21",
                       }}
                     >
-                      {xai || "—"}
+                      <div><strong>Action:</strong> {moderationAction}</div>
+                      <div><strong>Severity:</strong> {moderationSeverity}</div>
+                      <div><strong>Confidence:</strong> {moderationConfidence}</div>
+                      <div style={{ marginTop: 8 }}>
+                        <strong>Reason:</strong> {moderationReason}
+                      </div>
                     </div>
-                    <div style={{ fontSize: 11, color: "#65676b", marginTop: 6 }}>
-                      Generated using LIME (local explanation).
+
+                    <div className="mt-4">
+                      <SectionTitle>Explainable Summary</SectionTitle>
+                      <div
+                        style={{
+                          background: "#f0f4ff",
+                          border: "1px solid #c7d7fd",
+                          borderRadius: 10,
+                          padding: "12px 16px",
+                          lineHeight: 1.7,
+                          fontSize: 14,
+                          color: "#1c1e21",
+                        }}
+                      >
+                        {xai || "—"}
+                      </div>
+                      <div style={{ fontSize: 11, color: "#65676b", marginTop: 6 }}>
+                        Generated using LIME or backend explanation output.
+                      </div>
+                    </div>
+
+                    <div className="mt-4">
+                      <SectionTitle>Original Text</SectionTitle>
+                      <div
+                        style={{
+                          background: "#f8f9fa",
+                          border: "1px solid #e4e6ea",
+                          borderRadius: 10,
+                          padding: "10px 14px",
+                          fontSize: 14,
+                        }}
+                      >
+                        {original || "—"}
+                      </div>
                     </div>
 
                     <div className="mt-4">
                       <SectionTitle>Cleaned Text</SectionTitle>
                       <div
                         style={{
-                          background: "#f8f9fa", border: "1px solid #e4e6ea",
-                          borderRadius: 10, padding: "10px 14px", fontSize: 14,
+                          background: "#f8f9fa",
+                          border: "1px solid #e4e6ea",
+                          borderRadius: 10,
+                          padding: "10px 14px",
+                          fontSize: 14,
                         }}
                       >
                         {cleaned || "—"}
                       </div>
                     </div>
+                  </>
+                ),
+              },
+              {
+                title: "📊 Probabilities",
+                content: (
+                  <>
+                    <SectionTitle>Model Probabilities</SectionTitle>
+
+                    {Object.keys(probs).length === 0 ? (
+                      <div style={{ color: "#65676b", fontSize: 14 }}>No probabilities available.</div>
+                    ) : (
+                      <div className="d-flex flex-column gap-3">
+                        {Object.entries(probs).map(([label, value]) => {
+                          const percent = (Number(value) * 100).toFixed(2);
+                          const barColor =
+                            label === "HATE"
+                              ? "#ff4444"
+                              : label === "DISINFO"
+                              ? "#ffaa00"
+                              : "#42b72a";
+
+                          return (
+                            <div key={label}>
+                              <div className="d-flex justify-content-between mb-1">
+                                <div style={{ fontWeight: 800, fontSize: 13 }}>{label}</div>
+                                <div style={{ fontSize: 13, color: "#65676b" }}>{percent}%</div>
+                              </div>
+                              <div
+                                style={{
+                                  width: "100%",
+                                  height: 12,
+                                  background: "#e9ecef",
+                                  borderRadius: 999,
+                                  overflow: "hidden",
+                                }}
+                              >
+                                <div
+                                  style={{
+                                    width: `${percent}%`,
+                                    height: "100%",
+                                    background: barColor,
+                                    borderRadius: 999,
+                                    transition: "width 0.3s ease",
+                                  }}
+                                />
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
                   </>
                 ),
               },
@@ -1066,10 +1317,16 @@ export function AnalysisDrawer({ open, payload, onClose }) {
                     <SectionTitle>Token Importance (LIME)</SectionTitle>
                     <div
                       style={{
-                        background: "#fafafa", border: "1px solid #e4e6ea",
-                        borderRadius: 10, padding: "12px 16px", lineHeight: 2.2, fontSize: 15,
+                        background: "#fafafa",
+                        border: "1px solid #e4e6ea",
+                        borderRadius: 10,
+                        padding: "12px 16px",
+                        lineHeight: 2.2,
+                        fontSize: 15,
                       }}
-                      dangerouslySetInnerHTML={{ __html: highlightHtml || "" }}
+                      dangerouslySetInnerHTML={{
+                        __html: highlightHtml || "<span style='color:#65676b'>No highlighted output.</span>",
+                      }}
                     />
                     <div style={{ fontSize: 11, color: "#65676b", marginTop: 8 }}>
                       Highlighting is based on the cleaned text used by the model.
@@ -1082,38 +1339,55 @@ export function AnalysisDrawer({ open, payload, onClose }) {
                 content: (
                   <>
                     <SectionTitle>Rewrite Suggestions</SectionTitle>
+
                     {!showSuggestions ? (
                       <div
                         style={{
-                          background: "#f0fff4", border: "1px solid #c3f7cc",
-                          borderRadius: 10, padding: "12px 16px", fontSize: 14,
+                          background: "#f0fff4",
+                          border: "1px solid #c3f7cc",
+                          borderRadius: 10,
+                          padding: "12px 16px",
+                          fontSize: 14,
                           color: "#155111",
                         }}
                       >
-                        ✅ NORMAL comment — no suggestions needed.
+                        ✅ Safe content — no rewrite suggestions needed.
                       </div>
-                    ) : suggestions.length > 0 ? (
+                    ) : normalizedSuggestions.length > 0 ? (
                       <div className="d-flex flex-column gap-2">
-                        {suggestions.map((s, idx) => (
+                        {normalizedSuggestions.map((s, idx) => (
                           <div
                             key={idx}
                             style={{
-                              background: "#fff", border: "1px solid #e4e6ea",
-                              borderRadius: 10, padding: "12px 16px",
-                              fontSize: 14, lineHeight: 1.6,
+                              background: "#fff",
+                              border: "1px solid #e4e6ea",
+                              borderRadius: 10,
+                              padding: "12px 16px",
+                              fontSize: 14,
+                              lineHeight: 1.6,
                               borderLeft: "4px solid #42b72a",
                               boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
                             }}
                           >
-                            <span style={{ fontSize: 11, fontWeight: 700, color: "#42b72a", display: "block", marginBottom: 4 }}>
+                            <span
+                              style={{
+                                fontSize: 11,
+                                fontWeight: 700,
+                                color: "#42b72a",
+                                display: "block",
+                                marginBottom: 4,
+                              }}
+                            >
                               Suggestion {idx + 1}
                             </span>
-                            {s?.suggestion}
+                            {s}
                           </div>
                         ))}
                       </div>
                     ) : (
-                      <div style={{ color: "#65676b", fontSize: 14 }}>No suggestions available.</div>
+                      <div style={{ color: "#65676b", fontSize: 14 }}>
+                        No suggestions available.
+                      </div>
                     )}
                   </>
                 ),
@@ -1122,18 +1396,20 @@ export function AnalysisDrawer({ open, payload, onClose }) {
           />
         </div>
 
-        {/* Footer */}
         <div
           style={{
             padding: "14px 20px",
             borderTop: "1px solid #e4e6ea",
             background: "#fafafa",
-            display: "flex", justifyContent: "space-between", alignItems: "center",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
           <div style={{ fontSize: 12, color: "#65676b" }}>
             <i className="bi bi-keyboard me-1" /> ESC or click outside to close
           </div>
+
           <button
             className="btn btn-primary rounded-pill fw-bold sl-ripple"
             onClick={onClose}

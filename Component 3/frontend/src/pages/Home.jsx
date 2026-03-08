@@ -10,7 +10,7 @@ import {
   AnalysisDrawer,
 } from "../ui/SLBook.jsx";
 
-const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:5000";
+const API_BASE = (import.meta.env.VITE_API_BASE || "http://127.0.0.1:5000").replace(/\/$/, "");
 
 export default function Home() {
   const initialPosts = useMemo(
@@ -71,12 +71,10 @@ export default function Home() {
   const [draftComments, setDraftComments] = useState({});
   const [toast, setToast] = useState(null);
 
-  // ✅ left-side popup state
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [drawerPayload, setDrawerPayload] = useState(null); // { text, analysis, postId, commentId }
+  const [drawerPayload, setDrawerPayload] = useState(null);
 
   const likePost = (postId) => {
-    // UI-only micro-interaction: add a tiny "pulse" marker (doesn't change logic)
     setPosts((prev) =>
       prev.map((p) =>
         p.id === postId
@@ -101,21 +99,69 @@ export default function Home() {
     setDraftComments((prev) => ({ ...prev, [postId]: value }));
   };
 
-  async function analyzeTextWithFlask(text) {
-    const res = await fetch(`${API_BASE}/api/explain_lime`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text }),
-    });
+  function normalizeAnalysisResponse(raw, text) {
+    const probs = raw?.probs || {
+      HATE: 0,
+      DISINFO: 0,
+      NORMAL: 0,
+    };
 
-    if (!res.ok) {
-      const t = await res.text().catch(() => "");
-      throw new Error(`Flask API error ${res.status}: ${t || "no body"}`);
-    }
-    return res.json();
+    const prediction = raw?.prediction || "UNKNOWN";
+
+    const moderation = raw?.moderation || {
+      action: prediction === "HATE" ? "REVIEW" : prediction === "DISINFO" ? "FLAG" : "ALLOW",
+      severity: prediction === "NORMAL" ? "LOW" : "MEDIUM",
+      confidence: Number(probs[prediction] || 0),
+      reason: raw?.reason || "Moderation result generated from prediction.",
+    };
+
+    return {
+      original: raw?.original || text,
+      cleaned: raw?.cleaned || text,
+      prediction,
+      probs,
+      moderation,
+      xai_sentence: raw?.xai_sentence || "No explanation generated.",
+      highlight_html: raw?.highlight_html || "",
+      suggestions: Array.isArray(raw?.suggestions) ? raw.suggestions : [],
+      error: raw?.error || null,
+    };
   }
 
-  // ✅ open drawer helper
+  async function analyzeTextWithFlask(text) {
+    const payload = { text };
+
+    const endpoints = [
+      `${API_BASE}/api/explain_lime`,
+      `${API_BASE}/analyze`,
+    ];
+
+    let lastError = null;
+
+    for (const url of endpoints) {
+      try {
+        const res = await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) {
+          const msg = await res.text().catch(() => "");
+          lastError = new Error(`Flask API error ${res.status}: ${msg || "no body"}`);
+          continue;
+        }
+
+        const data = await res.json();
+        return normalizeAnalysisResponse(data, text);
+      } catch (err) {
+        lastError = err;
+      }
+    }
+
+    throw lastError || new Error("Could not connect to backend.");
+  }
+
   const openDrawer = ({ postId, commentId, text, analysis }) => {
     setDrawerPayload({ postId, commentId, text, analysis });
     setDrawerOpen(true);
@@ -127,7 +173,6 @@ export default function Home() {
 
     const commentId = crypto.randomUUID();
 
-    // add comment immediately (same behavior)
     setPosts((prev) =>
       prev.map((p) => {
         if (p.id !== postId) return p;
@@ -135,41 +180,62 @@ export default function Home() {
           ...p,
           comments: [
             ...p.comments,
-            { id: commentId, name: "ඔයා", text, analysis: null },
+            {
+              id: commentId,
+              name: "ඔයා",
+              text,
+              analysis: null,
+              status: "loading",
+            },
           ],
         };
       })
     );
+
     setDraftComments((prev) => ({ ...prev, [postId]: "" }));
 
-    // call Flask
     try {
       const result = await analyzeTextWithFlask(text);
 
-      // attach analysis to comment in state
       setPosts((prev) =>
         prev.map((p) => {
           if (p.id !== postId) return p;
           return {
             ...p,
             comments: p.comments.map((c) =>
-              c.id === commentId ? { ...c, analysis: result } : c
+              c.id === commentId
+                ? {
+                    ...c,
+                    analysis: result,
+                    status: "done",
+                  }
+                : c
             ),
           };
         })
       );
 
-      // ✅ auto-open left panel with the result (1st impression)
       openDrawer({ postId, commentId, text, analysis: result });
+
+      setToast({
+        type: "success",
+        text: `Analysis completed: ${result.prediction} / ${result.moderation?.action || "DONE"}`,
+      });
     } catch (e) {
       const errorAnalysis = {
+        original: text,
+        cleaned: text,
         prediction: "ERROR",
-        probs: {},
+        probs: { HATE: 0, DISINFO: 0, NORMAL: 0 },
+        moderation: {
+          action: "REVIEW",
+          severity: "LOW",
+          confidence: 0,
+          reason: "Backend connection failed.",
+        },
         xai_sentence: "API error",
         highlight_html: "",
         suggestions: [],
-        cleaned: "",
-        original: text,
         error: e?.message || "unknown",
       };
 
@@ -179,7 +245,13 @@ export default function Home() {
           return {
             ...p,
             comments: p.comments.map((c) =>
-              c.id === commentId ? { ...c, analysis: errorAnalysis } : c
+              c.id === commentId
+                ? {
+                    ...c,
+                    analysis: errorAnalysis,
+                    status: "error",
+                  }
+                : c
             ),
           };
         })
@@ -194,12 +266,12 @@ export default function Home() {
     }
   };
 
-  // ✅ open drawer when user clicks a comment (interactive)
   const onCommentClick = (postId, comment) => {
     if (!comment?.analysis) {
       setToast({ type: "warning", text: "මේ comment එකට analysis තාම නැහැ." });
       return;
     }
+
     openDrawer({
       postId,
       commentId: comment.id,
@@ -253,7 +325,6 @@ export default function Home() {
 
       {toast && <ToastMsg toast={toast} onClose={() => setToast(null)} />}
 
-      {/* ✅ Left-side popup */}
       <AnalysisDrawer
         open={drawerOpen}
         payload={drawerPayload}

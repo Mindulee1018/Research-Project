@@ -27,6 +27,7 @@ from lime.lime_text import LimeTextExplainer
 from sentence_transformers import SentenceTransformer
 
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classification_report
+from moderation import get_moderation_decision
 
 
 # =====================================================
@@ -473,16 +474,18 @@ def explain_lime(text: str, num_features=10, num_samples=1200):
     xai_sentence = build_xai_sentence_lime(pred_label, weights_list_sorted)
     suggestions = retrieve_safe_rewrites(pred_label, original, top_k=3)
 
+    moderation = get_moderation_decision(pred_label, probs)
+
     return {
         "original": original,
         "cleaned": cleaned,
         "prediction": pred_label,
         "probs": probs,
+        "moderation": moderation,
         "xai_sentence": xai_sentence,
         "highlight_html": highlight_html_out,
         "suggestions": suggestions
     }
-
 
 # =====================================================
 # Flask
