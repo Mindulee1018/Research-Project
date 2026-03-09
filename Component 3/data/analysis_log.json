@@ -49,5 +49,22 @@
       "NORMAL": 0.0009910614223145727,
       "DISINFO": 0.0005856137132505039
     }
+  },
+  {
+    "timestamp": "2026-03-09T11:48:47.548574",
+    "original": "මෝඩයඅ. ගොන් ගහක්",
+    "cleaned": "මෝඩයඅ. ගොන් ගහක්",
+    "prediction": "HATE",
+    "moderation": {
+      "action": "BLOCK",
+      "severity": "HIGH",
+      "reason": "High-confidence hateful or abusive content detected.",
+      "confidence": 0.9988
+    },
+    "probs": {
+      "HATE": 0.9988235364581233,
+      "DISINFO": 0.0006142643531081295,
+      "NORMAL": 0.0005621991877695208
+    }
   }
 ]

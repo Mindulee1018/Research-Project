@@ -50,7 +50,7 @@ export default function HomePage({
 
       <div className="row g-3 mt-3">
         <div className="col-12">
-          <RunDriftButton />
+          <RunDriftButton onDone={onRefresh}/>
         </div>
       </div>
 

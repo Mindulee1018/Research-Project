@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const API_URL = "http://127.0.0.1:8001";
 
-export default function RunDriftButton() {
+export default function RunDriftButton({ onDone }) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [output, setOutput] = useState("");
@@ -20,9 +20,13 @@ export default function RunDriftButton() {
       const data = await res.json();
 
       setMessage(data.message || "Done.");
-      setOutput(
-        [data.stdout, data.stderr].filter(Boolean).join("\n")
-      );
+      setOutput([data.stdout, data.stderr].filter(Boolean).join("\n"));
+
+      // ✅ refresh dashboard after drift finishes
+      if (onDone) {
+        setTimeout(() => onDone(), 500);
+      }
+
     } catch (err) {
       setMessage("Failed to run python -m src.main");
       setOutput(String(err));
@@ -37,9 +41,7 @@ export default function RunDriftButton() {
         <div className="d-flex align-items-start justify-content-between gap-3 flex-wrap">
           <div>
             <h5 className="mb-1">Run Drift Processing</h5>
-            <div className="text-muted small">
-              Execute <code>python -m src.main</code> from the dashboard
-            </div>
+            <div className="text-muted small"></div>
           </div>
 
           <button
@@ -52,7 +54,13 @@ export default function RunDriftButton() {
         </div>
 
         {message && (
-          <div className={`alert mt-3 mb-0 py-2 ${message.toLowerCase().includes("failed") ? "alert-danger" : "alert-info"}`}>
+          <div
+            className={`alert mt-3 mb-0 py-2 ${
+              message.toLowerCase().includes("failed")
+                ? "alert-danger"
+                : "alert-info"
+            }`}
+          >
             <div className="small">{message}</div>
           </div>
         )}
@@ -60,7 +68,11 @@ export default function RunDriftButton() {
         {output && (
           <pre
             className="mt-3 p-3 bg-light border rounded small mb-0"
-            style={{ whiteSpace: "pre-wrap", maxHeight: "260px", overflowY: "auto" }}
+            style={{
+              whiteSpace: "pre-wrap",
+              maxHeight: "260px",
+              overflowY: "auto",
+            }}
           >
             {output}
           </pre>
