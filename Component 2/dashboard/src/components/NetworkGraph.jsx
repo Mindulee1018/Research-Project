@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ForceGraph2D from "react-force-graph-2d";
-import { fetchNetworkGraph } from "../../../../Component 4/disinfo-risk-ui/src/api"; // adjust path if needed
+import axios from "axios";
 
 const riskColors = {
   HIGH: "#ef4444",
@@ -14,12 +14,8 @@ export default function NetworkGraph() {
 
   useEffect(() => {
     async function load() {
-      try {
-        const data = await fetchNetworkGraph(25, 3);
-        setGraphData(data);
-      } catch (err) {
-        console.error("Failed to load network graph:", err);
-      }
+      const res = await axios.get("http://127.0.0.1:8002/graph/sample?k=25&neighbor_limit=3");
+      setGraphData(res.data);
     }
     load();
   }, []);
@@ -27,14 +23,7 @@ export default function NetworkGraph() {
   if (!graphData) return <div>Loading graph...</div>;
 
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 300px",
-        gap: "12px",
-        alignItems: "start",
-      }}
-    >
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 300px", gap: "12px", alignItems: "start" }}>
       <div
         style={{
           height: 560,
@@ -56,10 +45,10 @@ export default function NetworkGraph() {
           backgroundColor="#ffffff"
           nodeLabel={(node) =>
             `${node.id}
-Risk: ${node.risk_level}
-Score: ${Number(node.risk_score).toFixed(3)}
-Community: ${node.community}`
-          }
+        Risk: ${node.risk_level}
+        Score: ${Number(node.risk_score).toFixed(3)}
+        Community: ${node.community}`
+                  }
           nodeCanvasObject={(node, ctx) => {
             const color = riskColors[node.risk_level] || "#3b82f6";
             const size = Math.max(4, node.risk_score * 28);
