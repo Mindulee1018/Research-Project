@@ -15,6 +15,7 @@ export default function AppRoutes() {
   const [variantGroups, setVariantGroups] = useState([]);
   const [manualMap, setManualMap] = useState({});
   const [err, setErr] = useState("");
+  const [moderationStats, setModerationStats] = useState(null);
 
   // keep “reviewed” state globally (for VariantGroups page)
   const [checkedGroups, setCheckedGroups] = useState(() => {
@@ -49,8 +50,6 @@ export default function AppRoutes() {
         setMetrics(data.metrics);
         setDrift(data.drift);
         setTriggers(data.triggers);
-
-        // ✅ IMPORTANT: these were missing in your file
         setVariantGroups(data.variantGroups);
         setManualMap(data.manualMap);
       } catch (e) {
@@ -58,6 +57,20 @@ export default function AppRoutes() {
       }
     }
     load();
+  }, [refreshTick]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:5000/api/moderation_stats")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Failed to fetch moderation stats (${res.status})`);
+        }
+        return res.json();
+      })
+      .then((data) => setModerationStats(data))
+      .catch((err) => {
+        console.error("Moderation stats error:", err);
+      });
   }, [refreshTick]);
 
   const refresh = () => setRefreshTick((x) => x + 1);
@@ -86,7 +99,9 @@ export default function AppRoutes() {
   const latestRow = drift?.length ? drift[drift.length - 1] : null;
 
   const action = useMemo(() => {
-    if (!latestRow) return { level: "info", title: "Waiting for data...", steps: [] };
+    if (!latestRow) {
+      return { level: "info", title: "Waiting for data...", steps: [] };
+    }
 
     const jsd = latestRow.jsd === "" ? null : Number(latestRow.jsd);
     const concept =
@@ -96,7 +111,8 @@ export default function AppRoutes() {
     const newTerm =
       latestRow.new_term_rate === "" ? null : Number(latestRow.new_term_rate);
 
-    const trig = String(latestRow.trigger) === "True" || latestRow.trigger === true;
+    const trig =
+      String(latestRow.trigger) === "True" || latestRow.trigger === true;
 
     const driftHigh =
       (jsd != null && jsd >= thresholds.jsd) ||
@@ -107,7 +123,10 @@ export default function AppRoutes() {
       return {
         level: "good",
         title: "Stable (no action needed)",
-        steps: ["Continue monitoring batches.", "No review required right now."],
+        steps: [
+          "Continue monitoring batches.",
+          "No review required right now.",
+        ],
       };
     }
 
@@ -136,7 +155,6 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route element={<AppLayout />}>
-        {/* HOME: KPI + Status + Drift chart */}
         <Route
           path="/"
           element={
@@ -148,11 +166,11 @@ export default function AppRoutes() {
               driftChartData={driftChartData}
               onRefresh={refresh}
               err={err}
+              moderationStats={moderationStats}
             />
           }
         />
 
-        {/* DRIFT DETAILS: triggers + merges */}
         <Route
           path="/drift"
           element={

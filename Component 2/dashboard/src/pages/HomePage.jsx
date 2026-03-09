@@ -3,6 +3,7 @@ import StatusCard from "../components/StatusCard.jsx";
 import DriftChart from "../components/DriftChart.jsx";
 import Component1PipelineCard from "../components/Component1PipelineCard.jsx";
 import RunDriftButton from "../components/RunDriftButton.jsx";
+import ModerationStatsChart from "../components/ModerationStatsChart.jsx";
 
 export default function HomePage({
   metrics,
@@ -12,6 +13,7 @@ export default function HomePage({
   driftChartData,
   onRefresh,
   err,
+  moderationStats
 }) {
   return (
     <div>
@@ -99,6 +101,10 @@ export default function HomePage({
 
         <div className="col-12 col-lg-7">
           <DriftChart data={driftChartData} thresholds={thresholds} />
+        </div>
+
+        <div className="mt-4">
+          <ModerationStatsChart stats={moderationStats} />
         </div>
       </div>
     </div>

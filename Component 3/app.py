@@ -28,7 +28,12 @@ from sentence_transformers import SentenceTransformer
 
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix, classification_report
 from moderation import get_moderation_decision
+from flask import Flask
+from flask_cors import CORS
 
+from pathlib import Path
+from threading import Lock
+from datetime import datetime
 
 # =====================================================
 # CONFIG
@@ -51,6 +56,73 @@ EVAL_TEXT_COL = os.environ.get("EVAL_TEXT_COL", "text").strip()
 EVAL_LABEL_COL = os.environ.get("EVAL_LABEL_COL", "label").strip()
 
 
+
+# =====================================================
+# Analysis storage for moderation statistics
+# =====================================================
+DATA_DIR = Path("data")
+DATA_DIR.mkdir(exist_ok=True)
+
+ANALYSIS_LOG_PATH = DATA_DIR / "analysis_log.json"
+analysis_log_lock = Lock()
+
+def load_analysis_log():
+    if ANALYSIS_LOG_PATH.exists():
+        try:
+            with open(ANALYSIS_LOG_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, list):
+                    return data
+        except Exception:
+            pass
+    return []
+
+def save_analysis_log(records):
+    with open(ANALYSIS_LOG_PATH, "w", encoding="utf-8") as f:
+        json.dump(records, f, ensure_ascii=False, indent=2)
+
+def append_analysis_record(result):
+    record = {
+        "timestamp": datetime.now().isoformat(),
+        "original": result.get("original", ""),
+        "cleaned": result.get("cleaned", ""),
+        "prediction": result.get("prediction", ""),
+        "moderation": result.get("moderation", {}),
+        "probs": result.get("probs", {}),
+    }
+
+    with analysis_log_lock:
+        records = load_analysis_log()
+        records.append(record)
+        save_analysis_log(records)
+
+def compute_moderation_stats(records):
+    stats = {
+        "BLOCK": 0,
+        "FLAG": 0,
+        "ALLOW": 0,
+        "PENDING": 0,
+        "ERROR": 0,
+        "TOTAL": 0,
+    }
+
+    for rec in records:
+        stats["TOTAL"] += 1
+
+        prediction = str(rec.get("prediction", "")).upper().strip()
+        moderation = rec.get("moderation") or {}
+        action = str(moderation.get("action", "")).upper().strip()
+
+        if not prediction:
+            stats["PENDING"] += 1
+        elif prediction == "ERROR":
+            stats["ERROR"] += 1
+        elif action in {"BLOCK", "FLAG", "ALLOW"}:
+            stats[action] += 1
+        else:
+            stats["PENDING"] += 1
+
+    return stats
 # =====================================================
 # STOPWORDS (match training)
 # =====================================================
@@ -517,7 +589,25 @@ def api_explain_lime():
     text = data.get("text", "")
     result = explain_lime(text)
     result["method"] = "LIME + Semantic Retrieval Suggestions"
+
+    append_analysis_record(result)
+
     return jsonify(result)
+
+@app.route("/api/moderation_stats", methods=["GET"])
+def api_moderation_stats():
+    records = load_analysis_log()
+    stats = compute_moderation_stats(records)
+    return jsonify(stats)
+
+@app.route("/api/recent_analyses", methods=["GET"])
+def api_recent_analyses():
+    limit = request.args.get("limit", default=20, type=int)
+
+    records = load_analysis_log()
+    records = list(reversed(records))[:limit]
+
+    return jsonify(records)
 
 @app.route("/health")
 def health():
@@ -530,6 +620,7 @@ def health():
         "rewrite_index_ready": (rewrite_bank_df is not None and rewrite_bank_emb is not None),
         "embed_model": EMBED_MODEL
     })
+
 
 
 if __name__ == "__main__":
