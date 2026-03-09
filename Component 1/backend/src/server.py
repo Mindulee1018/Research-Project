@@ -36,6 +36,19 @@ jobs = {}
 # def get_next_video_id():
 #     last_post = posts_col.find_one(sort=[("video_id", -1)])
 #     return (last_post["video_id"] + 1) if last_post else 1
+COUNTER_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "video_counter.json")
+
+def get_next_video_id():
+    if os.path.exists(COUNTER_FILE):
+        with open(COUNTER_FILE, "r") as f:
+            return json.load(f)["count"] + 1
+    return 1
+
+def save_video_id(video_id):
+    with open(COUNTER_FILE, "w") as f:
+        json.dump({"count": video_id}, f)
+
+
 video_counter = {"count": 0}
 
 print("Loading models...")
@@ -111,8 +124,13 @@ async def run_pipeline(job_id, youtube_url, max_comments):
     try:
         # ── Generate Video ID ──
         # MongoDB version: video_id = get_next_video_id()
-        video_counter["count"] += 1
-        video_id = video_counter["count"]
+        #video_counter["count"] += 1
+        # video_id = video_counter["count"]
+
+        # ── Generate Video ID ──
+        # MongoDB version: video_id = get_next_video_id()
+        video_id = get_next_video_id()   # ← replace video_counter lines
+        save_video_id(video_id)          # ← add this
 
         # ── Stage 0: Scraping ──
         job.update({"stage": 0, "progress": 5, "log": f"Scraping up to {max_comments} comments..."})
@@ -218,15 +236,21 @@ async def run_pipeline(job_id, youtube_url, max_comments):
         
         # ── Auto-save CSVs to Component 1 data/batches folder ──
         COMPONENT1_DATA_PATH = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        "..", "..", "Data", "batches")
+            os.path.dirname(os.path.abspath(__file__)),
+            "..", "..", "..","Component 1","Data", "batches"
+        )
         try:
             os.makedirs(COMPONENT1_DATA_PATH, exist_ok=True)
-            comment_path1 = os.path.join(COMPONENT1_DATA_PATH, f"batch_{video_id}.csv")
-            post_path1    = os.path.join(COMPONENT1_DATA_PATH, f"posts_batch_{video_id}.csv")
-            comment_df.to_csv(comment_path1, index=False, encoding="utf-8-sig")
-            post_df.to_csv(post_path1, index=False, encoding="utf-8-sig")
-            print(f"✅ CSVs saved to Component 1 batches: Video ID {video_id}")
+            comment_path1 = os.path.join(COMPONENT1_DATA_PATH, "all_comments.csv")
+            post_path1    = os.path.join(COMPONENT1_DATA_PATH, "all_posts.csv")
+
+            # Append if file exists, write header only if new file
+            comment_df.to_csv(comment_path1, mode="a", index=False, encoding="utf-8-sig",
+                                header=not os.path.exists(comment_path1))
+            post_df.to_csv(post_path1,    mode="a", index=False, encoding="utf-8-sig",
+                                header=not os.path.exists(post_path1))
+
+            print(f"✅ CSVs updated in Component 1 batches: Video ID {video_id}")
         except Exception as e:
             print(f"⚠️ Could not save to Component 1 batches: {e}")
 
@@ -238,9 +262,9 @@ async def run_pipeline(job_id, youtube_url, max_comments):
             os.makedirs(TEAMMATE_DATA_PATH, exist_ok=True)
             comment_path = os.path.join(TEAMMATE_DATA_PATH, f"batch_{video_id}.csv")
             comment_df.to_csv(comment_path, index=False, encoding="utf-8-sig")
-            print(f"✅ CSVs saved to teammate's folder: Video ID {video_id}")
+            print(f"CSVs saved to teammate's folder: Video ID {video_id}")
         except Exception as e:
-            print(f"⚠️ Could not save to teammate's folder: {e}")
+            print(f"Could not save to teammate's folder: {e}")
 
        
 
