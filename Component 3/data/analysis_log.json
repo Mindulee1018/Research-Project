@@ -1,0 +1,53 @@
+[
+  {
+    "timestamp": "2026-03-09T07:51:20.313745",
+    "original": "අද වැස්සත් එක්ක කොත්තු කෑවම මාර සතුටක",
+    "cleaned": "වැස්සත් එක්ක කොත්තු කෑවම මාර සතුටක",
+    "prediction": "HATE",
+    "moderation": {
+      "action": "BLOCK",
+      "severity": "HIGH",
+      "reason": "High-confidence hateful or abusive content detected.",
+      "confidence": 0.9978
+    },
+    "probs": {
+      "HATE": 0.997797296818777,
+      "NORMAL": 0.0016510573035968185,
+      "DISINFO": 0.000551645876628235
+    }
+  },
+  {
+    "timestamp": "2026-03-09T07:51:51.135489",
+    "original": "කොත්තු කන්න බඈ. නූඩ්ලිස් රසයි",
+    "cleaned": "කොත්තු කන්න බඈ. නූඩ්ලිස් රසයි",
+    "prediction": "HATE",
+    "moderation": {
+      "action": "BLOCK",
+      "severity": "HIGH",
+      "reason": "High-confidence hateful or abusive content detected.",
+      "confidence": 0.9864
+    },
+    "probs": {
+      "HATE": 0.9863865146781176,
+      "DISINFO": 0.009824245940410183,
+      "NORMAL": 0.003789239380485916
+    }
+  },
+  {
+    "timestamp": "2026-03-09T07:53:49.766920",
+    "original": "මගේ නෙමෙයි",
+    "cleaned": "මගේ නෙමෙයි",
+    "prediction": "HATE",
+    "moderation": {
+      "action": "BLOCK",
+      "severity": "HIGH",
+      "reason": "High-confidence hateful or abusive content detected.",
+      "confidence": 0.9984
+    },
+    "probs": {
+      "HATE": 0.9984233248634363,
+      "NORMAL": 0.0009910614223145727,
+      "DISINFO": 0.0005856137132505039
+    }
+  }
+]
