@@ -30,6 +30,7 @@ export default function AppLayout() {
           <div className="list-group list-group-flush">
             <SideItem to="/" label="Home" />
             <SideItem to="/drift" label="Drift Details" />
+            <SideItem to="/network-risk" label="Network Risk" />
           </div>
 
           <div className="p-3 mt-auto text-muted small">

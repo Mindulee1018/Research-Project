@@ -45,6 +45,7 @@ node_modules/
 
 package-lock.json
 package.json
+.package-lock.json
 
 component 2/data/processed
 component 2/data/batches

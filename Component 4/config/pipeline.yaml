@@ -1,0 +1,44 @@
+data_mode:
+  source: "real"   # "real" or "synthetic"
+
+synthetic_follow_graph:
+  enabled: true
+  num_users: 1200
+  model: "ba"          # "ba" (preferential attachment) or "ws" (small-world)
+  avg_degree: 12       # used for ws; for ba it controls attachment m approximately
+  seed: 42
+  
+general:
+  random_seed: 42
+
+graph:
+  co_engagement:
+    enabled: true
+    min_shared_posts: 2
+
+  temporal_coactivity:
+    enabled: true
+    window_seconds: 3600   # 1 hour
+
+  topic_similarity:
+    enabled: true
+    min_cosine: 0.25
+
+features:
+  time_bucket_seconds: 86400   # 1 day buckets
+
+risk_scoring:
+  weights:
+    influence: 0.45
+    exposure: 0.40
+    activity: 0.15
+  risk_buckets:
+    high: 0.75
+    medium: 0.45
+
+active_learning:
+  enabled: true
+  seed_size: 80
+  priority_mix:
+    uncertainty: 0.6
+    influence: 0.4

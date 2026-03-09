@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import AppLayout from "./layout/AppLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import DriftPage from "./pages/DriftPage.jsx";
+import NetworkRiskPage from "./pages/NetworkRiskPage.jsx";
 
 import { loadDashboardData } from "./lib/api.js";
 
@@ -169,6 +170,10 @@ export default function AppRoutes() {
           }
         />
       </Route>
+      <Route
+            path="/network-risk"
+            element={<NetworkRiskPage />}
+          />
     </Routes>
   );
 }

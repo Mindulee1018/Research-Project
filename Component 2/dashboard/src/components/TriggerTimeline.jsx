@@ -9,9 +9,62 @@ export default function TriggerTimeline({
   tlExpanded,
   toggleTlExpanded,
 }) {
+  function buildReasonParts(t) {
+    const v = t?.votes || {};
+    const parts = [];
+
+    if (v.data_drift === true) {
+      const jsdText =
+        t?.jsd != null && t?.jsd !== "" ? `JSD: ${Number(t.jsd).toFixed(4)}` : "distribution changed";
+      parts.push({
+        label: "🔴 Data drift",
+        color: "#dc2626",
+        text: `Hate-term distribution changed (${jsdText}).`,
+      });
+    }
+
+    if (v.concept_proxy === true) {
+      parts.push({
+        label: "🟠 Concept drift",
+        color: "#ea580c",
+        text: "Relationship between terms and hate labels changed.",
+      });
+    }
+
+    if (v.new_term_flag === true) {
+      const n =
+        t?.new_terms_in_hate != null && t?.new_terms_in_hate !== ""
+          ? `${t.new_terms_in_hate} new terms in hate content`
+          : "New hate terms appeared";
+      parts.push({
+        label: "🟢 New term drift",
+        color: "#16a34a",
+        text: `${n}.`,
+      });
+    }
+
+    if (v.target_drift === true) {
+      parts.push({
+        label: "🔵 Target drift",
+        color: "#2563eb",
+        text: "Overall hate rate changed compared with recent batches.",
+      });
+    }
+
+    if (!parts.length) {
+      parts.push({
+        label: "⚪ No clear drift type",
+        color: "#6b7280",
+        text: "No specific drift reason was flagged for this batch.",
+      });
+    }
+
+    return parts;
+  }
+
   const triggerTimeline = (() => {
     const q = tlQuery.trim().toLowerCase();
-    let rows = [...(triggers || [])].reverse(); // newest first
+    let rows = [...(triggers || [])].reverse();
 
     if (tlOnlyFlagged) {
       rows = rows.filter((t) => {
@@ -111,6 +164,8 @@ export default function TriggerTimeline({
                 v.concept_proxy === true ||
                 v.new_term_flag === true;
 
+              const reasonParts = buildReasonParts(t);
+
               return (
                 <div
                   key={idx}
@@ -142,6 +197,20 @@ export default function TriggerTimeline({
                   <div className="text-muted small mt-1">
                     target_drift: {String(v.target_drift)} | data_drift: {String(v.data_drift)} |
                     concept_proxy: {String(v.concept_proxy)} | new_term_flag: {String(v.new_term_flag)}
+                  </div>
+
+                  <div className="mt-2 d-flex flex-column gap-1">
+                    {reasonParts.map((r, i) => (
+                      <div key={i} className="small">
+                        <span
+                          className="fw-semibold"
+                          style={{ color: r.color }}
+                        >
+                          {r.label}:
+                        </span>{" "}
+                        <span>{r.text}</span>
+                      </div>
+                    ))}
                   </div>
 
                   <div className="text-muted small mt-1">
