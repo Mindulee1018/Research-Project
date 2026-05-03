@@ -5,6 +5,7 @@ from src.utils.io import load_batch_csv
 from src.preprocessing.lexicon import LexiconStore
 from .variant_resolver import VariantResolver
 from src.preprocessing.normalize import canonical_term
+from src.core.model_updater import fine_tune_for_trigger
 
 resolver = VariantResolver(path="artifacts/variant_map.json")
 LEXICON_PATH = "artifacts/lexicon_store.json"
@@ -101,7 +102,48 @@ def run_updates(processed_folder="data/processed", baseline_window=5):
         if not b or b in done:
             continue
 
-        result = update_lexicon_for_trigger(trig, processed_folder, baseline_window=baseline_window)
-        append_update_log(result)
+        lexicon_result = None
+        model_result = None
+
+        try:
+            # 1. Adaptive lexicon update
+            lexicon_result = update_lexicon_for_trigger(
+                trig,
+                processed_folder,
+                baseline_window=baseline_window
+            )
+
+            # 2. Incremental Hugging Face classifier update
+            try:
+                model_result = fine_tune_for_trigger(
+                    trigger_event=trig,
+                    processed_folder=processed_folder,
+                    baseline_window=baseline_window,
+                    min_train_rows=5,   # use 5 for testing
+                    epochs=1,
+                    batch_size=4,
+                )
+            except Exception as model_err:
+                model_result = {
+                    "batch_no": b,
+                    "status": "model_update_failed",
+                    "error": str(model_err),
+                }
+
+            result = {
+                **lexicon_result,
+                "model_update": model_result,
+            }
+
+            append_update_log(result)
+
+        except Exception as err:
+            append_update_log({
+                "batch_no": b,
+                "status": "update_failed",
+                "error": str(err),
+                "lexicon_result": lexicon_result,
+                "model_result": model_result,
+            })
 
     return True

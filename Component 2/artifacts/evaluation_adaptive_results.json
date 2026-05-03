@@ -1,0 +1,53 @@
+{
+  "model_type": "adaptive",
+  "model_path": "artifacts/adaptive_models\\model_v003_batch_5",
+  "test_file": "data/test/test_set.csv",
+  "evaluation_type": "binary_hate_vs_normal",
+  "note": "DISINFO is treated as NORMAL for Component 2 evaluation.",
+  "total_rows": 200,
+  "accuracy": 0.69,
+  "weighted_precision": 0.7613003452243958,
+  "weighted_recall": 0.69,
+  "weighted_f1": 0.6906820682068207,
+  "confusion_matrix_labels": [
+    "HATE",
+    "NORMAL"
+  ],
+  "confusion_matrix": [
+    [
+      68,
+      9
+    ],
+    [
+      53,
+      70
+    ]
+  ],
+  "classification_report": {
+    "HATE": {
+      "precision": 0.5619834710743802,
+      "recall": 0.8831168831168831,
+      "f1-score": 0.6868686868686869,
+      "support": 77.0
+    },
+    "NORMAL": {
+      "precision": 0.8860759493670886,
+      "recall": 0.5691056910569106,
+      "f1-score": 0.693069306930693,
+      "support": 123.0
+    },
+    "accuracy": 0.69,
+    "macro avg": {
+      "precision": 0.7240297102207344,
+      "recall": 0.7261112870868969,
+      "f1-score": 0.6899689968996899,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.7613003452243958,
+      "recall": 0.69,
+      "f1-score": 0.6906820682068207,
+      "support": 200.0
+    }
+  }
+}

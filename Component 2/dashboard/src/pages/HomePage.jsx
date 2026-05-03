@@ -4,6 +4,7 @@ import DriftChart from "../components/DriftChart.jsx";
 import Component1PipelineCard from "../components/Component1PipelineCard.jsx";
 import RunDriftButton from "../components/RunDriftButton.jsx";
 import ModerationStatsChart from "../components/ModerationStatsChart.jsx";
+import ModelEvaluationComparison from "../components/ModelEvaluationComparison.jsx";
 
 export default function HomePage({
   metrics,
@@ -13,7 +14,8 @@ export default function HomePage({
   driftChartData,
   onRefresh,
   err,
-  moderationStats
+  moderationStats,
+  evaluation,
 }) {
   return (
     <div>
@@ -50,7 +52,7 @@ export default function HomePage({
 
       <div className="row g-3 mt-3">
         <div className="col-12">
-          <RunDriftButton onDone={onRefresh}/>
+          <RunDriftButton onDone={onRefresh} />
         </div>
       </div>
 
@@ -86,6 +88,11 @@ export default function HomePage({
             hint="Unique terms tracked"
             accent="#f59e0b"
           />
+        </div>
+        <div className="row g-3 mt-3">
+          <div className="col-12">
+            <ModelEvaluationComparison evaluation={evaluation} />
+          </div>
         </div>
       </div>
 

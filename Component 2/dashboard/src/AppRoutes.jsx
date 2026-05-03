@@ -17,6 +17,7 @@ export default function AppRoutes() {
   const [manualMap, setManualMap] = useState({});
   const [err, setErr] = useState("");
   const [moderationStats, setModerationStats] = useState(null);
+  const [evaluation, setEvaluation] = useState(null);
 
   // keep “reviewed” state globally (for VariantGroups page)
   const [checkedGroups, setCheckedGroups] = useState(() => {
@@ -53,6 +54,25 @@ export default function AppRoutes() {
         setTriggers(data.triggers);
         setVariantGroups(data.variantGroups);
         setManualMap(data.manualMap);
+
+        // Load base vs adaptive model evaluation summary
+        try {
+          const evalRes = await fetch(
+            "http://127.0.0.1:8001/api/evaluation/summary",
+          );
+
+          if (!evalRes.ok) {
+            throw new Error(
+              `Failed to fetch evaluation summary (${evalRes.status})`,
+            );
+          }
+
+          const evalData = await evalRes.json();
+          setEvaluation(evalData);
+        } catch (evalErr) {
+          console.error("Evaluation summary error:", evalErr);
+          setEvaluation(null);
+        }
       } catch (e) {
         setErr(String(e?.message || e));
       }
@@ -168,6 +188,7 @@ export default function AppRoutes() {
               onRefresh={refresh}
               err={err}
               moderationStats={moderationStats}
+              evaluation={evaluation}
             />
           }
         />
@@ -188,10 +209,7 @@ export default function AppRoutes() {
           }
         />
       </Route>
-      <Route
-            path="/network-risk"
-            element={<NetworkRiskPage />}
-          />
+      <Route path="/network-risk" element={<NetworkRiskPage />} />
     </Routes>
   );
 }

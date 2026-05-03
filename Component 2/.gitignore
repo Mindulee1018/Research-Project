@@ -6,3 +6,40 @@ package.json
 # data/processed
 # data/batches
 # artifacts
+
+# Hugging Face / auth caches
+.huggingface/
+.cache/
+token
+*.token
+
+# =========================
+# Large adaptive model artifacts
+# =========================
+artifacts/adaptive_models/
+artifacts/trainer_tmp/
+
+# Hugging Face / model weight files
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# Morfessor trained model
+artifacts/morfessor_model.bin
+
+# =========================
+# Runtime generated artifacts
+# Optional: ignore if you do not want logs in GitHub
+# =========================
+artifacts/processed_manifest.json
+artifacts/term_store.json
+artifacts/lexicon_store.json
+artifacts/variant_map.json
+artifacts/morfessor_vocab.json
+artifacts/drift_history.csv
+artifacts/triggers.jsonl
+artifacts/update_jobs.jsonl
+artifacts/model_update_log.jsonl

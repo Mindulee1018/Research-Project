@@ -5,6 +5,7 @@ import pandas as pd
 import sys
 from fastapi import FastAPI, Body
 from fastapi.middleware.cors import CORSMiddleware
+from src.api.evaluation_routes import router as evaluation_router
 import subprocess
 
 ARTIFACTS_DIR = os.path.join(os.getcwd(), "artifacts")
@@ -20,6 +21,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Register evaluation routes
+app.include_router(evaluation_router)
 
 # Ensure artifacts dir + manual aliases file exist
 os.makedirs(ARTIFACTS_DIR, exist_ok=True)
