@@ -1,0 +1,32 @@
+{
+  "run_id": "run_20260320_023504",
+  "run_root": "/root/separate_volume/training/artifacts/runs/run_20260320_023504",
+  "approach": "Sentence-BERT fine-tune + embedding classifier",
+  "base_sbert": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "data_path": "/root/separate_volume/datasets/splits/current/train_labeled_331.csv",
+  "label_order": [
+    "DISINFO",
+    "HATE",
+    "NORMAL"
+  ],
+  "label2id": {
+    "DISINFO": 0,
+    "HATE": 1,
+    "NORMAL": 2
+  },
+  "id2label": {
+    "0": "DISINFO",
+    "1": "HATE",
+    "2": "NORMAL"
+  },
+  "counts": {
+    "all_rows": 59206,
+    "train_rows": 50325,
+    "val_rows": 8881
+  },
+  "metrics": {
+    "val_accuracy": 0.8546334872199076,
+    "val_macro_f1": 0.8626551705655782,
+    "val_disinfo_recall": 0.9197530864197531
+  }
+}

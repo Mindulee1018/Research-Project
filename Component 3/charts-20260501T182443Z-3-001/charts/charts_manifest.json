@@ -1,0 +1,96 @@
+{
+  "latest_run": "run_20260320_023504",
+  "purpose": "Analytics charts for dataset, validation, errors, and split quality.",
+  "data_sources": {
+    "final_labeled_dataset": "annotator_a_llm.csv",
+    "validation_report": "phase5_sbert_val_report.json",
+    "validation_confusion_matrix": "phase5_sbert_val_confusion_matrix.json",
+    "validation_predictions": "phase5_sbert_val_predictions_with_probs.csv",
+    "train_split": "train_labeled_331.csv",
+    "test_split": "unseen_labeled_rest.csv"
+  },
+  "split_analysis_summary": "split_analysis_summary.json",
+  "chart_count": 18,
+  "chart_groups": {
+    "dataset_overview": [
+      {
+        "file": "01_dataset_label_distribution.png",
+        "description": "Bar chart of final labeled dataset class counts (DISINFO, HATE, NORMAL) from datasets/labeled/annotator_a_llm.csv."
+      },
+      {
+        "file": "02_dataset_source_distribution.png",
+        "description": "Bar chart of final labeled dataset source counts (gossip_lanka, youtube, elakiri)."
+      },
+      {
+        "file": "03_source_label_heatmap.png",
+        "description": "Heatmap showing source vs label counts to visualize class balance by source."
+      }
+    ],
+    "validation_performance": [
+      {
+        "file": "04_validation_confusion_matrix_counts.png",
+        "description": "Confusion matrix (raw counts) for the latest validation/test split model evaluation."
+      },
+      {
+        "file": "05_validation_confusion_matrix_normalized.png",
+        "description": "Row-normalized confusion matrix for the latest validation/test split; each row sums to 1."
+      },
+      {
+        "file": "06_validation_class_metrics.png",
+        "description": "Grouped bar chart for precision, recall, and F1-score by class on the latest validation/test split."
+      },
+      {
+        "file": "07_validation_overall_scores.png",
+        "description": "Overall validation/test scores: Accuracy, Macro F1, and Weighted F1 for the latest run."
+      },
+      {
+        "file": "08_validation_confidence_distribution.png",
+        "description": "Histogram of model confidence on validation/test predictions using max class probability per sample."
+      }
+    ],
+    "validation_error_analysis": [
+      {
+        "file": "09_validation_errors_by_true_class.png",
+        "description": "Bar chart of validation misclassification counts grouped by true class."
+      },
+      {
+        "file": "10_validation_confidence_by_correctness.png",
+        "description": "Box plot comparing model confidence for correctly vs incorrectly predicted validation samples."
+      },
+      {
+        "file": "11_validation_accuracy_by_source.png",
+        "description": "Validation accuracy grouped by source to show source-level reliability."
+      },
+      {
+        "file": "12_validation_macro_f1_by_source.png",
+        "description": "Validation macro F1 grouped by source for class-balance-sensitive source quality comparison."
+      },
+      {
+        "file": "13_validation_raw_vs_tuned.png",
+        "description": "Comparison of raw vs threshold-tuned validation metrics (Accuracy and Macro F1)."
+      },
+      {
+        "file": "14_validation_top_confusion_pairs.png",
+        "description": "Horizontal bar chart of the most frequent validation misclassification directions (true -> predicted)."
+      }
+    ],
+    "split_analysis": [
+      {
+        "file": "15_split_class_counts_train_vs_test.png",
+        "description": "Side-by-side bar chart comparing class counts between train and test/unseen splits."
+      },
+      {
+        "file": "16_split_class_percentages_train_vs_test.png",
+        "description": "Side-by-side bar chart comparing class ratios between train and test/unseen splits."
+      },
+      {
+        "file": "17_split_source_counts_train_vs_test.png",
+        "description": "Side-by-side bar chart comparing source counts between train and test/unseen splits."
+      },
+      {
+        "file": "18_split_composition_stacked_ratios.png",
+        "description": "Stacked ratio chart showing class composition differences between train and test/unseen splits."
+      }
+    ]
+  }
+}
