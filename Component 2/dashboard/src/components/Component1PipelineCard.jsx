@@ -347,7 +347,6 @@ export default function Component1PipelineCard() {
               {[
                 { label: "Total Comments", value: results.total, cls: "text-primary" },
                 { label: "Hate Speech", value: results.hate, cls: "text-danger" },
-                { label: "Disinformation", value: results.disinfo, cls: "text-warning" },
                 { label: "Normal", value: results.normal, cls: "text-success" },
               ].map((item) => (
                 <div key={item.label} className="col-12 col-md-6">

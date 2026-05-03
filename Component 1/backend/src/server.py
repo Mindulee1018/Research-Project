@@ -182,7 +182,6 @@ async def run_pipeline(job_id, youtube_url, max_comments):
                 "Cleaned Comment":   c['clean'],
                 "Label":             label,
                 "Hate":              1 if label == "HATE"    else 0,
-                "Disinfo":           1 if label == "DISINFO" else 0,
                 "Normal":            1 if label == "NORMAL"  else 0,
                 "Hate Words":        ", ".join(hate_words) if hate_words else "",
                 "Processed At":      datetime.utcnow().isoformat(),
@@ -207,7 +206,6 @@ async def run_pipeline(job_id, youtube_url, max_comments):
             "Title Label":    title_label,
             "Total Comments": len(comment_results),
             "Hate Count":     sum(1 for c in comment_results if c['Label'] == 'HATE'),
-            "Disinfo Count":  sum(1 for c in comment_results if c['Label'] == 'DISINFO'),
             "Normal Count":   sum(1 for c in comment_results if c['Label'] == 'NORMAL'),
             "Processed At":   datetime.utcnow().isoformat(),
         }
@@ -274,7 +272,6 @@ async def run_pipeline(job_id, youtube_url, max_comments):
             "channel":     data['channel'],
             "total":       len(comment_df),
             "hate":        int(comment_df["Hate"].sum()),
-            "disinfo":     int(comment_df["Disinfo"].sum()),
             "normal":      int(comment_df["Normal"].sum()),
             "title_label": title_label,
         }
