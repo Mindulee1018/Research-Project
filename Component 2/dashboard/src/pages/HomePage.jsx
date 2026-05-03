@@ -2,6 +2,7 @@ import KPI from "../components/KPI.jsx";
 import StatusCard from "../components/StatusCard.jsx";
 import DriftChart from "../components/DriftChart.jsx";
 import Component1PipelineCard from "../components/Component1PipelineCard.jsx";
+import ElakiriFactCheckerTab from "../components/ElakiriFactCheckerTab";
 import RunDriftButton from "../components/RunDriftButton.jsx";
 import ModerationStatsChart from "../components/ModerationStatsChart.jsx";
 
@@ -43,8 +44,12 @@ export default function HomePage({
       )}
 
       <div className="row g-3 mt-0">
-        <div className="col-12">
+        <div className="col-12 col-lg-6">
           <Component1PipelineCard />
+        </div>
+       
+        <div className="col-12 col-lg-6">
+          <ElakiriFactCheckerTab />
         </div>
       </div>
 
