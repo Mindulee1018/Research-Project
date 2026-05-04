@@ -14,7 +14,7 @@ OUTPUTS_DIR      = os.path.join(BASE_DIR, "outputs")
 
 def run_pipeline(youtube_url, max_comments=500, output_filename=None):
     print("=" * 60)
-    print("  Sinhala Hate Speech & Disinformation Detection Pipeline")
+    print("  Sinhala Hate Speech Detection Pipeline")
     print("=" * 60)
 
     detector = SinhalaHateDetector()
@@ -35,9 +35,8 @@ def run_pipeline(youtube_url, max_comments=500, output_filename=None):
             "Original Comment": raw_comment,
             "Cleaned Comment":  cleaned,
             "Label":            label,
-            "Hate":             1 if label == "HATE"    else 0,
-            "Disinfo":          1 if label == "DISINFO" else 0,
-            "Normal":           1 if label == "NORMAL"  else 0,
+            "Hate":             1 if label == "HATE"   else 0,
+            "Normal":           1 if label == "NORMAL" else 0,
             "Hate Words":       ", ".join(hate_words) if hate_words else "",
         })
         if (i + 1) % 50 == 0:
@@ -50,13 +49,11 @@ def run_pipeline(youtube_url, max_comments=500, output_filename=None):
         output_filename = f"results_{video_id}.csv"
     output_path = os.path.join(OUTPUTS_DIR, output_filename)
     results_df.to_csv(output_path, index=False, encoding="utf-8-sig")
-    print(f"Total: {len(results_df)} | HATE: {results_df["Hate"].sum()} | DISINFO: {results_df["Disinfo"].sum()} | NORMAL: {results_df["Normal"].sum()}")
+    
+    print(f"Total: {len(results_df)} | HATE: {results_df['Hate'].sum()} | NORMAL: {results_df['Normal'].sum()}")
     print(f"Saved to: {output_path}")
     return results_df
 
-#if __name__ == "__main__":
-    #YOUTUBE_URL = "https://youtu.be/_7JGPFz7Vfs?si=CaJVL9sExi_0OtUM"
-    #df = run_pipeline(youtube_url=YOUTUBE_URL, max_comments=500, output_filename="youtube_results.csv")
 
 if __name__ == "__main__":
     from datetime import datetime
@@ -66,7 +63,9 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         YOUTUBE_URL = sys.argv[1]
     else:
-        YOUTUBE_URL = input("https://youtu.be/_7JGPFz7Vfs?si=P5-PxexZpKaFr0NP").strip()
+        YOUTUBE_URL = input("Enter YouTube URL: ").strip()
+        if not YOUTUBE_URL:
+            YOUTUBE_URL = "https://youtu.be/_7JGPFz7Vfs?si=P5-PxexZpKaFr0NP"
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_filename = f"youtube_results_{timestamp}.csv"

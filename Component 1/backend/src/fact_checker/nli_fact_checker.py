@@ -61,8 +61,8 @@ class NLIFactChecker:
         Returns per-source verdicts + final verdict.
 
         Final verdict logic:
-        - Both SUPPORT     → NOT DISINFO ✅
-        - Both REFUTE      → DISINFO ❌
+        - Both SUPPORT     → NOT DISINFO 
+        - Both REFUTE      → DISINFO 
         - One found result, other didn't → UNCERTAIN ⚠️ (show what found)
         - One SUPPORT one REFUTE → UNCERTAIN ⚠️
         - No source found anything → UNVERIFIED

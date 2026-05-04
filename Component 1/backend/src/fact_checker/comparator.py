@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer, util
 
 SBERT_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
 
-# ── Thresholds ─────────────────────────────────────────────────
+# ── Thresholds 
 DISINFO_HIGH   = 0.25   # avg similarity < 0.25 → HIGH confidence DISINFO
 DISINFO_LOW    = 0.40   # avg similarity < 0.40 → MODERATE confidence DISINFO
 NOT_DISINFO    = 0.60   # avg similarity > 0.60 → NOT DISINFO
@@ -17,7 +17,7 @@ class FactChecker:
     def __init__(self):
         print("Loading Sentence-BERT model for fact checking...")
         self.model = SentenceTransformer(SBERT_MODEL)
-        print("✅ FactChecker ready!")
+        print(" FactChecker ready!")
 
     def get_similarity(self, text1: str, text2: str) -> float:
         """Compute cosine similarity between two texts."""

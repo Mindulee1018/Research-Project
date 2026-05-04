@@ -138,10 +138,10 @@ export default function ElakiriFactCheckerTab() {
 
         {/* How it works */}
         <div className="rounded-4 p-3 mb-4 border border-warning-subtle bg-warning bg-opacity-10">
-          <div className="small text-warning fw-semibold mb-1">🧠 FEVER NLI Methodology</div>
+          <div className="small text-warning fw-semibold mb-1"> FEVER NLI Methodology</div>
           <div className="small text-muted">
             Paste an <strong>Elakiri post URL</strong> or directly enter a <strong>text claim</strong>.
-            The system extracts keywords, searches three Sri Lankan news sources, and uses
+            The system extracts keywords, searches 4 Sri Lankan news sources, and uses
             <strong> NLI</strong> to classify each as
             <strong className="text-success"> SUPPORTS</strong> /
             <strong className="text-danger"> REFUTES</strong> /
@@ -219,7 +219,7 @@ export default function ElakiriFactCheckerTab() {
               disabled={!isValidInput()}
               style={{ opacity: isValidInput() ? 1 : 0.5 }}
             >
-              🧠 Fact Check {inputType === "url" ? "This Post" : "This Claim"} →
+               Fact Check {inputType === "url" ? "This Post" : "This Claim"} →
             </button>
           </>
         )}
@@ -283,7 +283,7 @@ export default function ElakiriFactCheckerTab() {
             {/* Post / Claim info */}
             <div className="rounded-4 border p-3 mb-3 bg-light">
               <div className="small text-muted text-uppercase fw-semibold mb-1">
-                {results.input_type === "url" ? "📋 Elakiri Post" : "💬 Text Claim"}
+                {results.input_type === "url" ? " Elakiri Post" : " Text Claim"}
               </div>
               <div className="fw-semibold text-dark mb-2">{results.post_title}</div>
               {results.post_content && results.input_type === "url" && (

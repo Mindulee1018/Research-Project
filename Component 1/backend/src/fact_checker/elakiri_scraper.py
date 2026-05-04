@@ -39,7 +39,7 @@ def fetch_elakiri_post(url: str) -> dict:
         # Extract English keywords
         keywords = _extract_keywords(title + " " + content)
 
-        print(f"✅ Fetched: {title[:80]}")
+        print(f" Fetched: {title[:80]}")
         print(f"   Keywords: {keywords}")
 
         return {"title": title, "content": content, "keywords": keywords, "url": url}

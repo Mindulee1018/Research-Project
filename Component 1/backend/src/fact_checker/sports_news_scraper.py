@@ -114,7 +114,7 @@ def filter_relevant_results(source_results: dict, keywords: list) -> dict:
                 filtered_results[source_name].append(article)
 
         print(
-            f"✅ {source_name}: {len(filtered_results[source_name])}/"
+            f" {source_name}: {len(filtered_results[source_name])}/"
             f"{len(articles)} relevant articles kept"
         )
 

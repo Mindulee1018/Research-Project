@@ -29,7 +29,7 @@ jobs = {}
 
 print("Loading NLI Fact Checker...")
 checker = NLIFactChecker()
-print("✅ Server ready!")
+print(" Server ready!")
 
 
 class ElakiriRequest(BaseModel):
@@ -186,7 +186,7 @@ async def run_factcheck(job_id: str, input_type: str, input_value: str):
             },
         })
 
-        print(f"✅ Final: {result['final_verdict']} | {result['final_confidence']}")
+        print(f" Final: {result['final_verdict']} | {result['final_confidence']}")
 
     except Exception as e:
         jobs[job_id].update({

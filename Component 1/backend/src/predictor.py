@@ -7,15 +7,14 @@ import pandas as pd
 from optimum.onnxruntime import ORTModelForTokenClassification
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-LABEL2ID = {'HATE': 0, 'DISINFO': 1, 'NORMAL': 2}
-ID2LABEL = {0: 'HATE', 1: 'DISINFO', 2: 'NORMAL'}
-TAG2ID   = {'O': 0, 'B-HATE': 1, 'I-HATE': 2}
-ID2TAG   = {0: 'O', 1: 'B-HATE', 2: 'I-HATE'}
+LABEL2ID = {'HATE': 0, 'NORMAL': 1}
+ID2LABEL = {0: 'HATE', 1: 'NORMAL'}
+TAG2ID   = {'O': 0, 'B-HATE': 1, 'I-HATE': 2} 
+ID2TAG   = {0: 'O', 1: 'B-HATE', 2: 'I-HATE'}  
 
 # ── Thresholds ────────────────────────────────────────────────
 HATE_CLASSIFY_THRESHOLD = 0.65
 HATE_TOKEN_THRESHOLD    = 0.55
-DISINFO_THRESHOLD       = 0.60
 
 # ── HuggingFace repos ─────────────────────────────────────────
 CLF_REPO   = "Mindulee/sinhala-hate-adaptive-classifier"
@@ -52,7 +51,7 @@ class SinhalaHateDetector:
         print("Building hate word set...")
         self.hate_word_set = self._build_hate_word_set()
         print(f"Hate word set: {len(self.hate_word_set)} unique tokens")
-        print("✅ Detector ready!\n")
+        print(" Detector ready!\n")
 
     def _build_hate_word_set(self):
         hate_words = set()
