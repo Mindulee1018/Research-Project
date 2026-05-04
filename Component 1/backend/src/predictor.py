@@ -18,7 +18,8 @@ HATE_TOKEN_THRESHOLD    = 0.55
 DISINFO_THRESHOLD       = 0.60
 
 # ── HuggingFace repos ─────────────────────────────────────────
-CLF_REPO   = "Imaya2002/sinhala-hate-classifier-v2"   # PyTorch
+CLF_REPO   = "Mindulee/sinhala-hate-adaptive-classifier"
+#"Imaya2002/sinhala-hate-classifier-v2"   # PyTorch
 TOKEN_REPO = "Imaya2002/sinhala-hate-word-detector"   # ONNX
 
 # ── Local data paths ──────────────────────────────────────────
@@ -180,10 +181,8 @@ class SinhalaHateDetector:
 
         if hate_prob >= HATE_CLASSIFY_THRESHOLD:
             pred_label = 'HATE'
-        elif dis_prob >= DISINFO_THRESHOLD:
-            pred_label = 'DISINFO'
         else:
-            pred_label = 'NORMAL'
+            pred_label = 'NORMAL'   # ← DISINFO predictions become NORMAL
 
         hate_words = self._get_hate_words_combined(comment) if pred_label == 'HATE' else []
         return pred_label, hate_words
