@@ -8,11 +8,11 @@
       "last_updated_batch": "batch_5"
     },
     "තෝ": {
-      "hate_count": 130,
-      "total_count": 130,
-      "weight": 0.9924242424242424,
+      "hate_count": 230,
+      "total_count": 230,
+      "weight": 0.9956896551724138,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගෑනියෙක්": {
       "hate_count": 6,
@@ -29,25 +29,25 @@
       "last_updated_batch": "batch_5"
     },
     "හරකා": {
-      "hate_count": 38,
-      "total_count": 38,
-      "weight": 0.975,
+      "hate_count": 64,
+      "total_count": 64,
+      "weight": 0.9848484848484849,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මී": {
-      "hate_count": 9,
-      "total_count": 9,
-      "weight": 0.9090909090909091,
+      "hate_count": 15,
+      "total_count": 15,
+      "weight": 0.9411764705882353,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොන්": {
-      "hate_count": 78,
-      "total_count": 78,
-      "weight": 0.9875,
+      "hate_count": 132,
+      "total_count": 132,
+      "weight": 0.9925373134328358,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ජෝක්": {
       "hate_count": 6,
@@ -71,32 +71,32 @@
       "last_updated_batch": "batch_5"
     },
     "පරට්ටි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "උඹේ": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
+      "hate_count": 13,
+      "total_count": 13,
+      "weight": 0.9333333333333333,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පකෝ": {
-      "hate_count": 65,
-      "total_count": 65,
-      "weight": 0.9850746268656716,
+      "hate_count": 125,
+      "total_count": 125,
+      "weight": 0.9921259842519685,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බැල්ලි": {
-      "hate_count": 49,
-      "total_count": 49,
-      "weight": 0.9803921568627451,
+      "hate_count": 73,
+      "total_count": 73,
+      "weight": 0.9866666666666667,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගුද": {
       "hate_count": 6,
@@ -120,18 +120,18 @@
       "last_updated_batch": "batch_5"
     },
     "පයිය": {
-      "hate_count": 68,
-      "total_count": 68,
-      "weight": 0.9857142857142858,
+      "hate_count": 87,
+      "total_count": 87,
+      "weight": 0.9887640449438202,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොන්න": {
-      "hate_count": 63,
-      "total_count": 63,
-      "weight": 0.9846153846153847,
+      "hate_count": 113,
+      "total_count": 113,
+      "weight": 0.991304347826087,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නායකයෝ": {
       "hate_count": 6,
@@ -155,25 +155,25 @@
       "last_updated_batch": "batch_5"
     },
     "පුක": {
-      "hate_count": 116,
-      "total_count": 116,
-      "weight": 0.9915254237288136,
+      "hate_count": 205,
+      "total_count": 205,
+      "weight": 0.9951690821256038,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නොදකින්": {
-      "hate_count": 81,
-      "total_count": 81,
-      "weight": 0.9879518072289156,
+      "hate_count": 134,
+      "total_count": 134,
+      "weight": 0.9926470588235294,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අමු": {
-      "hate_count": 18,
-      "total_count": 18,
-      "weight": 0.95,
+      "hate_count": 21,
+      "total_count": 21,
+      "weight": 0.9565217391304348,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "ගොබ්බයි": {
       "hate_count": 6,
@@ -190,25 +190,25 @@
       "last_updated_batch": "batch_5"
     },
     "නරින්ගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පලයං": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "තොපි": {
-      "hate_count": 60,
-      "total_count": 60,
-      "weight": 0.9838709677419355,
+      "hate_count": 107,
+      "total_count": 107,
+      "weight": 0.9908256880733946,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "රෙද්දක්ද": {
       "hate_count": 6,
@@ -225,11 +225,11 @@
       "last_updated_batch": "batch_5"
     },
     "පකෙක්": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
+      "hate_count": 15,
+      "total_count": 15,
+      "weight": 0.9411764705882353,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මීහරකා": {
       "hate_count": 6,
@@ -239,18 +239,18 @@
       "last_updated_batch": "batch_5"
     },
     "බිජ්ජ": {
-      "hate_count": 51,
-      "total_count": 51,
-      "weight": 0.9811320754716981,
+      "hate_count": 81,
+      "total_count": 81,
+      "weight": 0.9879518072289156,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුජ්ජ": {
-      "hate_count": 70,
-      "total_count": 70,
-      "weight": 0.9861111111111112,
+      "hate_count": 121,
+      "total_count": 121,
+      "weight": 0.991869918699187,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කැත": {
       "hate_count": 6,
@@ -267,18 +267,18 @@
       "last_updated_batch": "batch_5"
     },
     "නාකි": {
-      "hate_count": 22,
-      "total_count": 22,
-      "weight": 0.9583333333333334,
+      "hate_count": 38,
+      "total_count": 38,
+      "weight": 0.975,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හෙන": {
-      "hate_count": 30,
-      "total_count": 30,
-      "weight": 0.96875,
+      "hate_count": 45,
+      "total_count": 45,
+      "weight": 0.9787234042553191,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "චාටර්": {
       "hate_count": 6,
@@ -295,67 +295,67 @@
       "last_updated_batch": "batch_5"
     },
     "කාලකණ්ණි": {
-      "hate_count": 46,
-      "total_count": 46,
-      "weight": 0.9791666666666666,
+      "hate_count": 78,
+      "total_count": 78,
+      "weight": 0.9875,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මෝඩයා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මෝඩ": {
-      "hate_count": 33,
-      "total_count": 33,
-      "weight": 0.9714285714285714,
+      "hate_count": 54,
+      "total_count": 54,
+      "weight": 0.9821428571428571,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මොංගල්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පර": {
-      "hate_count": 33,
-      "total_count": 33,
-      "weight": 0.9714285714285714,
+      "hate_count": 60,
+      "total_count": 60,
+      "weight": 0.9838709677419355,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "සක්කිලි": {
-      "hate_count": 95,
-      "total_count": 95,
-      "weight": 0.9896907216494846,
+      "hate_count": 141,
+      "total_count": 141,
+      "weight": 0.993006993006993,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හැත්ත": {
-      "hate_count": 83,
-      "total_count": 83,
-      "weight": 0.9882352941176471,
+      "hate_count": 149,
+      "total_count": 149,
+      "weight": 0.9933774834437086,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "තොපිට": {
-      "hate_count": 28,
-      "total_count": 28,
-      "weight": 0.9666666666666667,
+      "hate_count": 45,
+      "total_count": 45,
+      "weight": 0.9787234042553191,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පලයන්": {
-      "hate_count": 18,
-      "total_count": 18,
-      "weight": 0.95,
+      "hate_count": 40,
+      "total_count": 40,
+      "weight": 0.9761904761904762,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොන්නු": {
       "hate_count": 6,
@@ -386,32 +386,32 @@
       "last_updated_batch": "batch_5"
     },
     "රෙද්ද": {
-      "hate_count": 41,
-      "total_count": 41,
-      "weight": 0.9767441860465116,
+      "hate_count": 68,
+      "total_count": 68,
+      "weight": 0.9857142857142858,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කාලකන්නි": {
-      "hate_count": 25,
-      "total_count": 25,
-      "weight": 0.9629629629629629,
+      "hate_count": 35,
+      "total_count": 35,
+      "weight": 0.972972972972973,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "වේසි": {
-      "hate_count": 58,
-      "total_count": 58,
-      "weight": 0.9833333333333333,
+      "hate_count": 72,
+      "total_count": 72,
+      "weight": 0.9864864864864865,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බල්ලො": {
-      "hate_count": 14,
-      "total_count": 14,
-      "weight": 0.9375,
+      "hate_count": 24,
+      "total_count": 24,
+      "weight": 0.9615384615384616,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "සුනඛයෙක්": {
       "hate_count": 6,
@@ -428,11 +428,11 @@
       "last_updated_batch": "batch_5"
     },
     "උඹ": {
-      "hate_count": 14,
-      "total_count": 14,
-      "weight": 0.9375,
+      "hate_count": 22,
+      "total_count": 22,
+      "weight": 0.9583333333333334,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුකන්නෝ": {
       "hate_count": 6,
@@ -456,11 +456,11 @@
       "last_updated_batch": "batch_5"
     },
     "තොපේ": {
-      "hate_count": 18,
-      "total_count": 18,
-      "weight": 0.95,
+      "hate_count": 26,
+      "total_count": 26,
+      "weight": 0.9642857142857143,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අම්මගේ": {
       "hate_count": 6,
@@ -484,11 +484,11 @@
       "last_updated_batch": "batch_5"
     },
     "තොට": {
-      "hate_count": 46,
-      "total_count": 46,
-      "weight": 0.9791666666666666,
+      "hate_count": 103,
+      "total_count": 103,
+      "weight": 0.9904761904761905,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කාලකන්නියා": {
       "hate_count": 6,
@@ -505,18 +505,18 @@
       "last_updated_batch": "batch_5"
     },
     "ජංගියේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "චූ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොන්නයද": {
       "hate_count": 6,
@@ -526,11 +526,11 @@
       "last_updated_batch": "batch_5"
     },
     "පුකේ": {
-      "hate_count": 23,
-      "total_count": 23,
-      "weight": 0.96,
+      "hate_count": 45,
+      "total_count": 45,
+      "weight": 0.9787234042553191,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොන්ද": {
       "hate_count": 6,
@@ -554,11 +554,11 @@
       "last_updated_batch": "batch_5"
     },
     "සාප": {
-      "hate_count": 15,
-      "total_count": 15,
-      "weight": 0.9411764705882353,
+      "hate_count": 30,
+      "total_count": 30,
+      "weight": 0.96875,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මරි": {
       "hate_count": 6,
@@ -603,46 +603,46 @@
       "last_updated_batch": "batch_5"
     },
     "ලබ්බ": {
+      "hate_count": 59,
+      "total_count": 59,
+      "weight": 0.9836065573770492,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පිස්සා": {
       "hate_count": 33,
       "total_count": 33,
       "weight": 0.9714285714285714,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පිස්සා": {
-      "hate_count": 18,
-      "total_count": 18,
-      "weight": 0.95,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හැත්තට": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොනා": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
+      "hate_count": 17,
+      "total_count": 17,
+      "weight": 0.9473684210526315,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පක්කු": {
-      "hate_count": 18,
-      "total_count": 18,
-      "weight": 0.95,
+      "hate_count": 21,
+      "total_count": 21,
+      "weight": 0.9565217391304348,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "හුත්ත": {
-      "hate_count": 28,
-      "total_count": 28,
-      "weight": 0.9666666666666667,
+      "hate_count": 51,
+      "total_count": 51,
+      "weight": 0.9811320754716981,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හිවල්": {
       "hate_count": 6,
@@ -659,32 +659,32 @@
       "last_updated_batch": "batch_5"
     },
     "අවජාතක": {
-      "hate_count": 50,
-      "total_count": 50,
-      "weight": 0.9807692307692307,
+      "hate_count": 104,
+      "total_count": 104,
+      "weight": 0.9905660377358491,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "වල්": {
-      "hate_count": 24,
-      "total_count": 24,
-      "weight": 0.9615384615384616,
+      "hate_count": 38,
+      "total_count": 38,
+      "weight": 0.975,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බල්ලෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "තූ": {
-      "hate_count": 19,
-      "total_count": 19,
-      "weight": 0.9523809523809523,
+      "hate_count": 30,
+      "total_count": 30,
+      "weight": 0.96875,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කාලකණ්නියා": {
       "hate_count": 6,
@@ -708,11 +708,11 @@
       "last_updated_batch": "batch_5"
     },
     "තමුසෙ": {
-      "hate_count": 19,
-      "total_count": 19,
-      "weight": 0.9523809523809523,
+      "hate_count": 37,
+      "total_count": 37,
+      "weight": 0.9743589743589743,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නාකිම": {
       "hate_count": 6,
@@ -722,2370 +722,3875 @@
       "last_updated_batch": "batch_5"
     },
     "වේස": {
-      "hate_count": 39,
-      "total_count": 39,
-      "weight": 0.975609756097561,
+      "hate_count": 66,
+      "total_count": 66,
+      "weight": 0.9852941176470589,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හැමිනෙනවා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
     "පිස්සු": {
-      "hate_count": 48,
-      "total_count": 48,
-      "weight": 0.98,
+      "hate_count": 71,
+      "total_count": 71,
+      "weight": 0.9863013698630136,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුත්තිගේ": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
+      "hate_count": 17,
+      "total_count": 17,
+      "weight": 0.9473684210526315,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අවලම්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
     "චරිත": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
     "හමන්නලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
     "හිගාකන": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
     "වේසිගෙ": {
-      "hate_count": 26,
-      "total_count": 26,
-      "weight": 0.9642857142857143,
+      "hate_count": 36,
+      "total_count": 36,
+      "weight": 0.9736842105263158,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පුතාලා": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
+      "hate_count": 12,
+      "total_count": 12,
+      "weight": 0.9285714285714286,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "දෙන": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ජංගි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අඳින": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගල්": {
-      "hate_count": 14,
-      "total_count": 14,
-      "weight": 0.9375,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගොං": {
-      "hate_count": 13,
-      "total_count": 13,
-      "weight": 0.9333333333333333,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හැත්තක්": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ටොයියන්ට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බල්ලා": {
-      "hate_count": 19,
-      "total_count": 19,
-      "weight": 0.9523809523809523,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගූ": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කටු": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුත්තකටද": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "යකෝ": {
-      "hate_count": 68,
-      "total_count": 68,
-      "weight": 0.9857142857142858,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකනාතල්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ඇනපිය": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අයින්න": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මැරෙන්න": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පකයෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කැරි": {
-      "hate_count": 22,
-      "total_count": 22,
-      "weight": 0.9583333333333334,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පුතෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පට්ට": {
-      "hate_count": 19,
-      "total_count": 19,
-      "weight": 0.9523809523809523,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පුකයි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පතායා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බඩුව": {
-      "hate_count": 20,
-      "total_count": 20,
-      "weight": 0.9545454545454546,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මැරියන්": {
-      "hate_count": 21,
-      "total_count": 21,
-      "weight": 0.9565217391304348,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කැරියා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "නූගත්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හැත්තගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තොගෙන්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තොගෙ": {
-      "hate_count": 35,
-      "total_count": 35,
-      "weight": 0.972972972972973,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "රාක්ෂ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගෑණි": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ටහුකන": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "නපුංසකයො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "නැට්ටුක්කාර": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ඌගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගැණි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වසලයෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බබ්බුද": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුක": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මොඩ": {
-      "hate_count": 13,
-      "total_count": 13,
-      "weight": 0.9333333333333333,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මුසලයෙක්": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අලියෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හිවලෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හරක්": {
-      "hate_count": 11,
-      "total_count": 11,
-      "weight": 0.9230769230769231,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පඩත්තල": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ඊයා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කක්කි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පාහරයෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හැමිනෙන": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පකිස්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බූරුවො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මුසලයා": {
-      "hate_count": 14,
-      "total_count": 14,
-      "weight": 0.9375,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කිම්බ": {
-      "hate_count": 23,
-      "total_count": 23,
-      "weight": 0.96,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ඇට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තම්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුත්තේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හැතිකරයක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බැල්ලියෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පොරගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගෝත": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පක": {
-      "hate_count": 5,
-      "total_count": 5,
-      "weight": 0.8571428571428571,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තොපෙ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පලකො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වඳ": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසිගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පුතෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බූරුවා": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මූසලයෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පල": {
-      "hate_count": 19,
-      "total_count": 19,
-      "weight": 0.9523809523809523,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වාහේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පුතාලට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පොන්නය": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අම්ම": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසිගෙපුතා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකන්නල": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකවන්න": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකෝනව": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුත්තිගෙ": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පච": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ටහුඩු": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කුනුහබ්බ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මෙලෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "රහක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "නැනේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුත්තල": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පොන්නයොත්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පොන්නයො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ටිංකිම්බොයි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පයියවලුයි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අවජාතකයකු": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අමන": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මැරිලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසියේ": {
-      "hate_count": 8,
-      "total_count": 8,
-      "weight": 0.9,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මළ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "උන්ගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "අස්සේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කල්ලතොනියෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකහන්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුත්තෝ": {
-      "hate_count": 22,
-      "total_count": 22,
-      "weight": 0.9583333333333334,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වාගේ": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "දෙනවා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මෝඩයෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පොඩි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මුගේ": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බූතයො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කුජීත": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසියොන්ට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "රෙද්දෙ": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වැලක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තොපිලාට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වෙනවා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බොලව්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කැරියන්ව": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පරයෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තෝව": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පිම්පීයෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසකමේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හෙනකදයා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගහන්නෙ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කනට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "උට්ටෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "රිලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගැනිගේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පකේ": {
-      "hate_count": 7,
-      "total_count": 7,
-      "weight": 0.8888888888888888,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකන්න": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "නපුන්සකයා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "තොගේ": {
-      "hate_count": 12,
-      "total_count": 12,
-      "weight": 0.9285714285714286,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "උට්ටටක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පයියක්": {
-      "hate_count": 9,
-      "total_count": 9,
-      "weight": 0.9090909090909091,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ටෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මූට": {
-      "hate_count": 14,
-      "total_count": 14,
-      "weight": 0.9375,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වාචාල": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බිජ්ජොන්ට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කාලකණ්නි": {
       "hate_count": 10,
       "total_count": 10,
       "weight": 0.9166666666666666,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
-    "හැතිකරේට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පකයෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පණුවො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "දාලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කුණු": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වෙලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "මැරෙන්නේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකාපන්": {
+    "ජංගි": {
       "hate_count": 7,
       "total_count": 7,
       "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "කුනු": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "හිත": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "උන්මන්තක": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "වනචරයෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "බල්ලනේ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ලබ්බවල්": {
+    "අඳින": {
       "hate_count": 7,
       "total_count": 7,
       "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "හිගන": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "ගල්": {
+      "hate_count": 23,
+      "total_count": 23,
+      "weight": 0.96,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
-    "ආතල්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "ගොං": {
+      "hate_count": 31,
+      "total_count": 31,
+      "weight": 0.9696969696969697,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
-    "අමනයො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "හැත්තක්": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "බල්ලවත්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "ටොයියන්ට": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "හොරා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "බල්ලා": {
+      "hate_count": 43,
+      "total_count": 43,
+      "weight": 0.9777777777777777,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
-    "බරක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "ගූ": {
+      "hate_count": 16,
+      "total_count": 16,
+      "weight": 0.9444444444444444,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
-    "මොංගල්ද": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "කටු": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "ඩාලින්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "හුත්තකටද": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "කරුමයක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "යකෝ": {
+      "hate_count": 127,
+      "total_count": 127,
+      "weight": 0.9922480620155039,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
-    "චීත්තයක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "හුකනාතල්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "පලල්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "ඇනපිය": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "කොටයි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+    "අයින්න": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_6"
     },
-    "කොටියො": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "උඕෙ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "ගොබ්බයෙක්": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කුඩ්ඩොයි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "කුහකයෝ": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "රීලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
-      "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
-    },
-    "පරයා": {
+    "මැරෙන්න": {
       "hate_count": 8,
       "total_count": 8,
       "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
+    },
+    "පකයෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "කැරි": {
+      "hate_count": 38,
+      "total_count": 38,
+      "weight": 0.975,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පුතෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පට්ට": {
+      "hate_count": 26,
+      "total_count": 26,
+      "weight": 0.9642857142857143,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පුකයි": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පතායා": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "බඩුව": {
+      "hate_count": 49,
+      "total_count": 49,
+      "weight": 0.9803921568627451,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "මැරියන්": {
+      "hate_count": 36,
+      "total_count": 36,
+      "weight": 0.9736842105263158,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "කැරියා": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "නූගත්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හැත්තගේ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "තොගෙන්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "තොගෙ": {
+      "hate_count": 56,
+      "total_count": 56,
+      "weight": 0.9827586206896551,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "රාක්ෂ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "ගෑණි": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "ටහුකන": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "නපුංසකයො": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "නැට්ටුක්කාර": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "ඌගේ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "ගැණි": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "වසලයෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "බබ්බුද": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුක": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "මොඩ": {
+      "hate_count": 19,
+      "total_count": 19,
+      "weight": 0.9523809523809523,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "මුසලයෙක්": {
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "අලියෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හිවලෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හරක්": {
+      "hate_count": 34,
+      "total_count": 34,
+      "weight": 0.9722222222222222,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පඩත්තල": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "ඊයා": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "කක්කි": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පාහරයෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හැමිනෙන": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පකිස්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "බූරුවො": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "මුසලයා": {
+      "hate_count": 25,
+      "total_count": 25,
+      "weight": 0.9629629629629629,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "කිම්බ": {
+      "hate_count": 43,
+      "total_count": 43,
+      "weight": 0.9777777777777777,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "ඇට": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "තම්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුත්තේ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හැතිකරයක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "බැල්ලියෝ": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පොරගේ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "ගෝත": {
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පක": {
+      "hate_count": 12,
+      "total_count": 12,
+      "weight": 0.9285714285714286,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "තොපෙ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පලකො": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "වඳ": {
+      "hate_count": 13,
+      "total_count": 13,
+      "weight": 0.9333333333333333,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "වේසිගේ": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පුතෝ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "බූරුවා": {
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "මූසලයෙක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පල": {
+      "hate_count": 39,
+      "total_count": 39,
+      "weight": 0.975609756097561,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "වාහේ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පුතාලට": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පොන්නය": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "අම්ම": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "වේසිගෙපුතා": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුකන්නල": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුකවන්න": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුකෝනව": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුත්තිගෙ": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පච": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "ටහුඩු": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "කුනුහබ්බ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "මෙලෝ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "රහක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "නැනේ": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "හුත්තල": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පොන්නයොත්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_6"
+    },
+    "පොන්නයො": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "ටිංකිම්බොයි": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පයියවලුයි": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "අවජාතකයකු": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "අමන": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "මැරිලා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "වේසියේ": {
+      "hate_count": 13,
+      "total_count": 13,
+      "weight": 0.9333333333333333,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "මළ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "උන්ගේ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "අස්සේ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කල්ලතොනියෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "හුකහන්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "හුත්තෝ": {
+      "hate_count": 40,
+      "total_count": 40,
+      "weight": 0.9761904761904762,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "වාගේ": {
+      "hate_count": 16,
+      "total_count": 16,
+      "weight": 0.9444444444444444,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "දෙනවා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "මෝඩයෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පොඩි": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "මුගේ": {
+      "hate_count": 12,
+      "total_count": 12,
+      "weight": 0.9285714285714286,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "බූතයො": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කුජීත": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "වේසියොන්ට": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "රෙද්දෙ": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "වැලක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "තොපිලාට": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "වෙනවා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "බොලව්": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "කැරියන්ව": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පරයෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "තෝව": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පිම්පීයෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "වේසකමේ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "හෙනකදයා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "ගහන්නෙ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කනට": {
+      "hate_count": 10,
+      "total_count": 10,
+      "weight": 0.9166666666666666,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "උට්ටෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "රිලා": {
+      "hate_count": 10,
+      "total_count": 10,
+      "weight": 0.9166666666666666,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "ගැනිගේ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පකේ": {
+      "hate_count": 17,
+      "total_count": 17,
+      "weight": 0.9473684210526315,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "හුකන්න": {
+      "hate_count": 12,
+      "total_count": 12,
+      "weight": 0.9285714285714286,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "නපුන්සකයා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "තොගේ": {
+      "hate_count": 16,
+      "total_count": 16,
+      "weight": 0.9444444444444444,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "උට්ටටක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පයියක්": {
+      "hate_count": 17,
+      "total_count": 17,
+      "weight": 0.9473684210526315,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "ටෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "මූට": {
+      "hate_count": 21,
+      "total_count": 21,
+      "weight": 0.9565217391304348,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "වාචාල": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "බිජ්ජොන්ට": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කාලකණ්නි": {
+      "hate_count": 18,
+      "total_count": 18,
+      "weight": 0.95,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "හැතිකරේට": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පකයෝ": {
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "පණුවො": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "දාලා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කුණු": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "වෙලා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "මැරෙන්නේ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "හුකාපන්": {
+      "hate_count": 12,
+      "total_count": 12,
+      "weight": 0.9285714285714286,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "කුනු": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "හිත": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "උන්මන්තක": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "වනචරයෙක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "බල්ලනේ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "ලබ්බවල්": {
+      "hate_count": 12,
+      "total_count": 12,
+      "weight": 0.9285714285714286,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "හිගන": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "ආතල්": {
+      "hate_count": 10,
+      "total_count": 10,
+      "weight": 0.9166666666666666,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
+    },
+    "අමනයො": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "බල්ලවත්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "හොරා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "බරක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "මොංගල්ද": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "ඩාලින්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කරුමයක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "චීත්තයක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පලල්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කොටයි": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කොටියො": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "උඕෙ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "ගොබ්බයෙක්": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කුඩ්ඩොයි": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "කුහකයෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "රීලා": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_7"
+    },
+    "පරයා": {
+      "hate_count": 19,
+      "total_count": 19,
+      "weight": 0.9523809523809523,
+      "first_seen_batch": "batch_3",
+      "last_updated_batch": "batch_8"
     },
     "පිරිමි": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "ගණිකාව": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "තවුසෙට": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "ගහනව": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "හුටන්ලා": {
-      "hate_count": 6,
-      "total_count": 6,
-      "weight": 0.875,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_3",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_7"
     },
     "පරයො": {
-      "hate_count": 4,
-      "total_count": 4,
-      "weight": 0.8333333333333334,
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ආච්චිට": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හාල්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ගරන්න": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ගෑණු": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ඉල්ලන්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කෑවා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "යකූ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "තඩි": {
       "hate_count": 5,
       "total_count": 5,
       "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
+    },
+    "හාල්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ගරන්න": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෑණු": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ඉල්ලන්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කෑවා": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "යකූ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "තඩි": {
+      "hate_count": 14,
+      "total_count": 14,
+      "weight": 0.9375,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
     },
     "බඩා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ජම්බෝලයා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අලි": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බයියෙක්ව": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බන්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කිම්බේ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගු": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පකයා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "වහල්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොන්නයා": {
+      "hate_count": 18,
+      "total_count": 18,
+      "weight": 0.95,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "උට්ටො": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කන්න": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "සිගේ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "තන්": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පවු": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "වේසියන්ට": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "අකුලෝලම": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කුහක": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "උලතියන්න": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "යකො": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "නෙදකින්": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "අප්පිරියයි": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පඩ": {
+      "hate_count": 78,
+      "total_count": 78,
+      "weight": 0.9875,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "බං": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "අඳබාලයෝ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කල්ලතොනි": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කොල්ලො": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හැමිනෙන්න": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "වේසියොත්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ඇරලා": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පඳුරු": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පාහරයව": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කුණුහරප": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පූම්බා": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හාල්පාරුවො": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හාල්පාරුවෙක්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පිස්සො": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කියාපිය": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ලබ්බක්ද": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "නපුංසක": {
+      "hate_count": 9,
+      "total_count": 9,
+      "weight": 0.9090909090909091,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හුකනවා": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හුත්තො": {
+      "hate_count": 13,
+      "total_count": 13,
+      "weight": 0.9333333333333333,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "බල්ලන්ට": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "වේවා": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "අවදානවැස්සියෙක්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පෙරේතයා": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "මරිමෝඩ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "මැට්ටෝ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කාපන්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කාලකන්නින්ට": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ගොබ්බයෝ": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ලබ්බෙ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "ගං": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කබරයෝ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "තමුසෙලයි": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "තමුසෙලගෙ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "කාලලන්නි": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හොරු": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "බොක": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "යන්නෙ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හැතිකරේ": {
+      "hate_count": 13,
+      "total_count": 13,
+      "weight": 0.9333333333333333,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "බිජ්ජක්": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "පුකක්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "මෝඩයො": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "බඩ්ඩම": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "බඩු": {
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "හුයන්නෝ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_4",
+      "last_updated_batch": "batch_8"
+    },
+    "මාලු": {
       "hate_count": 4,
       "total_count": 4,
       "weight": 0.8333333333333334,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "උට්ටො": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කන්න": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "සිගේ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "තන්": {
-      "hate_count": 3,
-      "total_count": 3,
-      "weight": 0.8,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පවු": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසියන්ට": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "අකුලෝලම": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කුහක": {
-      "hate_count": 3,
-      "total_count": 3,
-      "weight": 0.8,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "උලතියන්න": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "යකො": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "නෙදකින්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "අප්පිරියයි": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පඩ": {
-      "hate_count": 30,
-      "total_count": 30,
-      "weight": 0.96875,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "බං": {
-      "hate_count": 3,
-      "total_count": 3,
-      "weight": 0.8,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "අඳබාලයෝ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කල්ලතොනි": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කොල්ලො": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හැමිනෙන්න": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "වේසියොත්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ඇරලා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පඳුරු": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පාහරයව": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කුණුහරප": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පූම්බා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හාල්පාරුවො": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හාල්පාරුවෙක්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පිස්සො": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කියාපිය": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ලබ්බක්ද": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "නපුංසක": {
-      "hate_count": 3,
-      "total_count": 3,
-      "weight": 0.8,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හුකනවා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හුත්තො": {
-      "hate_count": 3,
-      "total_count": 3,
-      "weight": 0.8,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "බල්ලන්ට": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "වේවා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "අවදානවැස්සියෙක්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පෙරේතයා": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "මරිමෝඩ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "මැට්ටෝ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කාපන්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කාලකන්නින්ට": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ගොබ්බයෝ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ලබ්බෙ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "ගං": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කබරයෝ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "තමුසෙලයි": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "තමුසෙලගෙ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "කාලලන්නි": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හොරු": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "බොක": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "යන්නෙ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හැතිකරේ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "බිජ්ජක්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "පුකක්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "මෝඩයො": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "බඩ්ඩම": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "බඩු": {
-      "hate_count": 3,
-      "total_count": 3,
-      "weight": 0.8,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "හුයන්නෝ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
-      "first_seen_batch": "batch_4",
-      "last_updated_batch": "batch_5"
-    },
-    "මාලු": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හැලුනොත්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අවජතකයන්ටත්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කුඩු": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොන්නයෙක්": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 11,
+      "total_count": 11,
+      "weight": 0.9230769230769231,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ඕයි": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "උබලා": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොන්නයන්ට": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කැරියෙක්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුචක්කු": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොබ්බ": {
-      "hate_count": 2,
-      "total_count": 2,
-      "weight": 0.75,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොන්නූ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුකේ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නන්නානේ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නොදෝකින්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොට්ටයෝ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොන්බයියො": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අප්පට": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අඩෝ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බල්ලන්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "රෙන": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොබිලො": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගස්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොබිලොද": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හිපාටුව": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හිකීම": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කිම්බක්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පොන්නයෙක්ම": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "තට්ට": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හොරුන්ට": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බූරුවෝ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "දෙක": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුත්තී": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ඩේසිය": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නාම්බෝ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පකීර්ල": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "රෙන්න": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "රෙන්ඩ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "චීත්ත": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පකය": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුකන්නෙ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "නොහුකම": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අනේ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පිම්පියො": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "අහිකුණ්ටිකයො": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුකන": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුයන්න": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හුයන්නක්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "හරකෝ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "බූරුවට": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොබ්බයා": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කටුස්සි": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "උබ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "වහු": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "පෙරේත": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "කුම්බාන්ඩ": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මීමැසි": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "ගොයන්": {
-      "hate_count": 1,
-      "total_count": 1,
-      "weight": 0.6666666666666666,
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
       "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "last_updated_batch": "batch_8"
     },
     "මැසි": {
+      "hate_count": 8,
+      "total_count": 8,
+      "weight": 0.9,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "නිල": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "බලු": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "සුනක": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "අගමැතියා": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "නිවට": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "නියාලු": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "බූරූ": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "මොංගලයොම": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "කොල්ලා": {
+      "hate_count": 10,
+      "total_count": 10,
+      "weight": 0.9166666666666666,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "බිජ්ජො": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "හරකෙක්": {
+      "hate_count": 7,
+      "total_count": 7,
+      "weight": 0.8888888888888888,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "හැමිනෙනවානේ": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "ටවුකන්න": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "ගොංවස්සො": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "දිදී": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "කට": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "කොල්ල": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "ගොන්නුන්ගේ": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "බැත්": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "බලයෙක්": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "පස්ස": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_5",
+      "last_updated_batch": "batch_8"
+    },
+    "බූරුවාගේ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "බූරු": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "බයියන්ගෙයි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ටොයියන්ගෙයි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "හැමිණෙන්න": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "පක්කාලි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ගහයි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "හැතිකරෙ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "හුකෙ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "උත්තො": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "තුප්පහි": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ජඩ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "තුච්ඡ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ඌටත්": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "කොනකපා": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ශුකාණු": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ඉරාගෙන": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "වේසාවා": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "මිනිහෝ": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ගැණියෙ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ත්ත": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "චික්": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "කැතේ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "අමිමලාට": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "පැලෙන්න": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "මුන්ට": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ගඳයි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "අඩෙ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "පුතා": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "හත": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "අසූචි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "බඩුවක්": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "බඩුවගේම": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "මොඩයෙක්": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "බැල්ලියොන්ගෙ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "කාලාකන්නි": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "තමුසෙට": {
+      "hate_count": 6,
+      "total_count": 6,
+      "weight": 0.875,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෙම්බියො": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "චුත": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "රොම්බ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "උස්සන්": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "පොන්නයෝ": {
+      "hate_count": 5,
+      "total_count": 5,
+      "weight": 0.8571428571428571,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ගොබ්බයන්ට": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "පලයම්": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "බෙබා": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ඌ": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "ඌව": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "පුකෙත්": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_6",
+      "last_updated_batch": "batch_8"
+    },
+    "මිරිකන්න": {
       "hate_count": 2,
       "total_count": 2,
       "weight": 0.75,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
     },
-    "නිල": {
+    "තඩියෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කැහුටු": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "බැල්ලියක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හීරලුවෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "අයිසෙ": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පොංනයෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පල්ලෙන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "බේරෙනවා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පිම්පි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "බඩුවකගේ්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "නොට්ටිගේ": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලබිබටම": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තම්බි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "අහවල්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "එක": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "අවජාතික": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කෙල": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තොල්ලා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කාරයා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෝතයා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "නාකියෝ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කුණුවෙලා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "මැරෙනවා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තප්පුලනවා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "දැන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "නරිය": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ඇරගන්න": {
+      "hate_count": 4,
+      "total_count": 4,
+      "weight": 0.8333333333333334,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ඇරලදෙනවා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "බයියෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තම්බියෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හාල්පාරු": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "මීහරක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තොපිලවගේ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "මැරිලයන්නඔ්න": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "වස්සියෙ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තුප්පැහි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගොන්ජා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "සක්කිලියා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "සමනලයා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ඌරා": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "උත්ටෝ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හිරිකිතයි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කියපන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "සම": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ප": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හැඳි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෑවිලා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "මීහරකුන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හොරෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පිංගුත්තරයෝ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගස්බල්ලෝ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "දාර": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "බල්ලෙක්ට": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ජාතක": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "වෙච්ච": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පරයෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "වේසියෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "අලිපුකෙන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පකයන්ට": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලොක්කෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ඕකුන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "අස්සෙ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තු": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පඩික්කම්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "මුඛය": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පන්සි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලක": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලන්සි": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පාරු": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "උක": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ඌරු": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පමල": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "දෙමල": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පලා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "රික": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෝතයෙක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ටෞකන්ඩ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "සරමේ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පිහියදැමිමා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "තුහ්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පුපුරල": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "මැරියං": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පකෙන්තුවන්ට": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලබ්බක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කැහුට්ටු": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෙම්බා": {
+      "hate_count": 3,
+      "total_count": 3,
+      "weight": 0.8,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හපලා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "උරලා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හිලත්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලබ්බො": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලොවින්න": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "අවජාතකයෝ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "දීපන්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ලමයෙක්ට": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කැරියො": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "හුක්කුං": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "පොයිය": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "ගොඩේ": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "බඩගෝස්තර": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_7",
+      "last_updated_batch": "batch_8"
+    },
+    "කන": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "වේ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "බලු": {
+    "ජංගිය": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "සුනක": {
+    "මූසල": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "හකරා": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "අගමැතියා": {
+    "තඩියා": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "නිවට": {
+    "තට්ටයා": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "නියාලු": {
+    "කොන්ඩයා": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "බූරූ": {
+    "නගින්නෙ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "මොංගලයොම": {
+    "නැති": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "කොල්ලා": {
+    "හුකා": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "බිජ්ජො": {
+    "හුකන්ඩ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "හරකෙක්": {
+    "කෑලි": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "හැමිනෙනවානේ": {
+    "බහුකාපන්": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "ටවුකන්න": {
+    "වෙසී": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "ගොංවස්සො": {
+    "වහුතු": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "දිදී": {
+    "සිපයියො": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "කට": {
+    "පකිස්තාන්පොන්නයෝ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "කොල්ල": {
+    "ගොන්නුනේ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "ගොන්නුන්ගේ": {
+    "පලයංකෝ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "බැත්": {
+    "කිබි": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "බලයෙක්": {
+    "හුත්තක්": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගහපියවු": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     },
-    "පස්ස": {
+    "ගෑණිගේ": {
       "hate_count": 1,
       "total_count": 1,
       "weight": 0.6666666666666666,
-      "first_seen_batch": "batch_5",
-      "last_updated_batch": "batch_5"
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කරනවා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ලැජ්ජයි": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කොත්තු": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "පුකට": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "තොත්තු": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "මෝල": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කර": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "යක්කු": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගහන්න": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෙම්බන්පිල": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "රැලක්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "නාකියෙක්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "පකෙක්ට": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කිම්බෙ": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "මල": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "මැටි": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "හුකන්නා": {
+      "hate_count": 2,
+      "total_count": 2,
+      "weight": 0.75,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "හුත්ති": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "බැල්ලී": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "රෙද්දක්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කොලු": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "සින්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෑණියෙක්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගූපුච්චන්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ජාතිවාදී": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "මූසලී": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "පරට්ටයන්ව": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගේ": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "උබට": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "නෑ": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "වසලයා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "අවජාතකයා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "සතා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ඔල්මාද": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "බැල්ලිගේ": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගහනවා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගෑනුටික": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "ගණිකා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "සේවයේ": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කපලා": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "කාලකන්නිකමකට": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
+    },
+    "බිජ්ජෙක්": {
+      "hate_count": 1,
+      "total_count": 1,
+      "weight": 0.6666666666666666,
+      "first_seen_batch": "batch_8",
+      "last_updated_batch": "batch_8"
     }
   }
 }

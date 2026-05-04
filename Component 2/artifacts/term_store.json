@@ -8,18 +8,18 @@
       "last_seen_batch": "batch_1"
     },
     "තෝ": {
-      "total_count": 29,
-      "hate_count": 29,
+      "total_count": 49,
+      "hate_count": 49,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ගෑනියෙක්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_1"
+      "last_seen_batch": "batch_7"
     },
     "බිජ්ජට": {
       "total_count": 1,
@@ -43,11 +43,11 @@
       "last_seen_batch": "batch_5"
     },
     "ගොන්": {
-      "total_count": 22,
-      "hate_count": 22,
+      "total_count": 38,
+      "hate_count": 38,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ජෝක්": {
       "total_count": 1,
@@ -85,18 +85,18 @@
       "last_seen_batch": "batch_1"
     },
     "පකෝ": {
-      "total_count": 20,
-      "hate_count": 20,
+      "total_count": 48,
+      "hate_count": 48,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "බැල්ලි": {
-      "total_count": 11,
-      "hate_count": 11,
+      "total_count": 17,
+      "hate_count": 17,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ගුද": {
       "total_count": 2,
@@ -120,18 +120,18 @@
       "last_seen_batch": "batch_1"
     },
     "පයිය": {
-      "total_count": 15,
-      "hate_count": 15,
-      "nonhate_count": 0,
-      "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
-    },
-    "පොන්න": {
       "total_count": 18,
       "hate_count": 18,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
+    },
+    "පොන්න": {
+      "total_count": 42,
+      "hate_count": 42,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_1",
+      "last_seen_batch": "batch_8"
     },
     "නායකයෝ": {
       "total_count": 1,
@@ -155,25 +155,25 @@
       "last_seen_batch": "batch_1"
     },
     "පුක": {
-      "total_count": 31,
-      "hate_count": 31,
+      "total_count": 53,
+      "hate_count": 53,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "නොදකින්": {
-      "total_count": 19,
-      "hate_count": 19,
+      "total_count": 33,
+      "hate_count": 33,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "අමු": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_8"
     },
     "ගොබ්බයි": {
       "total_count": 1,
@@ -190,25 +190,25 @@
       "last_seen_batch": "batch_1"
     },
     "නරින්ගේ": {
-      "total_count": 1,
-      "hate_count": 1,
-      "nonhate_count": 0,
-      "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_1"
-    },
-    "පලයං": {
       "total_count": 2,
       "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_7"
     },
-    "තොපි": {
-      "total_count": 18,
-      "hate_count": 18,
+    "පලයං": {
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
+    },
+    "තොපි": {
+      "total_count": 36,
+      "hate_count": 36,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_1",
+      "last_seen_batch": "batch_8"
     },
     "රෙද්දක්ද": {
       "total_count": 1,
@@ -239,25 +239,25 @@
       "last_seen_batch": "batch_1"
     },
     "බිජ්ජ": {
-      "total_count": 13,
-      "hate_count": 13,
+      "total_count": 22,
+      "hate_count": 22,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "හුජ්ජ": {
-      "total_count": 17,
-      "hate_count": 17,
+      "total_count": 27,
+      "hate_count": 27,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "කැත": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_1"
+      "last_seen_batch": "batch_6"
     },
     "ඌකාපන්": {
       "total_count": 1,
@@ -267,18 +267,18 @@
       "last_seen_batch": "batch_1"
     },
     "නාකි": {
-      "total_count": 6,
-      "hate_count": 6,
+      "total_count": 10,
+      "hate_count": 10,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "හෙන": {
-      "total_count": 5,
-      "hate_count": 5,
+      "total_count": 11,
+      "hate_count": 11,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "චාටර්": {
       "total_count": 1,
@@ -295,11 +295,11 @@
       "last_seen_batch": "batch_1"
     },
     "කාලකණ්ණි": {
-      "total_count": 10,
-      "hate_count": 10,
+      "total_count": 19,
+      "hate_count": 19,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "මෝඩයා": {
       "total_count": 1,
@@ -309,39 +309,39 @@
       "last_seen_batch": "batch_1"
     },
     "මෝඩ": {
-      "total_count": 8,
-      "hate_count": 8,
+      "total_count": 17,
+      "hate_count": 17,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "මොංගල්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_1"
+      "last_seen_batch": "batch_8"
     },
     "පර": {
-      "total_count": 13,
-      "hate_count": 13,
+      "total_count": 24,
+      "hate_count": 24,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "සක්කිලි": {
-      "total_count": 20,
-      "hate_count": 20,
+      "total_count": 32,
+      "hate_count": 32,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "හැත්ත": {
-      "total_count": 20,
-      "hate_count": 20,
+      "total_count": 38,
+      "hate_count": 38,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "තොපිට": {
       "total_count": 2,
@@ -386,25 +386,25 @@
       "last_seen_batch": "batch_1"
     },
     "රෙද්ද": {
-      "total_count": 12,
-      "hate_count": 12,
+      "total_count": 21,
+      "hate_count": 21,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "කාලකන්නි": {
-      "total_count": 6,
-      "hate_count": 6,
+      "total_count": 8,
+      "hate_count": 8,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "වේස": {
-      "total_count": 7,
-      "hate_count": 7,
+      "total_count": 14,
+      "hate_count": 14,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "බල්ලො": {
       "total_count": 5,
@@ -428,18 +428,18 @@
       "last_seen_batch": "batch_1"
     },
     "උඹ": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 5,
+      "hate_count": 5,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "වේසි": {
-      "total_count": 14,
-      "hate_count": 14,
+      "total_count": 17,
+      "hate_count": 17,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_6"
     },
     "හුකන්නෝ": {
       "total_count": 1,
@@ -519,11 +519,11 @@
       "last_seen_batch": "batch_1"
     },
     "චූ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_1"
+      "last_seen_batch": "batch_7"
     },
     "පොන්නයද": {
       "total_count": 1,
@@ -561,11 +561,11 @@
       "last_seen_batch": "batch_1"
     },
     "සාප": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 7,
+      "hate_count": 7,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "මරි": {
       "total_count": 1,
@@ -610,11 +610,11 @@
       "last_seen_batch": "batch_1"
     },
     "ලබ්බ": {
-      "total_count": 10,
-      "hate_count": 10,
+      "total_count": 19,
+      "hate_count": 19,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "පිස්සා": {
       "total_count": 3,
@@ -645,18 +645,18 @@
       "last_seen_batch": "batch_3"
     },
     "හුත්ත": {
-      "total_count": 18,
-      "hate_count": 18,
+      "total_count": 42,
+      "hate_count": 42,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "හිවල්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_1"
+      "last_seen_batch": "batch_7"
     },
     "සුනඛයෝ": {
       "total_count": 1,
@@ -666,18 +666,18 @@
       "last_seen_batch": "batch_1"
     },
     "අවජාතක": {
-      "total_count": 12,
-      "hate_count": 12,
+      "total_count": 28,
+      "hate_count": 28,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "වල්": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 8,
+      "hate_count": 8,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "බල්ලෝ": {
       "total_count": 1,
@@ -687,11 +687,11 @@
       "last_seen_batch": "batch_1"
     },
     "තූ": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 6,
+      "hate_count": 6,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "කාලකණ්නියා": {
       "total_count": 1,
@@ -715,11 +715,11 @@
       "last_seen_batch": "batch_1"
     },
     "තමුසෙ": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 11,
+      "hate_count": 11,
       "nonhate_count": 0,
       "first_seen_batch": "batch_1",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "නාකිම": {
       "total_count": 1,
@@ -736,11 +736,11 @@
       "last_seen_batch": "batch_2"
     },
     "පිස්සු": {
-      "total_count": 13,
-      "hate_count": 13,
+      "total_count": 18,
+      "hate_count": 18,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "හුත්තිගේ": {
       "total_count": 3,
@@ -778,11 +778,11 @@
       "last_seen_batch": "batch_2"
     },
     "වේසිගෙ": {
-      "total_count": 5,
-      "hate_count": 5,
+      "total_count": 7,
+      "hate_count": 7,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "පුතාලා": {
       "total_count": 2,
@@ -792,18 +792,18 @@
       "last_seen_batch": "batch_2"
     },
     "දෙන": {
+      "total_count": 5,
+      "hate_count": 5,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_2",
+      "last_seen_batch": "batch_7"
+    },
+    "ජංගි": {
       "total_count": 2,
       "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
-    },
-    "ජංගි": {
-      "total_count": 1,
-      "hate_count": 1,
-      "nonhate_count": 0,
-      "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_7"
     },
     "අඳින": {
       "total_count": 1,
@@ -813,18 +813,18 @@
       "last_seen_batch": "batch_2"
     },
     "ගල්": {
-      "total_count": 3,
-      "hate_count": 3,
+      "total_count": 6,
+      "hate_count": 6,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "ගොං": {
-      "total_count": 5,
-      "hate_count": 5,
+      "total_count": 7,
+      "hate_count": 7,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "හැත්තක්": {
       "total_count": 2,
@@ -841,18 +841,18 @@
       "last_seen_batch": "batch_2"
     },
     "බල්ලා": {
-      "total_count": 9,
-      "hate_count": 9,
+      "total_count": 23,
+      "hate_count": 23,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ගූ": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 5,
+      "hate_count": 5,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "කටු": {
       "total_count": 2,
@@ -869,18 +869,18 @@
       "last_seen_batch": "batch_2"
     },
     "යකෝ": {
-      "total_count": 18,
-      "hate_count": 18,
+      "total_count": 30,
+      "hate_count": 30,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "තොට": {
-      "total_count": 12,
-      "hate_count": 12,
+      "total_count": 29,
+      "hate_count": 29,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "හුකනාතල්": {
       "total_count": 1,
@@ -904,11 +904,11 @@
       "last_seen_batch": "batch_2"
     },
     "මැරෙන්න": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_7"
     },
     "පකයෙක්": {
       "total_count": 1,
@@ -918,11 +918,11 @@
       "last_seen_batch": "batch_2"
     },
     "කැරි": {
-      "total_count": 7,
-      "hate_count": 7,
+      "total_count": 15,
+      "hate_count": 15,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "පුතෙක්": {
       "total_count": 1,
@@ -953,18 +953,18 @@
       "last_seen_batch": "batch_2"
     },
     "බඩුව": {
-      "total_count": 10,
-      "hate_count": 10,
+      "total_count": 20,
+      "hate_count": 20,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "මැරියන්": {
-      "total_count": 5,
-      "hate_count": 5,
+      "total_count": 6,
+      "hate_count": 6,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "කැරියා": {
       "total_count": 1,
@@ -995,11 +995,11 @@
       "last_seen_batch": "batch_2"
     },
     "තොගෙ": {
-      "total_count": 8,
-      "hate_count": 8,
+      "total_count": 11,
+      "hate_count": 11,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "රාක්ෂ": {
       "total_count": 1,
@@ -1009,11 +1009,11 @@
       "last_seen_batch": "batch_2"
     },
     "ගෑණි": {
-      "total_count": 3,
-      "hate_count": 3,
+      "total_count": 6,
+      "hate_count": 6,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ටහුකන": {
       "total_count": 1,
@@ -1044,18 +1044,18 @@
       "last_seen_batch": "batch_2"
     },
     "ගැණි": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_6"
     },
     "වසලයෙක්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_8"
     },
     "බබ්බුද": {
       "total_count": 1,
@@ -1100,11 +1100,11 @@
       "last_seen_batch": "batch_2"
     },
     "හරක්": {
-      "total_count": 8,
-      "hate_count": 8,
+      "total_count": 18,
+      "hate_count": 18,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "පඩත්තල": {
       "total_count": 1,
@@ -1156,25 +1156,25 @@
       "last_seen_batch": "batch_2"
     },
     "මුසලයා": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 6,
+      "hate_count": 6,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "කිම්බ": {
-      "total_count": 8,
-      "hate_count": 8,
+      "total_count": 13,
+      "hate_count": 13,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ඇට": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_7"
     },
     "තම්": {
       "total_count": 1,
@@ -1205,11 +1205,11 @@
       "last_seen_batch": "batch_2"
     },
     "ගෝත": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "පක": {
       "total_count": 3,
@@ -1233,11 +1233,11 @@
       "last_seen_batch": "batch_2"
     },
     "වඳ": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "වේසිගේ": {
       "total_count": 1,
@@ -1254,11 +1254,11 @@
       "last_seen_batch": "batch_2"
     },
     "බූරුවා": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 6,
+      "hate_count": 6,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_6"
     },
     "මූසලයෙක්": {
       "total_count": 1,
@@ -1268,11 +1268,11 @@
       "last_seen_batch": "batch_2"
     },
     "පල": {
-      "total_count": 4,
-      "hate_count": 4,
+      "total_count": 17,
+      "hate_count": 17,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "වාහේ": {
       "total_count": 1,
@@ -1324,11 +1324,11 @@
       "last_seen_batch": "batch_2"
     },
     "හුත්තිගෙ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_7"
     },
     "පච": {
       "total_count": 1,
@@ -1366,11 +1366,11 @@
       "last_seen_batch": "batch_2"
     },
     "නැනේ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_2",
-      "last_seen_batch": "batch_2"
+      "last_seen_batch": "batch_8"
     },
     "හුත්තල": {
       "total_count": 1,
@@ -1450,11 +1450,11 @@
       "last_seen_batch": "batch_3"
     },
     "අස්සේ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_7"
     },
     "කල්ලතොනියෝ": {
       "total_count": 2,
@@ -1499,11 +1499,11 @@
       "last_seen_batch": "batch_3"
     },
     "බූතයො": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "කුජීත": {
       "total_count": 1,
@@ -1541,11 +1541,11 @@
       "last_seen_batch": "batch_3"
     },
     "බොලව්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "කැරියන්ව": {
       "total_count": 1,
@@ -1590,18 +1590,18 @@
       "last_seen_batch": "batch_3"
     },
     "ගහන්නෙ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "කනට": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "උට්ටෝ": {
       "total_count": 3,
@@ -1611,11 +1611,11 @@
       "last_seen_batch": "batch_4"
     },
     "රිලා": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_7"
     },
     "ගැනිගේ": {
       "total_count": 1,
@@ -1660,11 +1660,11 @@
       "last_seen_batch": "batch_4"
     },
     "හැතිකරේට": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_6"
     },
     "පකයෝ": {
       "total_count": 2,
@@ -1688,11 +1688,11 @@
       "last_seen_batch": "batch_3"
     },
     "කුණු": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_7"
     },
     "වෙලා": {
       "total_count": 1,
@@ -1758,11 +1758,11 @@
       "last_seen_batch": "batch_3"
     },
     "ආතල්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "අමනයො": {
       "total_count": 1,
@@ -1779,11 +1779,11 @@
       "last_seen_batch": "batch_3"
     },
     "හොරා": {
-      "total_count": 3,
-      "hate_count": 3,
+      "total_count": 4,
+      "hate_count": 4,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "බරක්": {
       "total_count": 1,
@@ -1807,11 +1807,11 @@
       "last_seen_batch": "batch_3"
     },
     "කරුමයක්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "චීත්තයක්": {
       "total_count": 1,
@@ -1849,11 +1849,11 @@
       "last_seen_batch": "batch_3"
     },
     "ගොබ්බයෙක්": {
-      "total_count": 5,
-      "hate_count": 5,
+      "total_count": 7,
+      "hate_count": 7,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_6"
     },
     "කුඩ්ඩොයි": {
       "total_count": 1,
@@ -1884,11 +1884,11 @@
       "last_seen_batch": "batch_3"
     },
     "ගණිකාව": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_3",
-      "last_seen_batch": "batch_3"
+      "last_seen_batch": "batch_8"
     },
     "තවුසෙට": {
       "total_count": 1,
@@ -1940,11 +1940,11 @@
       "last_seen_batch": "batch_4"
     },
     "කෑවා": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "යකූ": {
       "total_count": 1,
@@ -1954,11 +1954,11 @@
       "last_seen_batch": "batch_4"
     },
     "තඩි": {
-      "total_count": 3,
-      "hate_count": 3,
+      "total_count": 5,
+      "hate_count": 5,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ජම්බෝලයා": {
       "total_count": 1,
@@ -1968,11 +1968,11 @@
       "last_seen_batch": "batch_4"
     },
     "බයියෙක්ව": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_7"
     },
     "බන්": {
       "total_count": 1,
@@ -1982,18 +1982,18 @@
       "last_seen_batch": "batch_4"
     },
     "වහල්": {
+      "total_count": 4,
+      "hate_count": 4,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_4",
+      "last_seen_batch": "batch_8"
+    },
+    "සිගේ": {
       "total_count": 2,
       "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_5"
-    },
-    "සිගේ": {
-      "total_count": 1,
-      "hate_count": 1,
-      "nonhate_count": 0,
-      "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "තන්": {
       "total_count": 2,
@@ -2024,11 +2024,11 @@
       "last_seen_batch": "batch_4"
     },
     "නෙදකින්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "අප්පිරියයි": {
       "total_count": 1,
@@ -2038,11 +2038,11 @@
       "last_seen_batch": "batch_4"
     },
     "පඩ": {
-      "total_count": 15,
-      "hate_count": 15,
+      "total_count": 17,
+      "hate_count": 17,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_7"
     },
     "බං": {
       "total_count": 2,
@@ -2066,11 +2066,11 @@
       "last_seen_batch": "batch_5"
     },
     "ඇරලා": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_7"
     },
     "පඳුරු": {
       "total_count": 1,
@@ -2101,11 +2101,11 @@
       "last_seen_batch": "batch_4"
     },
     "හාල්පාරුවො": {
-      "total_count": 2,
-      "hate_count": 2,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_7"
     },
     "කියාපිය": {
       "total_count": 1,
@@ -2115,11 +2115,11 @@
       "last_seen_batch": "batch_4"
     },
     "වේවා": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_7"
     },
     "අවදානවැස්සියෙක්": {
       "total_count": 1,
@@ -2143,11 +2143,11 @@
       "last_seen_batch": "batch_4"
     },
     "මැට්ටෝ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_4",
-      "last_seen_batch": "batch_4"
+      "last_seen_batch": "batch_8"
     },
     "කාපන්": {
       "total_count": 1,
@@ -2290,11 +2290,11 @@
       "last_seen_batch": "batch_5"
     },
     "මුගේ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_6"
     },
     "අප්පට": {
       "total_count": 1,
@@ -2304,11 +2304,11 @@
       "last_seen_batch": "batch_5"
     },
     "අඩෝ": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "ගොබිලො": {
       "total_count": 2,
@@ -2318,11 +2318,11 @@
       "last_seen_batch": "batch_5"
     },
     "ගස්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "හිපාටුව": {
       "total_count": 1,
@@ -2346,18 +2346,18 @@
       "last_seen_batch": "batch_5"
     },
     "තට්ට": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "හුත්තී": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_8"
     },
     "ඩේසිය": {
       "total_count": 1,
@@ -2409,11 +2409,11 @@
       "last_seen_batch": "batch_5"
     },
     "පිම්පියො": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "අහිකුණ්ටිකයො": {
       "total_count": 1,
@@ -2514,11 +2514,11 @@
       "last_seen_batch": "batch_5"
     },
     "ටවුකන්න": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 2,
+      "hate_count": 2,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "ගොංවස්සො": {
       "total_count": 1,
@@ -2535,11 +2535,11 @@
       "last_seen_batch": "batch_5"
     },
     "බැත්": {
-      "total_count": 1,
-      "hate_count": 1,
+      "total_count": 3,
+      "hate_count": 3,
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
-      "last_seen_batch": "batch_5"
+      "last_seen_batch": "batch_7"
     },
     "නපුංසක": {
       "total_count": 1,
@@ -2554,6 +2554,804 @@
       "nonhate_count": 0,
       "first_seen_batch": "batch_5",
       "last_seen_batch": "batch_5"
+    },
+    "බයියන්ගෙයි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ටොයියන්ගෙයි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "හැමිණෙන්න": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "උත්තො": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_7"
+    },
+    "තුප්පහි": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_8"
+    },
+    "ජඩ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "තුච්ඡ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ඌටත්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "කොනකපා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ශුකාණු": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ඉරාගෙන": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "මිනිහෝ": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ත්ත": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "චික්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "පැලෙන්න": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ගඳයි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "හත": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "අසූචි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "හුත්තෝ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "කොල්ලා": {
+      "total_count": 5,
+      "hate_count": 5,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_8"
+    },
+    "මොඩයෙක්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "බැල්ලියොන්ගෙ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "කාලාකන්නි": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_7"
+    },
+    "ගෙම්බියො": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_7"
+    },
+    "චුත": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "රොම්බ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "උස්සන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "බෙබා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ඌ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "ඌව": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_6",
+      "last_seen_batch": "batch_6"
+    },
+    "මිරිකන්න": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "කැහුටු": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "හීරලුවෙක්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "අයිසෙ": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පොංනයෙක්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "බේරෙනවා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ලබිබටම": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "තම්බි": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "අහවල්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "එක": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "කෙල": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "කාරයා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "තප්පුලනවා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "දැන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ඇරගන්න": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "මීහරක්": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "මැරිලයන්නඔ්න": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "හැතිකරේ": {
+      "total_count": 3,
+      "hate_count": 3,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_8"
+    },
+    "වස්සියෙ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "තුප්පැහි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ගොන්ජා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "සමනලයා": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ඌරා": {
+      "total_count": 3,
+      "hate_count": 3,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_8"
+    },
+    "හිරිකිතයි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "කියපන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ප": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "හැඳි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පිංගුත්තරයෝ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ගස්බල්ලෝ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "දාර": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ජාතක": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "වෙච්ච": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "අලිපුකෙන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "උබ": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_8"
+    },
+    "ලොක්කෙක්": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ඕකුන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "තු": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_8"
+    },
+    "මුඛය": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පන්සි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ලක": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ලන්සි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පාරු": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "උක": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පමල": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ටෞකන්ඩ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "සරමේ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පිහියදැමිමා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "තුහ්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "පුපුරල": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "මැරියං": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "හපලා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "උරලා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "දීපන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "ලමයෙක්ට": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "හුක්කුං": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "බඩගෝස්තර": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_7"
+    },
+    "මූසල": {
+      "total_count": 2,
+      "hate_count": 2,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_7",
+      "last_seen_batch": "batch_8"
+    },
+    "හකරා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ගෙම්බා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "නගින්නෙ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "බහුකාපන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "වෙසී": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "සිපයියො": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "පකිස්තාන්පොන්නයෝ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "කිබි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ගහපියවු": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ලැජ්ජයි": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "නරිය": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ඌරු": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ගෙම්බන්පිල": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "රැලක්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "මල": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "බැල්ලී": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ගූපුච්චන්": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ජාතිවාදී": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "මූසලී": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "මැරිය": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ගේ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "නෑ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "සතා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ඔල්මාද": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "ගෑවිලා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "සේවයේ": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
+    },
+    "කපලා": {
+      "total_count": 1,
+      "hate_count": 1,
+      "nonhate_count": 0,
+      "first_seen_batch": "batch_8",
+      "last_seen_batch": "batch_8"
     }
   }
 }
