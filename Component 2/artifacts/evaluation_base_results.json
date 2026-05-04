@@ -1,0 +1,53 @@
+{
+  "model_type": "base",
+  "model_path": "Imaya2002/sinhala-hate-classifier-v2",
+  "test_file": "data/test/test_set.csv",
+  "evaluation_type": "binary_hate_vs_normal",
+  "note": "DISINFO is treated as NORMAL for Component 2 evaluation.",
+  "total_rows": 200,
+  "accuracy": 0.425,
+  "weighted_precision": 0.6660904255319149,
+  "weighted_recall": 0.425,
+  "weighted_f1": 0.3090356394129979,
+  "confusion_matrix_labels": [
+    "HATE",
+    "NORMAL"
+  ],
+  "confusion_matrix": [
+    [
+      75,
+      2
+    ],
+    [
+      113,
+      10
+    ]
+  ],
+  "classification_report": {
+    "HATE": {
+      "precision": 0.39893617021276595,
+      "recall": 0.974025974025974,
+      "f1-score": 0.5660377358490566,
+      "support": 77.0
+    },
+    "NORMAL": {
+      "precision": 0.8333333333333334,
+      "recall": 0.08130081300813008,
+      "f1-score": 0.14814814814814814,
+      "support": 123.0
+    },
+    "accuracy": 0.425,
+    "macro avg": {
+      "precision": 0.6161347517730497,
+      "recall": 0.527663393517052,
+      "f1-score": 0.35709294199860236,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.6660904255319149,
+      "recall": 0.425,
+      "f1-score": 0.3090356394129979,
+      "support": 200.0
+    }
+  }
+}

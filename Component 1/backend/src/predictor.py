@@ -35,15 +35,46 @@ FALSE_POSITIVE_WORDS = {
     'bad', 'hate', 'sad', 'mad', 'die', 'kill', 'fight',
 }
 
+# ── Adaptive model path from Component 2 ─────────────────────
+COMPONENT2_ADAPTIVE_MODEL_FILE = os.path.join(
+    BASE_DIR,
+    "..",
+    "Component 2",
+    "artifacts",
+    "adaptive_models",
+    "latest_model.txt",
+)
+
+def get_classifier_model_path():
+    """
+    Load latest Component 2 adaptive model if available.
+    Otherwise use original Hugging Face classifier.
+    """
+    try:
+        if os.path.exists(COMPONENT2_ADAPTIVE_MODEL_FILE):
+            with open(COMPONENT2_ADAPTIVE_MODEL_FILE, "r", encoding="utf-8") as f:
+                latest_model_path = f.read().strip()
+
+            if latest_model_path and os.path.exists(latest_model_path):
+                print(f"Loading adaptive classifier model: {latest_model_path}")
+                return latest_model_path
+    except Exception as e:
+        print(f"Could not load adaptive model path: {e}")
+
+    print(f"Loading base classifier model from Hugging Face: {CLF_REPO}")
+    return CLF_REPO
+
 
 class SinhalaHateDetector:
     def __init__(self):
         self.device = 'cpu'
-        print("Loading tokenizer from HuggingFace...")
-        self.tokenizer = AutoTokenizer.from_pretrained(CLF_REPO)
+        clf_model_path = get_classifier_model_path()
+
+        print("Loading tokenizer...")
+        self.tokenizer = AutoTokenizer.from_pretrained(clf_model_path)
 
         print("Loading classifier model (PyTorch)...")
-        self.clf_model = AutoModelForSequenceClassification.from_pretrained(CLF_REPO)
+        self.clf_model = AutoModelForSequenceClassification.from_pretrained(clf_model_path)
         self.clf_model.eval()
 
         print("Loading token classifier model (ONNX)...")
