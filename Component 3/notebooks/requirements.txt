@@ -1,0 +1,14 @@
+datasets
+numpy
+pandas
+scikit-learn
+torch
+transformers
+sentence-transformers
+pyarrow
+tqdm
+requests
+google-auth
+hf_xet
+transformers[torch]
+accelerate>=0.26.0

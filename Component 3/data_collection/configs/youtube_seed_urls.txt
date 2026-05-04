@@ -1,0 +1,10 @@
+# YouTube seed pages or direct watch URLs for comment scraping.
+# Add your own channel pages, search pages, and watch URLs here.
+
+https://www.youtube.com/@newsfirstsrilanka/videos
+https://www.youtube.com/@SatahanRadio/videos
+https://www.youtube.com/@VFMRADIO107/videos
+https://www.youtube.com/@AdaDerana24/videos
+https://www.youtube.com/@AdaDeranaNews/videos
+https://www.youtube.com/@SirasaTV3/videos
+https://www.youtube.com/@swarnavahinitv/videos

@@ -1,0 +1,34 @@
+{
+  "train_rows": 59206,
+  "test_rows": 70545,
+  "train_label_counts": {
+    "DISINFO": 11881,
+    "HATE": 18930,
+    "NORMAL": 28395
+  },
+  "test_label_counts": {
+    "DISINFO": 2160,
+    "HATE": 4675,
+    "NORMAL": 63710
+  },
+  "train_label_ratios": {
+    "DISINFO": 0.20067222916596292,
+    "HATE": 0.31973110833361484,
+    "NORMAL": 0.47959666250042227
+  },
+  "test_label_ratios": {
+    "DISINFO": 0.030618753986816925,
+    "HATE": 0.06626975689276349,
+    "NORMAL": 0.9031114891204196
+  },
+  "train_source_counts": {
+    "gossip_lanka": 37023,
+    "youtube": 13758,
+    "elakiri": 8425
+  },
+  "test_source_counts": {
+    "gossip_lanka": 45740,
+    "youtube": 16974,
+    "elakiri": 7831
+  }
+}

@@ -1,0 +1,17 @@
+.git
+.next
+node_modules
+frontend/node_modules
+frontend/.next
+venv
+.venv
+__pycache__
+.pytest_cache
+.pytest_tmp
+.tmp
+training/artifacts
+notebooks/*.executed.ipynb
+*.pyc
+*.pyo
+*.pyd
+*.log

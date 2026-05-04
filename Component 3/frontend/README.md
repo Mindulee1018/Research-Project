@@ -1,16 +1,48 @@
-# React + Vite
+# Frontend (Next.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This frontend uses Next.js App Router and React.
 
-Currently, two official plugins are available:
+## Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Open `http://localhost:3000`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Routes:
 
-## Expanding the ESLint configuration
+- `/` overview console
+- `/moderate` single moderation focus
+- `/batch` batch queue focus
+- `/decisions` decision-log focus
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build
+
+```bash
+npm run build
+npm run start
+```
+
+## Environment
+
+Create `frontend/.env.local` from `frontend/.env.example`.
+
+PowerShell:
+
+```bash
+Copy-Item .env.example .env.local
+```
+
+Supported variables:
+
+```bash
+NEXT_PUBLIC_API_BASE=http://127.0.0.1:5000
+NEXT_PUBLIC_MODERATOR_ID=ui_moderator
+```
+
+Notes:
+- `NEXT_PUBLIC_API_BASE` should point to the FastAPI backend.
+- If omitted, frontend defaults to `http://127.0.0.1:5000`.
+- Queue/progress state is stored in browser `localStorage` and recovers on refresh.

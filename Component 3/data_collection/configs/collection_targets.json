@@ -1,0 +1,16 @@
+{
+  "tiers": {
+    "minimum": {
+      "labeled_per_class_per_source": 1000
+    },
+    "better": {
+      "labeled_per_class_per_source": 2000
+    },
+    "strong": {
+      "labeled_per_class_per_source": 3000
+    }
+  },
+  "classes": ["HATE", "DISINFO", "NORMAL"],
+  "raw_multiplier": 4
+}
+
